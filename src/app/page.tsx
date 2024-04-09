@@ -1,7 +1,12 @@
+import Hero from "./components/Hero";
+import MaxWidthWrapper from "./components/MaxWidthWrapper";
+
 export default function Home() {
   return (
-    <main className="text-center">
-      <h1>To be continued... 😁</h1>
+    <main className="bg-mainBlack">
+      <MaxWidthWrapper>
+        <Hero />
+      </MaxWidthWrapper>
     </main>
   );
 }
