@@ -3,11 +3,11 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Footer = () => {
   return (
-    <footer className="bg-mainBlack">
-      <MaxWidthWrapper>
+    <MaxWidthWrapper>
+      <footer className="bg-mainBlack">
         <h2 className="text-mainWhite">Footer</h2>
-      </MaxWidthWrapper>
-    </footer>
+      </footer>
+    </MaxWidthWrapper>
   );
 };
 

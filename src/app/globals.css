@@ -51,3 +51,7 @@ p {
 a {
   display: inline-block;
 }
+
+html {
+  scroll-behavior: smooth;
+}

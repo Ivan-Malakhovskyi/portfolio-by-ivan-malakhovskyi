@@ -1,11 +1,8 @@
 import React from "react";
+import About from "../components/About";
 
-const About = () => {
-  return (
-    <div>
-      <h1 className="text-mainWhite">About</h1>
-    </div>
-  );
+const Page = () => {
+  return <About />;
 };
 
-export default About;
+export default Page;
