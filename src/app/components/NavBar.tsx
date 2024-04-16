@@ -8,7 +8,7 @@ import Navigations from "./Navigations";
 const NavBar: FC = () => {
   return (
     <MaxWidthWrapper>
-      <div className="lg:flex ">
+      <div className="flex items-center">
         {" "}
         <span className="">
           {" "}
@@ -16,7 +16,7 @@ const NavBar: FC = () => {
             Ivan Malakhovskyi
           </Link>
         </span>
-        <nav className="lg:ml-auto text-mainWhite">
+        <nav className="ml-auto text-mainWhite">
           {" "}
           <Navigations />
         </nav>

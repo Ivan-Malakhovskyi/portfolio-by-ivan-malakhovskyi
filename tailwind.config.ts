@@ -12,6 +12,7 @@ const config: Config = {
         mainBlack: "#000000",
         mainWhite: "#ffffff",
         mainGreen: "#1ed760",
+        mainGrey: "#959595",
         addGreen: "#0e8538",
         accentGreen: "#a7d575",
         neon: "#a7d575",
