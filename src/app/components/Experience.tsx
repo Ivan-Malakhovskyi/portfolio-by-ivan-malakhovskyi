@@ -3,7 +3,7 @@ import React from "react";
 const Experience = () => {
   return (
     <section id="experience" className="pb-14">
-      <h1 className="text-mainWhite text-6xl">Experience</h1>
+      <h1 className="text-mainWhite text-3xl md:text-6xl">Experience</h1>
       <h2 className="text-mainWhite text-2xl">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ipsa
         nihil. Ut accusamus temporibus reiciendis commodi optio. Perspiciatis

@@ -9,32 +9,29 @@ const OpenToWork: FC = () => {
       <ul className="flex gap-4 flex-col items-center mb-8">
         {" "}
         <li>
-          <span className="text-mainWhite text-6xl"> Jobs: &#123;</span>
+          <span className="text-mainWhite text-3xl md:text-6xl">
+            {" "}
+            Jobs: &#123;
+          </span>
         </li>{" "}
         <li>
-          <h2 className="">
-            <span className="text-6xl font-bold bg-gradient-to-r from-neon to-skyBlue text-transparent bg-clip-text ">
-              Full Stack Developer
-            </span>
+          <h2 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-neon to-skyBlue text-transparent bg-clip-text break-word">
+            Full Stack Developer
           </h2>
         </li>
         <li>
-          <h2 className="">
-            <span className="text-6xl font-bold bg-gradient-to-r from-aqua to-purple text-transparent bg-clip-text">
-              Frontend Developer
-            </span>
+          <h2 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-aqua to-purple text-transparent bg-clip-text break-word">
+            Frontend Developer
           </h2>
         </li>
         <li>
-          <h2 className="">
-            <span className="text-6xl font-bold bg-gradient-to-r from-mainWhite to-gray-600 text-transparent bg-clip-text">
-              Backend Developer
-            </span>
+          <h2 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-mainWhite to-gray-600 text-transparent bg-clip-text break-word">
+            Backend Developer
           </h2>
         </li>
         <li>
           {" "}
-          <span className="text-mainWhite  text-6xl">&#125;</span>
+          <span className="text-mainWhite text-3xl md:text-6xl">&#125;</span>
         </li>
       </ul>
       <h3 className="text-mainWhite text-xl  font-medium max-w-[600px] ">
