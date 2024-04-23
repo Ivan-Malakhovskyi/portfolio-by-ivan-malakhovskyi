@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <MaxWidthWrapper>
-      <footer className="bg-mainBlack">
+      <footer className="bg-mainBlack py-10 ">
         <h4 className="text-mainGrey text-center mb-6">Social</h4>
 
         <ul className="flex gap-10 justify-center mb-6">

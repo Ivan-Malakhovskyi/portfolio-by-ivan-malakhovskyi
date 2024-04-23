@@ -1,24 +1,46 @@
 "use client";
 
 import Image from "next/image";
-import React, { FC, useEffect, MouseEvent } from "react";
-// import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import { FC, useEffect, MouseEvent, useState } from "react";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { IModalProps } from "./Modal.types";
+import { motion } from "framer-motion";
 import icon_close from "/public/icons/x.svg";
 
-const Modal: FC<IModalProps> = ({ close, children }) => {
+const dropIn = {
+  hidden: {
+    y: "-100vh",
+    opacity: 0,
+  },
+  visible: {
+    y: "0",
+    opacity: 1,
+    transitions: {
+      duration: 0.3,
+      type: "spring",
+      stiffness: 500,
+    },
+  },
+  exit: {
+    y: "100vh",
+    opacity: 0,
+  },
+};
+
+const Modal: FC<IModalProps> = ({ close, showModal, children }) => {
   useEffect(() => {
     const handleEscClick = ({ code }: KeyboardEvent) => {
+      console.log(code);
       if (code === "Escape") {
         close();
       }
 
-      window.addEventListener("keydown", handleEscClick);
-      // disableBodyScroll(document.body);
+      document.addEventListener("keydown", handleEscClick);
+      disableBodyScroll(document.body);
 
       return () => {
-        window.removeEventListener("keydown", handleEscClick);
-        // enableBodyScroll(document.body);
+        document.removeEventListener("keydown", handleEscClick);
+        enableBodyScroll(document.body);
       };
     };
   }, [close]);
@@ -33,12 +55,16 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
   };
 
   return (
-    <div
+    <motion.div
+      variants={dropIn}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
       onClick={handleBackDropClick}
-      className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center overflow-y-auto bg-mainBlack z-50"
+      className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center overflow-y-auto backdrop-filter  backdrop-grayscale  backdrop-blur-[10px] backdrop-contrast-200  z-50"
     >
       {/* {max-w-[428px]  } */}
-      <div className="">
+      <div>
         <button
           type="button"
           onClick={close}
@@ -48,7 +74,7 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
         </button>
       </div>
       {children}
-    </div>
+    </motion.div>
   );
 };
 

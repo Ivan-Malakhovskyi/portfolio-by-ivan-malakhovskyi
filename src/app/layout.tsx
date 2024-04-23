@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import "normalize.css/normalize.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import fire from "../../public/icons/fire.svg";
 
 const roboto = Roboto({
   weight: ["400", "500", "700", "900"],
@@ -10,9 +12,10 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Portfolio by Ivan Malakhovskyi",
   description: "Home page",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{

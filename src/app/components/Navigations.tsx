@@ -1,11 +1,13 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { FC, useState } from "react";
 import burger from "/public/icons/menu.svg";
 import Image from "next/image";
 import Modal from "./global/Modal";
+import MaxWidthWrapper from "./MaxWidthWrapper";
+import { AnimatePresence } from "framer-motion";
 
 const navigation = [
   { id: 1, title: "About me", path: "#about" },
@@ -16,9 +18,15 @@ const navigation = [
 
 const Navigations: FC = () => {
   const [showModal, setShowModal] = useState(false);
+  const router = useRouter();
 
   const handleToggleClick = () => {
     setShowModal(!showModal);
+  };
+
+  const handleLinkClick = (path: string) => {
+    setShowModal(false);
+    router.push(path);
   };
 
   const pathName = usePathname();
@@ -47,16 +55,40 @@ const Navigations: FC = () => {
         <button type="button" onClick={handleToggleClick}>
           <Image src={burger} width={32} height={32} alt="burger_icon" />
         </button>
-        {showModal && (
-          <Modal close={handleToggleClick}>
-            <h2>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-              inventore facilis accusantium laboriosam explicabo. Alias
-              recusandae doloremque natus nesciunt. Dicta, quasi laborum et
-              dolorem ea laudantium amet eius eaque veniam.
-            </h2>
-          </Modal>
-        )}
+        <AnimatePresence
+          initial={false}
+          mode="wait"
+          onExitComplete={() => null}
+        >
+          {showModal && (
+            <Modal close={handleToggleClick} showModal={showModal}>
+              <MaxWidthWrapper>
+                <ul className="text-center">
+                  {navigation.map(({ id, title, path }) => {
+                    const isActive = pathName === path;
+
+                    return (
+                      <li key={id}>
+                        <Link
+                          href={path}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            handleLinkClick(path);
+                          }}
+                          className={`py-6 hover:text-mainGreen focus:text-mainGreen transition ease-out duration-300 ${
+                            isActive ? "text-mainGreen" : ""
+                          }`}
+                        >
+                          {title}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </MaxWidthWrapper>
+            </Modal>
+          )}
+        </AnimatePresence>
       </div>
     </>
   );
