@@ -2,8 +2,8 @@ import { FC } from "react";
 
 const Contact: FC = () => {
   return (
-    <section id="contact">
-      <h2 className="text-mainWhite text-3xl text-center md:text-6xl mb-8">
+    <section id="contact" className="pb-14">
+      <h2 className="text-mainWhite text-3xl font-semibold  text-center md:text-6xl mb-8">
         Contact
       </h2>
       <p className="text-mainGrey text-xl">

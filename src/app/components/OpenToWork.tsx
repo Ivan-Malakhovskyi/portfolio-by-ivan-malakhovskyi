@@ -6,13 +6,13 @@ const OpenToWork: FC = () => {
   return (
     <>
       <section className="py-14">
-        <h3 className="text-mainGrey text-xl  font-medium mb-8">
+        <h3 className="text-mainGrey text-xl  font-semibold  font-medium mb-8">
           I`m currently looking for Jobs.
         </h3>
         <ul className="flex gap-4 flex-col items-center mb-8">
           {" "}
           <li>
-            <span className="text-mainWhite text-3xl md:text-6xl">
+            <span className="text-mainWhite font-semibold  text-3xl md:text-6xl">
               {" "}
               Jobs: &#123;
             </span>
@@ -37,7 +37,7 @@ const OpenToWork: FC = () => {
             <span className="text-mainWhite text-3xl md:text-6xl">&#125;</span>
           </li>
         </ul>
-        <h3 className="text-mainGrey text-xl  font-medium max-w-[600px] ">
+        <h3 className="text-mainGrey text-xl  font-semibold  max-w-[600px] ">
           I am particularly interested in product based positions where I can
           help make an organization wide impact.
         </h3>

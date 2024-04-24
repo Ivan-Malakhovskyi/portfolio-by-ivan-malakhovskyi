@@ -14,10 +14,11 @@ export default function Home() {
       <MaxWidthWrapper>
         <OpenToWork />
         <About />
-        <Experience />
         <Projects />
+        <Experience />
         <Contact />
       </MaxWidthWrapper>
+
       <BtnToTop />
     </main>
   );
