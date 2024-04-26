@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FC } from "react";
 import people from "../../../public/icons/people_alt.svg";
 import code from "../../../public/icons/embed2.svg";

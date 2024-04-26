@@ -5,7 +5,7 @@ import Image from "next/image";
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 
 interface IImageComponentProps {
-  className: string;
+  className?: string;
   src: StaticImageData;
   alt: string;
   width: number;
