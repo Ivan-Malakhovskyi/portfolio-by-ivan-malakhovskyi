@@ -4,7 +4,6 @@ import "./globals.css";
 import "normalize.css/normalize.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import fire from "../../public/icons/fire.svg";
 
 const roboto = Roboto({
   weight: ["400", "500", "700", "900"],
