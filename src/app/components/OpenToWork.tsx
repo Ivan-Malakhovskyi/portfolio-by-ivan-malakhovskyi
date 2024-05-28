@@ -1,12 +1,13 @@
 "use client";
 
 import { FC } from "react";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const OpenToWork: FC = () => {
   return (
-    <>
+    <MaxWidthWrapper>
       <section className="py-14">
-        <h3 className="text-mainGrey text-xl  font-semibold  font-medium mb-8">
+        <h3 className="text-mainGrey text-xl font-semibold mb-8">
           I`m currently looking for Jobs.
         </h3>
         <ul className="flex gap-4 flex-col items-center mb-8">
@@ -42,7 +43,7 @@ const OpenToWork: FC = () => {
           help make an organization wide impact.
         </h3>
       </section>
-    </>
+    </MaxWidthWrapper>
   );
 };
 

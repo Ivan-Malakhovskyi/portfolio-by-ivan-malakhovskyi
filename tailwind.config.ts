@@ -21,6 +21,9 @@ const config: Config = {
         skyBlue: "#52abc4",
         aqua: "#37eaf7",
         purple: "#c624ee",
+        purpleMain: "#4A0D67",
+        purpleAccent: "#6B21A8",
+        purpleAdd: "#9333EA",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

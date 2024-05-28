@@ -31,7 +31,7 @@ const BtnToTop: FC = () => {
           showBtn
             ? "block opacity-100 translate-y-0"
             : "opacity-0 translate-y-10"
-        } transition ease-out duration-300 hover:bg`}
+        } transition ease-out duration-300 hover:bg-mainGrey`}
       >
         <Image src={arrowUp} width={16} height={16} alt="icon_arrow_up" />
       </button>

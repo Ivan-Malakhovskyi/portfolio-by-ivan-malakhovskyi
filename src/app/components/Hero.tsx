@@ -8,23 +8,6 @@ import Image from "next/image";
 import copy from "/public/images/my_photo_copy_2.jpg";
 import TypeWriterTextAnimation from "./global/TypeWriterTextAnimation";
 
-// const containerVariants = {
-//   hidden: {
-//     opacity: 0,
-//     y: 30,
-//   },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       duration: 0.3,
-//       ease: "easeOut",
-//       delayChildren: 0.3,
-//       staggerChildren: 0.1,
-//     },
-//   },
-// };
-
 const containerVariants = {
   hidden: { opacity: 1 },
   visible: { opacity: 1, transition: { staggerChildren: 0.08 } },
@@ -47,7 +30,7 @@ const itemVariants = {
 const text =
   "Ivan Malakhovskyi Enthusiastic Full Stack Developer from Ukraine, Vinnytsia";
 
-const nextText = "Hey there 🙌, my name is";
+const nextText = `Hey there ${(<span>U+1F44B</span>)}, my name is`;
 
 const Hero: FC = () => {
   return (
@@ -55,10 +38,11 @@ const Hero: FC = () => {
       <MaxWidthWrapper>
         <section className="py-14">
           <TypeWriterTextAnimation
-            text={nextText}
+            text="Hey there &#128075;, my name is"
             tag="h2"
             className="text-mainWhite mb-8"
           />
+
           <ul className="md:flex md:gap-6 flex-wrap justify-between">
             <li>
               {" "}

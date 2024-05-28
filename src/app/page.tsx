@@ -3,7 +3,6 @@ import BtnToTop from "./components/BtnToTop";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
-import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import OpenToWork from "./components/OpenToWork";
 import Projects from "./components/Projects";
 
@@ -11,13 +10,11 @@ export default function Home() {
   return (
     <main className="bg-mainBlack">
       <Hero />
-      <MaxWidthWrapper>
-        <OpenToWork />
-        <About />
-        <Projects />
-        <Experience />
-        <Contact />
-      </MaxWidthWrapper>
+      <OpenToWork />
+      <About />
+      <Projects />
+      <Experience />
+      <Contact />
 
       <BtnToTop />
     </main>

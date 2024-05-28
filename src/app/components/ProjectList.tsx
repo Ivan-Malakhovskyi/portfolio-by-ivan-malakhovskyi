@@ -80,40 +80,36 @@ const ProjectList: FC = () => {
             type,
             href,
           }) => (
-            <li
-              key={id}
-              className="flex items-center flex-wrap justify-between gap-6 bg-gray-900 shadow-lg rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300"
-            >
-              <motion.div
-                className="md:w-1/2 mb-4 "
-                variants={animationVariants}
-                initial={animate ? "visible" : "hidden"}
-                animate={inView ? "visible" : "hidden"}
-                transition={transition}
-                onAnimationComplete={handleAnimate}
-              >
-                {" "}
-                <h3 className="text-lg font-medium text-mainWhite mb-2 ">
-                  {title}
-                </h3>
-                <p className="text-gray-600 mb-2">{description}</p>
-                <p className="text-mainWhite">
-                  Role: <span className="ml-2">{role}</span>
-                </p>
-                <p className="text-mainWhite">
-                  ToDO: <span className="ml-2">{toDo}</span>
-                </p>
-              </motion.div>
+            <Link href={href} key={id}>
+              <li className="flex items-center flex-wrap justify-between gap-6 bg-gray-900 shadow-lg rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300">
+                <motion.div
+                  className="md:w-1/2 mb-4 "
+                  variants={animationVariants}
+                  initial={animate ? "visible" : "hidden"}
+                  animate={inView ? "visible" : "hidden"}
+                  transition={transition}
+                  onAnimationComplete={handleAnimate}
+                >
+                  {" "}
+                  <h3 className="text-lg font-medium text-mainWhite mb-2 ">
+                    {title}
+                  </h3>
+                  <p className="text-gray-600 mb-2">{description}</p>
+                  <p className="text-mainWhite">
+                    Role: <span className="ml-2">{role}</span>
+                  </p>
+                  <p className="text-mainWhite">
+                    ToDO: <span className="ml-2">{toDo}</span>
+                  </p>
+                </motion.div>
 
-              <motion.div
-                variants={animationVariants}
-                initial={animate ? "visible" : "hidden"}
-                animate={inView ? "visible" : "hidden"}
-                transition={transition}
-                onAnimationComplete={handleAnimate}
-              >
-                {" "}
-                <Link href={href}>
+                <motion.div
+                  variants={animationVariants}
+                  initial={animate ? "visible" : "hidden"}
+                  animate={inView ? "visible" : "hidden"}
+                  transition={transition}
+                  onAnimationComplete={handleAnimate}
+                >
                   {" "}
                   <ImageComponent
                     className="rounded-lg w-1/2 md:w-full md:h-full"
@@ -122,9 +118,9 @@ const ProjectList: FC = () => {
                     height={400}
                     alt="water_tracker"
                   />
-                </Link>
-              </motion.div>
-            </li>
+                </motion.div>
+              </li>
+            </Link>
           )
         )}
       </ul>
