@@ -29,10 +29,15 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-text": "linear-gradient(to right, #ff7e5f, #feb47b)",
+      },
+      backgroundClip: {
+        text: "text",
       },
       animation: {
         "gradient-x": "gradient-x 5s ease infinite",
         "gradient-xy": "gradient-xy 5s ease infinite",
+        marquee: "marquee 10s linear infinite",
       },
       keyframes: {
         "gradient-x": {
@@ -55,8 +60,16 @@ const config: Config = {
             "background-position": "right center",
           },
         },
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
     },
+  },
+  variants: {
+    backgroundImage: ["responsive", "hover", "focus"],
+    backgroundClip: ["responsive", "hover", "focus"],
   },
   plugins: [],
 };

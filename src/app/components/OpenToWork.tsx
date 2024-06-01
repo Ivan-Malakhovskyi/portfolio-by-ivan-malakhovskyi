@@ -7,9 +7,15 @@ const OpenToWork: FC = () => {
   return (
     <MaxWidthWrapper>
       <section className="py-14">
-        <h3 className="text-mainGrey text-xl font-semibold mb-8">
-          I`m currently looking for Jobs.
-        </h3>
+        <div className="overflow-hidden w-full">
+          {" "}
+          <div className="animate-marquee gradient-text">
+            {" "}
+            <h3 className="text-mainGrey text-xl font-semibold mb-8s">
+              I`m currently looking for Jobs.
+            </h3>
+          </div>
+        </div>
         <ul className="flex gap-4 flex-col items-center mb-8">
           {" "}
           <li>

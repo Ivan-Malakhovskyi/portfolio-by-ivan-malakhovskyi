@@ -16,7 +16,7 @@ const Projects: FC = () => {
               Featured Projects
             </h2>
             <p className="text-mainGrey text-2xl text-center mb-6">
-              Тут щось буде напсано гарне
+              TEAM PROJECTS
             </p>
           </div>
 

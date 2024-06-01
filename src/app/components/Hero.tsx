@@ -30,8 +30,6 @@ const itemVariants = {
 const text =
   "Ivan Malakhovskyi Enthusiastic Full Stack Developer from Ukraine, Vinnytsia";
 
-const nextText = `Hey there ${(<span>U+1F44B</span>)}, my name is`;
-
 const Hero: FC = () => {
   return (
     <div className="bg-gradient-to-r from-mainBlack to-slate-500 animate-gradient-xy">
