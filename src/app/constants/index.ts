@@ -29,3 +29,10 @@ export const socialLinks = [
     alt: "facebook_icon",
   },
 ];
+
+export const animationVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
+
+export const transition = { duration: 1 };

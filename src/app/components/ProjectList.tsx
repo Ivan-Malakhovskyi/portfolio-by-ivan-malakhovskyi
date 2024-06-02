@@ -3,7 +3,6 @@ import ProjectsListItem from "./ProjectsListItem";
 import waterTracker from "/public/images/WaterTracker.png";
 import bookSelf from "/public/images/book_shelf.png";
 import watchSpot from "/public/images/watch_spot.png";
-import learnLingo from "/public/images/LearnLingoPortfolio.png";
 
 const projects = [
   {

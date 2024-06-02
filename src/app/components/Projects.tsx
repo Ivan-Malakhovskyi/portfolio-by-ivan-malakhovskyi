@@ -1,6 +1,7 @@
 import { FC } from "react";
 import ProjectList from "./ProjectList";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import PersonalProjectList from "./PersonalProjectList";
 
 const Projects: FC = () => {
   return (
@@ -21,6 +22,12 @@ const Projects: FC = () => {
           </div>
 
           <ProjectList />
+
+          <p className="text-mainGrey text-2xl uppercase text-center my-4">
+            PERSONAL PROJECTS
+          </p>
+
+          <PersonalProjectList />
         </section>
       </MaxWidthWrapper>
     </div>

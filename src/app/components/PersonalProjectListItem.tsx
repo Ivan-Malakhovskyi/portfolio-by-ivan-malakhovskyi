@@ -1,37 +1,28 @@
 "use client";
 
-import React, { FC, useEffect } from "react";
+import { FC, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-import ImageComponent from "./global/ImageComponent";
 import Link from "next/link";
-import WorkedOnList from "./WorkedOnList";
-import RolesList from "./RolesList";
-import { ProjectsListItemProps } from "../types";
+import ImageComponent from "./global/ImageComponent";
 import { animationVariants, transition } from "../constants";
+import { ProjectsListItemProps } from "../types";
+import WorkedOnList from "./WorkedOnList";
 
-const ProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
-  const { id, title, toDo, description, img, role, workedOn, href } = project;
+const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
+  const { id, img, title, description, workedOn, href } = project;
 
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
+  const { ref, inView } = useInView({ threshold: 0.1 });
 
   useEffect(() => {
     console.log(`Element is ${inView ? "in view" : "out of view"}`);
   }, [inView]);
 
-  if (!role) {
-    return undefined;
-  }
-
   return (
     <>
-      {" "}
       <Link href={href} key={id} ref={ref}>
         <li
-          className="flex items-center flex-wrap justify-between max-w-[1712px] gap-6 bg-gray-900 shadow-lg rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300"
+          className="flex items-center flex-wrap justify-between gap-6 max-w-[1712px] bg-gray-900 shadow-lg rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300"
           ref={ref}
         >
           <motion.div
@@ -46,17 +37,8 @@ const ProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
               {title}
             </h3>
             <p className="text-gray-600 mb-2">{description}</p>
-            <p className="text-mainWhite mb-2">
-              Role: <RolesList role={role} />
-            </p>
-            <p className="text-mainWhite mb-2">
-              ToDO:{" "}
-              <span className="ml-2 border-2 rounded-full border-mainGrey px-2 py-[2px]">
-                {toDo}
-              </span>
-            </p>
             <div className="text-mainWhite ">
-              <p className="mb-2">Worked On:</p>{" "}
+              <p className="mb-2">Features and Technologies</p>{" "}
               <WorkedOnList workedOn={workedOn} />
             </div>
           </motion.div>
@@ -82,4 +64,4 @@ const ProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
   );
 };
 
-export default ProjectsListItem;
+export default PersonalProjectListItem;

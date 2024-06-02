@@ -14,9 +14,9 @@ interface Project {
   title: string;
   description: string;
   img: StaticImageData;
-  role: string[];
+  role?: string[];
   workedOn: string[];
-  toDo: string;
+  toDo?: string;
 }
 export interface ProjectsListItemProps {
   project: Project;
