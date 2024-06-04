@@ -20,13 +20,13 @@ const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
 
   return (
     <>
-      <Link href={href} key={id} ref={ref}>
+      <Link href={href} key={id} ref={ref} className="w-full">
         <li
-          className="flex items-center flex-wrap justify-between gap-6 max-w-[1712px] bg-gray-900 shadow-lg rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300"
+          className="flex items-center flex-wrap justify-between gap-6 max-w-[1712px]  bg-gray-900 shadow-lg rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300"
           ref={ref}
         >
           <motion.div
-            className="md:w-1/2 mb-4 "
+            className="w-full md:w-1/2 mb-4"
             variants={animationVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
@@ -51,10 +51,10 @@ const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
           >
             {" "}
             <ImageComponent
-              className="rounded-lg w-1/2 md:w-full md:h-full"
+              className="rounded-lg w-full h-auto object-cover"
               src={img}
-              width={400}
-              height={400}
+              width={700}
+              height={700}
               alt="learn_lingo"
             />
           </motion.div>

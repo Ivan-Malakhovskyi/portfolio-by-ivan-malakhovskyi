@@ -11,7 +11,7 @@ import RolesList from "./RolesList";
 import { ProjectsListItemProps } from "../types";
 import { animationVariants, transition } from "../constants";
 
-const ProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
+const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
   const { id, title, toDo, description, img, role, workedOn, href } = project;
 
   const { ref, inView } = useInView({
@@ -29,7 +29,7 @@ const ProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
   return (
     <>
       {" "}
-      <Link href={href} key={id} ref={ref}>
+      <Link href={href} key={id} ref={ref} className="w-full">
         <li
           className="flex items-center flex-wrap justify-between max-w-[1712px] gap-6 bg-gray-900 shadow-lg rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300"
           ref={ref}
@@ -71,8 +71,8 @@ const ProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
             <ImageComponent
               className="rounded-lg w-1/2 md:w-full md:h-full"
               src={img}
-              width={400}
-              height={400}
+              width={700}
+              height={700}
               alt="learn_lingo"
             />
           </motion.div>
@@ -82,4 +82,4 @@ const ProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
   );
 };
 
-export default ProjectsListItem;
+export default TeamProjectsListItem;

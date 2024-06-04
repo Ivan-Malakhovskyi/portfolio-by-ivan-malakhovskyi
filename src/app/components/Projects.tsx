@@ -1,14 +1,14 @@
 import { FC } from "react";
-import ProjectList from "./ProjectList";
+import TeamProjectList from "./TeamProjectList";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import PersonalProjectList from "./PersonalProjectList";
 
 const Projects: FC = () => {
   return (
-    <div className="bg-gradient-to-t from-black via-gray-400 to-mainBlack">
+    <div className="bg-gradient-to-b from-black via-gray-400 to-mainBlack">
       <MaxWidthWrapper>
         <section id="projects" className="py-40">
-          <div className="">
+          <div>
             {" "}
             <p className="text-mainGrey text-2xl uppercase text-center mb-4">
               Frontend | Backend
@@ -21,9 +21,9 @@ const Projects: FC = () => {
             </p>
           </div>
 
-          <ProjectList />
+          <TeamProjectList />
 
-          <p className="text-mainGrey text-2xl uppercase text-center my-4">
+          <p className="text-mainBlack text-2xl uppercase text-center mt-10 mb-4">
             PERSONAL PROJECTS
           </p>
 
