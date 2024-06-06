@@ -34,7 +34,7 @@ const Hero: FC = () => {
   return (
     <div className="bg-gradient-to-r from-mainBlack to-slate-500 animate-gradient-xy">
       <MaxWidthWrapper>
-        <section className="py-14">
+        <section className="py-20">
           <TypeWriterTextAnimation
             text="Hey there &#128075;, my name is"
             tag="h2"

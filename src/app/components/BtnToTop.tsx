@@ -27,7 +27,7 @@ const BtnToTop: FC = () => {
       <button
         type="button"
         onClick={handleClick}
-        className={`fixed right-12 bottom-40 bg-mainWhite rounded-full w-16 h-16 flex justify-center items-center ${
+        className={`fixed right-4 bottom-10 md:right-12 md:bottom-40 bg-mainWhite rounded-full w-12 h-12 flex justify-center items-center ${
           showBtn
             ? "block opacity-100 translate-y-0"
             : "opacity-0 translate-y-10"

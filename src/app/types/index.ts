@@ -21,3 +21,9 @@ interface Project {
 export interface ProjectsListItemProps {
   project: Project;
 }
+type ComponentType = React.ComponentType<{ project: Project }>;
+
+export interface IProjectsListProps {
+  projects: Project[];
+  component: ComponentType;
+}

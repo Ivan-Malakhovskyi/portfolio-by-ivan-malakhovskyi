@@ -14,9 +14,7 @@ const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
 
   const { ref, inView } = useInView({ threshold: 0.1 });
 
-  useEffect(() => {
-    console.log(`Element is ${inView ? "in view" : "out of view"}`);
-  }, [inView]);
+  useEffect(() => {}, [inView]);
 
   return (
     <>

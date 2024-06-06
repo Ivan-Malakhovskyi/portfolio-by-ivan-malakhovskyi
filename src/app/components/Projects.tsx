@@ -1,7 +1,9 @@
 import { FC } from "react";
-import TeamProjectList from "./TeamProjectList";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import PersonalProjectList from "./PersonalProjectList";
+import ProjectsList from "./global/ProjectsList";
+import { personalProjects, teamProjects } from "../constants";
+import PersonalProjectListItem from "./PersonalProjectListItem";
+import TeamProjectsListItem from "./TeamProjectsListItem";
 
 const Projects: FC = () => {
   return (
@@ -21,13 +23,19 @@ const Projects: FC = () => {
             </p>
           </div>
 
-          <TeamProjectList />
+          <ProjectsList
+            projects={teamProjects}
+            component={TeamProjectsListItem}
+          />
 
           <p className="text-mainBlack text-2xl uppercase text-center mt-10 mb-4">
             PERSONAL PROJECTS
           </p>
 
-          <PersonalProjectList />
+          <ProjectsList
+            projects={personalProjects}
+            component={PersonalProjectListItem}
+          />
         </section>
       </MaxWidthWrapper>
     </div>

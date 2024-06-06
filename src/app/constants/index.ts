@@ -12,6 +12,21 @@ import movieSearch from "/public/images/main_page_movies_app.png";
 import contactsApp from "/public/images/main_page_contacts.png";
 import webStudio from "/public/images/lending.png";
 
+import html5 from "/public/icons/html5.svg";
+import css3 from "/public/icons/css3.svg";
+import sass from "/public/icons/sass.svg";
+import js from "/public/icons/javascript.svg";
+import ts from "/public/icons/typescript.svg";
+import react from "/public/icons/react.svg";
+import redux from "/public/icons/redux.svg";
+import node from "/public/icons/node-dot-js.svg";
+import express from "../../../public/icons/icons8-express-js_light.svg";
+import mongodb from "/public/icons/mongodb.svg";
+import postman from "../../../public/icons/postman.svg";
+import figma from "../../../public/icons/figma.svg";
+
+//! SOCIAL LINKS
+
 export const socialLinks = [
   {
     id: 1,
@@ -45,6 +60,8 @@ export const animationVariants = {
 };
 
 export const transition = { duration: 1 };
+
+//! TEAM PROJECTS
 
 export const teamProjects = [
   {
@@ -96,6 +113,8 @@ export const teamProjects = [
     toDo: "Collection watches",
   },
 ];
+
+//! PERSONAL PROJECTS
 
 export const personalProjects = [
   {
@@ -165,4 +184,21 @@ export const personalProjects = [
     img: webStudio,
     workedOn: ["HTML5", "CSS3", "SaSS", "Responsive design"],
   },
+];
+
+//! SKILLS LIST
+
+export const skills = [
+  { name: "HTML5", icon: html5 },
+  { name: "CSS3", icon: css3 },
+  { name: "Sass", icon: sass },
+  { name: "JavaScript (ES6+)", icon: js },
+  { name: "React", icon: react },
+  { name: "Redux Toolkit", icon: redux },
+  { name: "TypeScript", icon: ts },
+  { name: "Node.js", icon: node },
+  { name: "Express.js", icon: express },
+  { name: "MongoDB", icon: mongodb },
+  { name: "Postman", icon: postman },
+  { name: "Figma", icon: figma },
 ];

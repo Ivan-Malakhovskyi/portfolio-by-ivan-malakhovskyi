@@ -14,6 +14,7 @@ const navigation = [
   { id: 2, title: "Experience", path: "#experience" },
   { id: 3, title: "Projects", path: "#projects" },
   { id: 4, title: "Contact me", path: "#contact" },
+  { id: 5, title: "Skills", path: "#skills" },
 ];
 
 const Navigations: FC = () => {

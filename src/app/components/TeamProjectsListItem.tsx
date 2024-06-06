@@ -18,9 +18,7 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
     threshold: 0.1,
   });
 
-  useEffect(() => {
-    console.log(`Element is ${inView ? "in view" : "out of view"}`);
-  }, [inView]);
+  useEffect(() => {}, [inView]);
 
   if (!role) {
     return undefined;
