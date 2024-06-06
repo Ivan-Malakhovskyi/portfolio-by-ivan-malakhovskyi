@@ -54,7 +54,9 @@ const Skills = () => {
               >
                 {" "}
                 <ImageComponent src={icon} alt={name} width={60} height={60} />
-                <h3 className="text-xl font-semibold mt-4">{name}</h3>
+                <h3 className="text-xl text-mainWhite font-semibold mt-4">
+                  {name}
+                </h3>
               </motion.div>
             </li>
           ))}
