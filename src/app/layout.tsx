@@ -11,6 +11,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon/favicon.svg",
+  },
   title: "Portfolio by Ivan Malakhovskyi",
   description: "Home page",
 };
@@ -22,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon/favicon.svg" />
+      </head>
       <body className={roboto.className} style={{ backgroundColor: "#000" }}>
         <Header />
         {children}

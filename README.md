@@ -13,6 +13,7 @@ This is my personal portfolio website created using Next.js and Tailwind CSS. He
 ## Technologies used
 
 - **Next.js**: React framework for server rendering and creating static websites.
+- **TypeScript** : For static typing
 - **Tailwind CSS**: Utilitarian CSS framework for fast development of modern interfaces.
 - **Vercel**: Platform for deploying Next.js applications.
 
