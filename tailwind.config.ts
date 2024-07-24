@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         mainBlack: "#000000",
+        accentWhite: "#f1e7ff",
         addBlack: "#060708",
         accentBlack: "#0e0f11",
         mainWhite: "#ffffff",
@@ -23,7 +24,10 @@ const config: Config = {
         purple: "#c624ee",
         purpleMain: "#4A0D67",
         purpleAccent: "#6B21A8",
+        addPurple: "#8c21f8",
+        mainPurple: "#a958fa",
         purpleAdd: "#9333EA",
+        accentPurple: "#c591fc",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

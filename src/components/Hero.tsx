@@ -32,7 +32,7 @@ const text =
 
 const Hero: FC = () => {
   return (
-    <div className="bg-gradient-to-r from-mainBlack to-slate-500 animate-gradient-xy">
+    <div className="">
       <MaxWidthWrapper>
         <section className="py-20">
           <TypeWriterTextAnimation
@@ -53,17 +53,17 @@ const Hero: FC = () => {
                 <TypeWriterTextAnimation
                   text={text}
                   tag="h1"
-                  className="text-mainWhite text-3xl md:text-5xl lg:text-7xl font-medium mb-8"
+                  className="text-mainWhite text-4xl font-bold bg-gradient-to-r from-mainPurple to-addPurple bg-clip-text text-transparent break-words animate-text-gradient md:text-5xl lg:text-7xl  mb-8"
                 />
 
                 <motion.p
                   className="text-mainWhite mb-8"
                   variants={itemVariants}
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Cumque in harum culpa, reiciendis incidunt veritatis.
-                  Obcaecati aperiam porro expedita veniam qui id non? Maxime
-                  quis mollitia, ex at adipisci minus!
+                  I am a Full Stack Developer. Recently I am a successfully
+                  completed commercial project{" "}
+                  <span className="font-bold ">Online store - marketplace</span>{" "}
+                  at company Team Challenge. Now I am ready to new opportunities
                 </motion.p>
                 <motion.span variants={itemVariants}>
                   <Link

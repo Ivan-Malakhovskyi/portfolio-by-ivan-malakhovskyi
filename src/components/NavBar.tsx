@@ -11,7 +11,6 @@ const NavBar: FC = () => {
       <div className="flex items-center">
         {" "}
         <span className="">
-          {" "}
           <Link href="/" className="py-6 text-mainWhite ">
             Ivan Malakhovskyi
           </Link>

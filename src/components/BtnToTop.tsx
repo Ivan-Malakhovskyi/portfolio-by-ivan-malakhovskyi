@@ -13,6 +13,8 @@ const BtnToTop: FC = () => {
     };
 
     window.addEventListener("scroll", handleScrollToTop);
+
+    return () => window.removeEventListener("scroll", handleScrollToTop);
   }, []);
 
   const handleClick = () => {

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FC, useEffect, MouseEvent, useState } from "react";
+import { FC, useEffect, MouseEvent } from "react";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { IModalProps } from "./Modal.types";
 import { motion } from "framer-motion";

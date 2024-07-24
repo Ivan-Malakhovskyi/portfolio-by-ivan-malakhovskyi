@@ -22,7 +22,7 @@ const TypeWriterTextAnimation: FC<ITypeWriterTextAnimationProps> = ({
     <AnimatePresence>
       <motion.div
         key={`text-animation`}
-        className={`${className}`}
+        className={`${className} `}
         initial="hidden"
         animate="visible"
         exit={{ opacity: 0 }}

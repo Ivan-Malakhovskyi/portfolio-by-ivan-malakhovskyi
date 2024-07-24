@@ -3,6 +3,7 @@ import linkedin from "/public/icons/linkedin.svg";
 import instagram from "/public/icons/instagram.svg";
 import facebook from "/public/icons/facebook.svg";
 
+import techStop from "/public/images/techstop_large.png";
 import waterTracker from "/public/images/WaterTracker.png";
 import bookSelf from "/public/images/book_shelf.png";
 import watchSpot from "/public/images/watch_spot.png";
@@ -11,6 +12,7 @@ import carRental from "/public/images/car_rental.png";
 import movieSearch from "/public/images/main_page_movies_app.png";
 import contactsApp from "/public/images/main_page_contacts.png";
 import webStudio from "/public/images/lending.png";
+import restaurantTestTask from "/public/images/restaurant_test_task.png";
 
 import html5 from "/public/icons/html5.svg";
 import css3 from "/public/icons/css3.svg";
@@ -21,11 +23,11 @@ import react from "/public/icons/react.svg";
 import redux from "/public/icons/redux.svg";
 import next from "/public/icons/brand-nextjs.svg";
 import node from "/public/icons/node-dot-js.svg";
-import express from "../../../public/icons/icons8-express-js_light.svg";
+import express from "/public/icons/icons8-express-js_light.svg";
 import mongodb from "/public/icons/mongodb.svg";
 import git from "/public/icons/git.svg";
-import postman from "../../../public/icons/postman.svg";
-import figma from "../../../public/icons/figma.svg";
+import postman from "/public/icons/postman.svg";
+import figma from "/public/icons/figma.svg";
 
 //! SOCIAL LINKS
 
@@ -38,7 +40,7 @@ export const socialLinks = [
   },
   {
     id: 2,
-    href: "www.linkedin.com/in/ivan-malakhovskyi",
+    href: "https://www.linkedin.com/in/ivan-malakhovskyi",
     icon: linkedin,
     alt: "linkedin_icon",
   },
@@ -68,6 +70,26 @@ export const transition = { duration: 1 };
 export const teamProjects = [
   {
     id: 1,
+    href: "https://tech-stop-woad.vercel.app/",
+    title: "TechStop",
+    description:
+      "TechStop is a modern online marketplace for buying and selling technological gadgets, electronics and accessories. Our marketplace provides a user-friendly interface, ease of use, and a wide selection of products from various sellers.",
+    img: techStop,
+    role: ["Frontend developer"],
+    workedOn: [
+      "Product card - <AboutProduct> | <Characteristics> | <Feedback>",
+      "Admin panel(CMS) - creating CMS from scratch including management: a)Products, b)Orders, c)Categories, d)Users, e)Reviews",
+      "Сode refactoring other frontend developer",
+      "Code review",
+      "Readme description",
+      "Demonstrate demo product",
+      "Product presentation on release",
+      "Resolving problem to create CMS from scratch",
+    ],
+    toDo: "Product card | CMS | Demonstrate project on release | demo",
+  },
+  {
+    id: 2,
     href: "https://okimmi.github.io/stackNinjas-frontend/",
     title: "WaterTracker",
     description:
@@ -83,7 +105,7 @@ export const teamProjects = [
     toDo: "Setting modal",
   },
   {
-    id: 2,
+    id: 3,
     href: "https://arag0rn.github.io/project-CodeBusters/",
     title: "Bookshelf",
     description:
@@ -100,7 +122,7 @@ export const teamProjects = [
     toDo: "Shopping List",
   },
   {
-    id: 3,
+    id: 4,
     href: "https://arag0rn.github.io/The-Watch-Spot/",
     title: "Watch Spot",
     description:
@@ -186,6 +208,15 @@ export const personalProjects = [
     img: webStudio,
     workedOn: ["HTML5", "CSS3", "SaSS", "Responsive design"],
   },
+  {
+    id: 9,
+    href: "https://restaurant-test-task.vercel.app/",
+    img: restaurantTestTask,
+    title: "Restaurant Test Task",
+    description:
+      "Restaurant is a web application for displaying and filtering restaurant menus. The project must be adaptive and support the rendering of a list of dishes with the possibility of filtering them by category. A web application consists of two main pages: the main page and the menu page.",
+    workedOn: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive design"],
+  },
 ];
 
 //! SKILLS LIST
@@ -205,4 +236,23 @@ export const skills = [
   { name: "Git", icon: git },
   { name: "Postman", icon: postman },
   { name: "Figma", icon: figma },
+];
+
+export const experiences = [
+  {
+    position: "Frontend developer",
+    company: "Team Challenge",
+    project: "Online store - marketplace",
+    period: "2023 - 2024",
+    employment: "Part-time",
+  },
+];
+
+export const certificatesList = [
+  {
+    id: 1,
+    title: "Full Stack Developer",
+    organization: "GoIT",
+    href: "https://drive.google.com/file/d/1vT0EeVShIbEQI5OZPS0VdOF30HDbOP4g/view",
+  },
 ];

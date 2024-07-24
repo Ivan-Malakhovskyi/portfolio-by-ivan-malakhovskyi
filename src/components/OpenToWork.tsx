@@ -11,7 +11,7 @@ const OpenToWork: FC = () => {
           {" "}
           <div className="animate-marquee gradient-text">
             {" "}
-            <h3 className="text-mainGrey text-xl font-semibold mb-8s">
+            <h3 className="text-mainGrey text-2xl font-semibold mb-8">
               I`m currently looking for Jobs.
             </h3>
           </div>
@@ -25,12 +25,12 @@ const OpenToWork: FC = () => {
             </span>
           </li>{" "}
           <li>
-            <h2 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-neon to-skyBlue text-transparent bg-clip-text break-word">
+            <h2 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-neon to-skyBlue text-transparent bg-clip-text break-words">
               Full Stack Developer
             </h2>
           </li>
           <li>
-            <h2 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-aqua to-purple text-transparent bg-clip-text break-word">
+            <h2 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-aqua to-purple text-transparent bg-clip-text break-words">
               Frontend Developer
             </h2>
           </li>
@@ -44,10 +44,6 @@ const OpenToWork: FC = () => {
             <span className="text-mainWhite text-3xl md:text-6xl">&#125;</span>
           </li>
         </ul>
-        <h3 className="text-mainGrey text-xl  font-semibold  max-w-[600px] ">
-          I am particularly interested in product based positions where I can
-          help make an organization wide impact.
-        </h3>
       </section>
     </MaxWidthWrapper>
   );
