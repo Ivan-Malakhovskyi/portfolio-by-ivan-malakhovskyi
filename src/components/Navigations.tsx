@@ -63,30 +63,28 @@ const Navigations: FC = () => {
         >
           {showModal && (
             <Modal close={handleToggleClick} showModal={showModal}>
-              <MaxWidthWrapper>
-                <ul className="text-center">
-                  {navigation.map(({ id, title, path }) => {
-                    const isActive = pathName === path;
+              <ul className="text-center">
+                {navigation.map(({ id, title, path }) => {
+                  const isActive = pathName === path;
 
-                    return (
-                      <li key={id}>
-                        <Link
-                          href={path}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            handleLinkClick(path);
-                          }}
-                          className={`py-6 hover:text-mainGreen focus:text-mainGreen transition ease-out duration-300 ${
-                            isActive ? "text-mainGreen" : ""
-                          }`}
-                        >
-                          {title}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </MaxWidthWrapper>
+                  return (
+                    <li key={id}>
+                      <Link
+                        href={path}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleLinkClick(path);
+                        }}
+                        className={`py-6 hover:text-mainGreen focus:text-mainGreen transition ease-out duration-300 ${
+                          isActive ? "text-mainGreen" : ""
+                        }`}
+                      >
+                        {title}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
             </Modal>
           )}
         </AnimatePresence>
