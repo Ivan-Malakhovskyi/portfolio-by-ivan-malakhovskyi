@@ -35,15 +35,15 @@ const About: FC = () => {
             {" "}
             <h3 className="text-mainWhite font-semibold  text-3xl">
               {" "}
-              <div className="mb-4">
+              <div className="mb-4 flex">
                 <ImageComponent
                   src={people}
                   width={40}
                   height={40}
                   alt="people_icon"
                 />
+                <span className="ml-4">Summary</span>
               </div>
-              Soft skills
             </h3>
             <p className="text-mainGrey text-2xl">
               With a background in Biology and a drive for tech innovation, my

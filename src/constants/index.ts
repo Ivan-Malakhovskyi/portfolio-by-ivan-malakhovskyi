@@ -77,8 +77,8 @@ export const teamProjects = [
     img: techStop,
     role: ["Frontend developer"],
     workedOn: [
-      "Product card - <AboutProduct> | <Characteristics> | <Feedback>",
-      "Admin panel(CMS) - creating CMS from scratch including management: a)Products, b)Orders, c)Categories, d)Users, e)Reviews",
+      "Product card - <AboutProduct/> | <Characteristics/> | <Feedback/>",
+      "Admin panel(CMS) - creating CMS from scratch including management: products, orders, categories, users, reviews",
       "Сode refactoring other frontend developer",
       "Code review",
       "Readme description",
@@ -86,7 +86,7 @@ export const teamProjects = [
       "Product presentation on release",
       "Resolving problem to create CMS from scratch",
     ],
-    toDo: "Product card | CMS | Demonstrate project on release | demo",
+    toDo: "Product card | CMS | Demonstrate project on release | Demo presentation",
   },
   {
     id: 2,
