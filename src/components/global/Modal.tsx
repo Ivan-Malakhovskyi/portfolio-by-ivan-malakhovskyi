@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { FC, useEffect, SyntheticEvent } from "react";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
@@ -18,12 +20,10 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
     disableBodyScroll(document.body);
 
     return () => {
-      enableBodyScroll(document.body);
       window.removeEventListener("keydown", handleEscClick);
+      enableBodyScroll(document.body);
     };
   }, [close]);
-
-  console.log("AFTER USE EFFECT Log AFTER unmounting");
 
   const handleBackdropClick = (e: SyntheticEvent) => {
     if (e.target === e.currentTarget) {

@@ -6,7 +6,6 @@ import { FC, useState } from "react";
 import burger from "/public/icons/menu.svg";
 import Image from "next/image";
 import Modal from "./global/Modal";
-import MaxWidthWrapper from "./MaxWidthWrapper";
 import { AnimatePresence } from "framer-motion";
 
 const navigation = [
@@ -31,6 +30,7 @@ const Navigations: FC = () => {
   };
 
   const pathName = usePathname();
+
   return (
     <>
       <ul className="md:flex md:gap-8 hidden">

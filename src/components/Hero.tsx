@@ -36,7 +36,7 @@ const Hero: FC = () => {
       <MaxWidthWrapper>
         <section className="py-20">
           <TypeWriterTextAnimation
-            text="Hey there 👋, my name is"
+            text="Hey there  &#x1F44B;, my name is"
             tag="h2"
             className="text-mainWhite mb-8"
           />

@@ -38,7 +38,7 @@ const Backdrop: React.FC<BackdropProps> = ({
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="fixed top-0 left-0  w-screen h-screen flex justify-center items-center overflow-auto  backdrop-filter  backdrop-grayscale  backdrop-blur-[10px] backdrop-contrast-200  z-50"
+      className="fixed top-0 left-0  w-screen h-screen flex justify-center items-center overflow-y-scroll  backdrop-filter  backdrop-grayscale  backdrop-blur-[10px] backdrop-contrast-200  z-50"
       onClick={onClick}
       style={{ maxHeight: maxheight }}
     >
