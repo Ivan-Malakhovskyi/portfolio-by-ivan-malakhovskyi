@@ -14,14 +14,16 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
       }
     };
 
-    window.addEventListener("keyup", handleEscClick);
+    window.addEventListener("keydown", handleEscClick);
     disableBodyScroll(document.body);
 
     return () => {
-      window.removeEventListener("keyup", handleEscClick);
       enableBodyScroll(document.body);
+      window.removeEventListener("keydown", handleEscClick);
     };
   }, [close]);
+
+  console.log("AFTER USE EFFECT Log AFTER unmounting");
 
   const handleBackdropClick = (e: SyntheticEvent) => {
     if (e.target === e.currentTarget) {
