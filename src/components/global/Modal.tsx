@@ -7,21 +7,21 @@ import Backdrop from "./BackDrop";
 import ModalContent from "./ModalContent";
 
 const Modal: FC<IModalProps> = ({ close, children }) => {
-  // useEffect(() => {
-  //   const handleEscClick = (e: KeyboardEvent) => {
-  //     if (e.code === "Escape") {
-  //       close();
-  //     }
-  //   };
+  useEffect(() => {
+    const handleEscClick = (e: KeyboardEvent) => {
+      if (e.code === "Escape") {
+        close();
+      }
+    };
 
-  //   window.addEventListener("keydown", handleEscClick);
-  //   disableBodyScroll(document.body);
+    window.addEventListener("keyup", handleEscClick);
+    disableBodyScroll(document.body);
 
-  //   return () => {
-  //     window.removeEventListener("keydown", handleEscClick);
-  //     enableBodyScroll(document.body);
-  //   };
-  // }, [close]);
+    return () => {
+      window.removeEventListener("keyup", handleEscClick);
+      enableBodyScroll(document.body);
+    };
+  }, [close]);
 
   const handleBackdropClick = (e: SyntheticEvent) => {
     if (e.target === e.currentTarget) {
