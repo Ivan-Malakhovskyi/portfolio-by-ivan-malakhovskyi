@@ -17,11 +17,11 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
     };
 
     window.addEventListener("keydown", handleEscClick);
-    // disableBodyScroll(document.body);
+    disableBodyScroll(document.body);
 
     return () => {
       window.removeEventListener("keydown", handleEscClick);
-      // enableBodyScroll(document.body);
+      enableBodyScroll(document.body);
     };
   }, [close]);
 
