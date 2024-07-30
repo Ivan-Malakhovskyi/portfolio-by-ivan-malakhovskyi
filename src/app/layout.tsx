@@ -4,7 +4,6 @@ import "./globals.css";
 import "normalize.css/normalize.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Head from "next/head";
 
 const roboto = Roboto({
   weight: ["400", "500", "700", "900"],
@@ -26,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <title>Portfolio by Ivan Malakhovskyi</title>
         <meta
           name="description"
@@ -37,7 +36,7 @@ export default function RootLayout({
           content="MERN, HTML5, CSS3, SaSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Redux, Zustand, Firebase, Node.js, Express.js, MongoDB, Postman, Figma, Pixso"
         />
         <link rel="icon" href="/favicon/favicon.svg" />
-      </Head>
+      </head>
       <body className={roboto.className} style={{ backgroundColor: "#000" }}>
         <Header />
         {children}
