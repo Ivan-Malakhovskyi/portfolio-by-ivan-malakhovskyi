@@ -21,13 +21,17 @@ import js from "/public/icons/javascript.svg";
 import ts from "/public/icons/typescript.svg";
 import react from "/public/icons/react.svg";
 import redux from "/public/icons/redux.svg";
+import zustand from "../../public/icons/favicon.ico";
 import next from "/public/icons/brand-nextjs.svg";
+import tailwindcss from "/public/icons/tailwindcss.svg";
+import firebase from "/public/icons/firebase.svg";
 import node from "/public/icons/node-dot-js.svg";
 import express from "/public/icons/icons8-express-js_light.svg";
 import mongodb from "/public/icons/mongodb.svg";
 import git from "/public/icons/git.svg";
 import postman from "/public/icons/postman.svg";
 import figma from "/public/icons/figma.svg";
+import pixso from "/public/icons/pixso.jpg";
 
 //! SOCIAL LINKS
 
@@ -228,14 +232,18 @@ export const skills = [
   { name: "JavaScript (ES6+)", icon: js },
   { name: "React", icon: react },
   { name: "Redux Toolkit", icon: redux },
+  { name: "Zustand", icon: zustand },
   { name: "Next.js", icon: next },
+  { name: "Tailwind CSS", icon: tailwindcss },
   { name: "TypeScript", icon: ts },
+  { name: "Firebase", icon: firebase },
   { name: "Node.js", icon: node },
   { name: "Express.js", icon: express },
   { name: "MongoDB", icon: mongodb },
   { name: "Git", icon: git },
   { name: "Postman", icon: postman },
   { name: "Figma", icon: figma },
+  { name: "Pixso", icon: pixso },
 ];
 
 export const experiences = [
