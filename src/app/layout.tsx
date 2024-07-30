@@ -29,6 +29,10 @@ export default function RootLayout({
       <Head>
         <title>Portfolio by Ivan Malakhovskyi</title>
         <meta
+          name="google-site-verification"
+          content="0actxjaMkV8c2KQgyaMwe2i9SqRqhKTRlbKvB0CyMhM"
+        />
+        <meta
           name="description"
           content="Portfolio by Ivan Malakhovskyi, MERN Full Stack Developer"
         />
