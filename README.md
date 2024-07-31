@@ -9,6 +9,7 @@ This is my personal portfolio website created using Next.js and Tailwind CSS. He
 - **Certificates and awards**: Information about received certificates and awards.
 - **Social**: Links to contact me via email or social media.
 - **404 Page**: A stylized 404 error page with an option to return to the main page.
+- ##### `Google Search Console`: The Web App is available when performing a keyword search
 
 ## Technologies used
 
