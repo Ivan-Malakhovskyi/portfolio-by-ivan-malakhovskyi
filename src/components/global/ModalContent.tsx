@@ -10,7 +10,7 @@ const ModalContent: React.FC<ModalContentProps> = ({ children, maxwidth }) => {
     <div
       style={{ maxWidth: maxwidth }}
       className="overflow-auto"
-      // onClick={(e) => e.stopPropagation()}
+      onClick={(e) => e.stopPropagation()}
     >
       {children}
     </div>
