@@ -33,7 +33,7 @@ export default function RootLayout({
         />
         <meta
           name="keywords"
-          content="MERN, HTML5, CSS3, SaSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Redux, Zustand, Firebase, Node.js, Express.js, MongoDB, Postman, Figma, Pixso"
+          content="MERN, HTML5, CSS3, SaSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Redux, Zustand, Firebase, Node.js, Express.js, MongoDB, Postman, Figma, Pixso, Vinnytsia, Ivan Malakhovskyi"
         />
         <link rel="icon" href="/favicon/favicon.svg" />
       </head>
