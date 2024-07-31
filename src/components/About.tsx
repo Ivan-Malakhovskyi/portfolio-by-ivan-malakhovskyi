@@ -45,7 +45,7 @@ const About: FC = () => {
                 <span className="ml-4">Summary</span>
               </div>
             </h3>
-            <p className="text-mainGrey text-2xl">
+            <p className="text-mainGrey text-base md:text-xl lg:text-2xl">
               With a background in Biology and a drive for tech innovation, my
               journey led me to frontend development, where I currently enhance
               online shopping experiences at Team Challenge. I apply my Full

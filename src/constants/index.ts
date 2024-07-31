@@ -33,6 +33,11 @@ import postman from "/public/icons/postman.svg";
 import figma from "/public/icons/figma.svg";
 import pixso from "/public/icons/pixso.jpg";
 
+import communicative from "../../public/icons/users.svg";
+import responsible from "../../public/icons/user-tie.svg";
+import beingProactive from "../../public/icons/power.svg";
+import problemSolving from "../../public/icons/sync_problem.svg";
+
 //! SOCIAL LINKS
 
 export const socialLinks = [
@@ -81,7 +86,7 @@ export const teamProjects = [
     img: techStop,
     role: ["Frontend developer"],
     workedOn: [
-      "Product card - <AboutProduct/> | <Characteristics/> | <Feedback/>",
+      "Product card - AboutProduct | Characteristics | Feedback",
       "Admin panel(CMS) - creating CMS from scratch including management: products, orders, categories, users, reviews",
       "Сode refactoring other frontend developer",
       "Code review",
@@ -225,7 +230,7 @@ export const personalProjects = [
 
 //! SKILLS LIST
 
-export const skills = [
+export const hardSkills = [
   { name: "HTML5", icon: html5 },
   { name: "CSS3", icon: css3 },
   { name: "Sass", icon: sass },
@@ -244,6 +249,13 @@ export const skills = [
   { name: "Postman", icon: postman },
   { name: "Figma", icon: figma },
   { name: "Pixso", icon: pixso },
+];
+
+export const softSkills = [
+  { name: "Communicative", icon: communicative },
+  { name: "Being proactive", icon: beingProactive },
+  { name: "Problem solving", icon: problemSolving },
+  { name: "Responsible", icon: responsible },
 ];
 
 export const experiences = [

@@ -49,7 +49,7 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
             </p>
             <p className="text-mainWhite mb-2">
               ToDO:{" "}
-              <span className="ml-2 border-2 rounded-full border-mainGrey px-2 py-[2px]">
+              <span className="text-xs md:text-xl ml-2 border-2 rounded-full  border-mainGrey px-2 py-[2px]">
                 {toDo}
               </span>
             </p>

@@ -6,7 +6,7 @@ const RolesList: FC<RolesListProps> = ({ role }) => {
     <>
       {role.map((item, idx) => (
         <span
-          className="ml-2 border-2 rounded-full border-mainGrey px-2 py-[2px]"
+          className="ml-2 border-2 text-xs md:text-xl rounded-full border-mainGrey px-2 py-[2px]"
           key={idx}
         >
           {item}
