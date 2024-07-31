@@ -73,7 +73,7 @@ const Hero: FC = () => {
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="/Ivan_Malakhovskyi_Junior_Full_Stack_Developer.pdf"
+                  href="/public/Ivan_Malakhovskyi_Full_Stack_Developer.pdf"
                   className="text-mainWhite px-12 py-4 rounded-full bg-mainBlack border-[1px] border-solid border-mainWhite hover:bg-gray-400 focus:bg-gray-400 transition ease-out duration-300 "
                 >
                   Download CV
