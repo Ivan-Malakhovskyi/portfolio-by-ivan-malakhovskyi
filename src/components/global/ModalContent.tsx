@@ -7,11 +7,7 @@ interface ModalContentProps {
 
 const ModalContent: React.FC<ModalContentProps> = ({ children, maxwidth }) => {
   return (
-    <div
-      style={{ maxWidth: maxwidth }}
-      className="overflow-auto"
-      onClick={(e) => e.stopPropagation()}
-    >
+    <div style={{ maxWidth: maxwidth }} onClick={(e) => e.stopPropagation()}>
       {children}
     </div>
   );
