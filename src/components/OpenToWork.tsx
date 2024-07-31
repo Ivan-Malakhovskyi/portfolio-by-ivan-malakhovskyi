@@ -6,15 +6,17 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 const OpenToWork: FC = () => {
   return (
     <>
-      <div className="animate-marquee gradient-text">
+      <div className="overflow-hidden w-full">
         {" "}
-        <h3 className="text-mainGrey text-2xl font-semibold mb-8">
-          I`m currently looking for Jobs.
-        </h3>
+        <div className="animate-marquee gradient-text">
+          {" "}
+          <h3 className="text-mainGrey text-2xl font-semibold mb-8">
+            I`m currently looking for Jobs.
+          </h3>
+        </div>
       </div>
       <MaxWidthWrapper>
         <section className="py-14">
-          <div className="overflow-hidden w-full"> </div>
           <ul className="flex gap-4 flex-col items-center mb-8">
             {" "}
             <li>
