@@ -1,7 +1,8 @@
 import { FC } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import ProjectsList from "./global/ProjectsList";
-import { personalProjects, teamProjects } from "../constants";
+import { personalProjects } from "../constants/personalProjects";
+import { teamProjects } from "../constants/teamProjects";
 import PersonalProjectListItem from "./PersonalProjectListItem";
 import TeamProjectsListItem from "./TeamProjectsListItem";
 

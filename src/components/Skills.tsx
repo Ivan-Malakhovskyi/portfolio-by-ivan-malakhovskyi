@@ -18,7 +18,10 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-gray-900">
       <MaxWidthWrapper>
-        <h2 className="text-mainWhite text-3xl md:text-6xl font-bold text-center mb-8">
+        <h2
+          id="hard_skills"
+          className="text-mainWhite text-3xl md:text-6xl font-bold text-center mb-8"
+        >
           Hard Skills
         </h2>
         <motion.ul
@@ -48,7 +51,10 @@ const Skills = () => {
             </li>
           ))}
         </motion.ul>
-        <h2 className="text-mainWhite text-3xl md:text-6xl font-bold text-center my-8">
+        <h2
+          id="soft_skills"
+          className="text-mainWhite text-3xl md:text-6xl font-bold text-center my-8"
+        >
           Soft Skills
         </h2>
         <motion.ul

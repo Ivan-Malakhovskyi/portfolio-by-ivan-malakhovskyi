@@ -3,18 +3,13 @@
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { FC, useState } from "react";
+import { AnimatePresence } from "framer-motion";
+
+import { navigation } from "@/constants/navigation";
+
 import burger from "/public/icons/menu.svg";
 import Image from "next/image";
 import Modal from "./global/Modal";
-import { AnimatePresence } from "framer-motion";
-
-const navigation = [
-  { id: 1, title: "About me", path: "#about" },
-  { id: 2, title: "Experience", path: "#experience" },
-  { id: 3, title: "Certificates", path: "#certificates" },
-  { id: 4, title: "Skills", path: "#skills" },
-  { id: 5, title: "Projects", path: "#projects" },
-];
 
 const Navigations: FC = () => {
   const [showModal, setShowModal] = useState(false);
