@@ -8,7 +8,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 import { hardSkills, softSkills } from "../constants";
 
-import { container, item } from "../constants/animationStyles";
+import { container, item } from "../constants/animations/animationStyles";
 
 const Skills = () => {
   const { ref, inView } = useInView({ threshold: 0.1 });

@@ -4,6 +4,7 @@ import movieSearch from "/public/images/main_page_movies_app.png";
 import contactsApp from "/public/images/main_page_contacts.png";
 import webStudio from "/public/images/lending.png";
 import restaurantTestTask from "/public/images/restaurant_test_task.png";
+import contactsTestTask from "/public/images/contacts-test-task.png";
 
 export const personalProjects = [
   {
@@ -81,5 +82,20 @@ export const personalProjects = [
     description:
       "Restaurant is a web application for displaying and filtering restaurant menus. The project must be adaptive and support the rendering of a list of dishes with the possibility of filtering them by category. A web application consists of two main pages: the main page and the menu page.",
     workedOn: ["Next.js", "TypeScript", "Tailwind CSS", "Responsive design"],
+  },
+  {
+    id: 10,
+    href: "https://main--contacts-test-task.netlify.app/",
+    img: contactsTestTask,
+    title: "Contact Test Task",
+    description:
+      "Restaurant is a web application for manage contacts. The project must be adaptive and support the rendering of a list of contact with the possibility add/remove contacts and also user must be have opportunity add tags to contact.",
+    workedOn: [
+      "React",
+      "Vite",
+      "styled-components",
+      "react-router",
+      "Responsive design",
+    ],
   },
 ];

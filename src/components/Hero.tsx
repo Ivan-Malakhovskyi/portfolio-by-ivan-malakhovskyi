@@ -7,25 +7,10 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
 import copy from "/public/images/my_photo_copy_2.jpg";
 import TypeWriterTextAnimation from "./global/TypeWriterTextAnimation";
-
-const containerVariants = {
-  hidden: { opacity: 1 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.08 } },
-};
-const itemVariants = {
-  hidden: {
-    opacity: 0,
-    y: 15,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.3,
-      ease: "easeOut",
-    },
-  },
-};
+import {
+  containerVariants,
+  itemVariants,
+} from "@/constants/animations/animationStyles";
 
 const text =
   "Ivan Malakhovskyi Enthusiastic Full Stack Developer from Ukraine, Vinnytsia";
@@ -73,7 +58,7 @@ const Hero: FC = () => {
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="/public/Ivan_Malakhovskyi_Full_Stack_Developer.pdf"
+                  href="/Ivan_Malakhovskyi_Full_Stack_Developer.pdf"
                   className="text-mainWhite px-12 py-4 rounded-full bg-mainBlack border-[1px] border-solid border-mainWhite hover:bg-gray-400 focus:bg-gray-400 transition ease-out duration-300 "
                 >
                   Download CV

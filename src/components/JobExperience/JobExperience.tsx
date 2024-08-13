@@ -3,7 +3,7 @@
 import { FC } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import { container, item } from "@/constants/animationStyles";
+import { container, item } from "@/constants/animations/animationStyles";
 
 interface IJobExperienceProps {
   position: string;

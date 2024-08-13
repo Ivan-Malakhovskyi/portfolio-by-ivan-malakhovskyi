@@ -7,7 +7,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { container, item } from "../constants/animationStyles";
+import { container, item } from "../constants/animations/animationStyles";
 
 const About: FC = () => {
   const { ref, inView } = useInView({ threshold: 0.1 });
