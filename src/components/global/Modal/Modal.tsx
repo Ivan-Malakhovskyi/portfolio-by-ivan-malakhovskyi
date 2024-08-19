@@ -16,9 +16,9 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
       }
     };
 
-    // if (!window.location.hash) {
-    disableBodyScroll(document.body);
-    // }
+    if (!window?.location?.hash) {
+      disableBodyScroll(document.body);
+    }
 
     return () => {
       window.removeEventListener("keydown", handleEscClick);
