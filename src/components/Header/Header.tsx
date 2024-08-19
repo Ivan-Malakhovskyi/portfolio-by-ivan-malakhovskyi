@@ -1,7 +1,7 @@
 "use client";
 
 import React, { FC, useEffect, useState } from "react";
-import NavBar from "./NavBar";
+import NavBar from "../NavBar";
 
 const Header: FC = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);

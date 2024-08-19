@@ -9,7 +9,7 @@ import { navigation } from "@/constants/navigation";
 
 import burger from "/public/icons/menu.svg";
 import Image from "next/image";
-import Modal from "./global/Modal";
+import Modal from "../global/Modal";
 
 const Navigations: FC = () => {
   const [showModal, setShowModal] = useState(false);

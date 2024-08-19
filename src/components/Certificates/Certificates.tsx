@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import CertificatesList from "./CertificatesList";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper from "../global/MaxWidthWrapper";
 
 const Certificates: FC = () => {
   return (

@@ -4,13 +4,13 @@ import { FC, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
-import ImageComponent from "./global/ImageComponent";
-import { animationVariants, transition } from "../constants";
-import { ProjectsListItemProps } from "../types";
-import WorkedOnList from "./WorkedOnList";
+import ImageComponent from "../global/ImageComponent";
+import { ProjectsListItemProps } from "@/types";
+import TechnoLogiesList from "../TechnologiesList";
+import { item, transition } from "@/constants/animations/animationStyles";
 
 const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
-  const { id, img, title, description, workedOn, href } = project;
+  const { id, img, title, description, technologies, href } = project;
 
   const { ref, inView } = useInView({ threshold: 0.1 });
 
@@ -25,7 +25,7 @@ const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
         >
           <motion.div
             className="w-full md:w-1/2 mb-4"
-            variants={animationVariants}
+            variants={item}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             transition={transition}
@@ -37,23 +37,23 @@ const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
             <p className="text-gray-600 mb-2">{description}</p>
             <div className="text-mainWhite ">
               <p className="mb-2">Features and Technologies</p>{" "}
-              <WorkedOnList workedOn={workedOn} />
+              <TechnoLogiesList workedOn={technologies} />
             </div>
           </motion.div>
 
           <motion.div
-            variants={animationVariants}
+            variants={item}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             transition={transition}
           >
             {" "}
             <ImageComponent
-              className="rounded-lg w-full h-auto object-cover"
+              className="w-full h-auto object-cover max-w-[]"
               src={img}
               width={700}
               height={700}
-              alt="learn_lingo"
+              alt={title}
             />
           </motion.div>
         </li>

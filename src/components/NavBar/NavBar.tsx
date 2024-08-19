@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FC } from "react";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper from "../global/MaxWidthWrapper";
 import Navigations from "./Navigations";
 
 const NavBar: FC = () => {

@@ -3,12 +3,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ImageComponent from "./global/ImageComponent";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import ImageComponent from "../global/ImageComponent";
+import MaxWidthWrapper from "../global/MaxWidthWrapper";
 
-import { hardSkills, softSkills } from "../constants";
+import { hardSkills, softSkills } from "@/constants";
 
-import { container, item } from "../constants/animations/animationStyles";
+import { container, item } from "@/constants/animations/animationStyles";
 
 const Skills = () => {
   const { ref, inView } = useInView({ threshold: 0.1 });

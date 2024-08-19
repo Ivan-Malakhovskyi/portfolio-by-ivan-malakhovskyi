@@ -4,12 +4,12 @@ import React, { FC, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import ImageComponent from "./global/ImageComponent";
+import ImageComponent from "../global/ImageComponent";
 import Link from "next/link";
-import WorkedOnList from "./WorkedOnList";
-import RolesList from "./RolesList";
-import { ProjectsListItemProps } from "../types";
-import { animationVariants, transition } from "../constants";
+import RolesList from "../RolesList";
+import { ProjectsListItemProps } from "@/types";
+import TechnoLogiesList from "../TechnologiesList";
+import { item, transition } from "@/constants/animations/animationStyles";
 
 const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
   const { id, title, toDo, description, img, role, workedOn, href } = project;
@@ -34,7 +34,7 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
         >
           <motion.div
             className="md:w-1/2 mb-4 "
-            variants={animationVariants}
+            variants={item}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             transition={transition}
@@ -55,19 +55,19 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
             </p>
             <div className="text-mainWhite ">
               <p className="mb-2">Worked On:</p>{" "}
-              <WorkedOnList workedOn={workedOn} />
+              <TechnoLogiesList workedOn={workedOn} />
             </div>
           </motion.div>
 
           <motion.div
-            variants={animationVariants}
+            variants={item}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             transition={transition}
           >
             {" "}
             <ImageComponent
-              className="rounded-lg w-1/2 md:w-full md:h-full"
+              className="w-full h-auto object-cover max-w-[700px]"
               src={img}
               width={700}
               height={700}

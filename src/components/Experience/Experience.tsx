@@ -1,8 +1,8 @@
 import React from "react";
-import MaxWidthWrapper from "./MaxWidthWrapper";
-import JobExperience from "./JobExperience";
+import MaxWidthWrapper from "../global/MaxWidthWrapper";
+import JobExperience from "../JobExperience";
 
-import { experiences } from "../constants";
+import { experiences } from "@/constants";
 
 const Experience = () => {
   return (

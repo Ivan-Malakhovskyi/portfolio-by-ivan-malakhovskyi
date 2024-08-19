@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { RolesListProps } from "../types";
+import { RolesListProps } from "@/types";
 
 const RolesList: FC<RolesListProps> = ({ role }) => {
   return (

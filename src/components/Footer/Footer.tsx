@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { socialLinks } from "../constants";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import { socialLinks } from "../../constants";
+import MaxWidthWrapper from "../global/MaxWidthWrapper";
 import Image from "next/image";
 
 const Footer = () => {

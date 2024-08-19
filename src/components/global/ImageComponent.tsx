@@ -17,9 +17,16 @@ const ImageComponent: FC<IImageComponentProps> = ({
   alt,
   width,
   height,
+  className,
 }) => {
   return (
-    <Image src={src} alt={alt} width={width} height={height} className="" />
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className={`${className} rounded-md`}
+    />
   );
 };
 

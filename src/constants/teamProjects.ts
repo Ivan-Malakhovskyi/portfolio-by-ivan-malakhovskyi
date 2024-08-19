@@ -14,15 +14,14 @@ export const teamProjects = [
     role: ["Frontend developer"],
     workedOn: [
       "Product card - AboutProduct | Characteristics | Feedback",
-      "Admin panel(CMS) - creating CMS from scratch including management: products, orders, categories, users, reviews",
-      "Сode refactoring other frontend developer",
+      "Admin panel - creating CMS from scratch",
       "Code review",
       "Readme description",
-      "Demonstrate demo product",
-      "Product presentation on release",
+      "Product presentation",
       "Resolving problem to create CMS from scratch",
     ],
-    toDo: "Product card | CMS | Demonstrate project on release | Demo presentation",
+    technologies: ["Next.js"],
+    toDo: "Product card | CMS | Product presentation",
   },
   {
     id: 2,
@@ -38,6 +37,7 @@ export const teamProjects = [
       "updating the user's password 🔑",
       "validation of fields ✅",
     ],
+    technologies: ["Full Stack", "React"],
     toDo: "Setting modal",
   },
   {
@@ -55,6 +55,7 @@ export const teamProjects = [
       "removing books from the collection 🚮",
       "displaying a message to the user if there are no books 📖",
     ],
+    technologies: ["HTML/CSS/JS"],
     toDo: "Shopping List",
   },
   {
@@ -70,6 +71,7 @@ export const teamProjects = [
       "adaptive layout 📟",
       "collection display",
     ],
+    technologies: ["HTML/CSS/JS"],
     toDo: "Collection watches",
   },
 ];

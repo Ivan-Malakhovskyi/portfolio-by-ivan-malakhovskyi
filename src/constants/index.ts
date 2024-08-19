@@ -10,7 +10,7 @@ import js from "/public/icons/javascript.svg";
 import ts from "/public/icons/typescript.svg";
 import react from "/public/icons/react.svg";
 import redux from "/public/icons/redux.svg";
-import zustand from "../../public/icons/favicon.ico";
+import zustand from "/public/icons/favicon.ico";
 import next from "/public/icons/brand-nextjs.svg";
 import tailwindcss from "/public/icons/tailwindcss.svg";
 import firebase from "/public/icons/firebase.svg";
@@ -23,10 +23,10 @@ import postman from "/public/icons/postman.svg";
 import figma from "/public/icons/figma.svg";
 import pixso from "/public/icons/pixso.jpg";
 
-import communicative from "../../public/icons/users.svg";
-import responsible from "../../public/icons/user-tie.svg";
-import beingProactive from "../../public/icons/power.svg";
-import problemSolving from "../../public/icons/sync_problem.svg";
+import communicative from "/public/icons/users.svg";
+import responsible from "/public/icons/user-tie.svg";
+import beingProactive from "/public/icons/power.svg";
+import problemSolving from "/public/icons/sync_problem.svg";
 
 //! SOCIAL LINKS
 
@@ -56,19 +56,6 @@ export const socialLinks = [
     alt: "facebook_icon",
   },
 ];
-
-export const animationVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
-
-export const transition = { duration: 1 };
-
-//! TEAM PROJECTS
-
-//! PERSONAL PROJECTS
-
-//! SKILLS LIST
 
 export const hardSkills = [
   { name: "HTML5", icon: html5 },
@@ -114,6 +101,6 @@ export const certificatesList = [
     id: 1,
     title: "Full Stack Developer",
     organization: "GoIT",
-    href: "https://drive.google.com/file/d/1vT0EeVShIbEQI5OZPS0VdOF30HDbOP4g/view",
+    href: "https://drive.google.com/file/d/1PdEMoA8pEyztGqEPJ7dzMsf-dP1jjVcD/view",
   },
 ];

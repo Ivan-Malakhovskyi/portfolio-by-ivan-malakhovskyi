@@ -1,12 +1,21 @@
-import { FC } from "react";
-import MaxWidthWrapper from "./MaxWidthWrapper";
-import ProjectsList from "./global/ProjectsList";
-import { personalProjects } from "../constants/personalProjects";
-import { teamProjects } from "../constants/teamProjects";
+"use client";
+
+import { FC, useState } from "react";
+import MaxWidthWrapper from "../global/MaxWidthWrapper";
+import ProjectsList from "../global/ProjectsList";
+import { personalProjects } from "@/constants/personalProjects";
+import { teamProjects } from "@/constants/teamProjects";
 import PersonalProjectListItem from "./PersonalProjectListItem";
 import TeamProjectsListItem from "./TeamProjectsListItem";
+import BtnFilter from "../BtnFilter";
+import { Project } from "@/types";
 
 const Projects: FC = () => {
+  const [personalFilter, setPersonalFilter] = useState<Project[] | []>(
+    personalProjects
+  );
+  const [teamFilter, setTeamFilter] = useState<Project[] | []>(teamProjects);
+
   return (
     <div className="bg-gradient-to-b from-black via-gray-400 to-mainBlack">
       <MaxWidthWrapper>
@@ -24,8 +33,13 @@ const Projects: FC = () => {
             </p>
           </div>
 
-          <ProjectsList
+          <BtnFilter
             projects={teamProjects}
+            setFilteredProjects={setTeamFilter}
+          />
+
+          <ProjectsList
+            projects={teamFilter}
             component={TeamProjectsListItem}
           />
 
@@ -33,8 +47,13 @@ const Projects: FC = () => {
             PERSONAL PROJECTS
           </p>
 
-          <ProjectsList
+          <BtnFilter
             projects={personalProjects}
+            setFilteredProjects={setPersonalFilter}
+          />
+
+          <ProjectsList
+            projects={personalFilter}
             component={PersonalProjectListItem}
           />
         </section>

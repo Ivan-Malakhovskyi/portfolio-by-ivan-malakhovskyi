@@ -2,12 +2,12 @@
 
 import { FC } from "react";
 import people from "/public/icons/people_alt.svg";
-import ImageComponent from "./global/ImageComponent";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import ImageComponent from "../global/ImageComponent";
+import MaxWidthWrapper from "../global/MaxWidthWrapper";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { container, item } from "../constants/animations/animationStyles";
+import { container, item } from "@/constants/animations/animationStyles";
 
 const About: FC = () => {
   const { ref, inView } = useInView({ threshold: 0.1 });
@@ -25,7 +25,6 @@ const About: FC = () => {
           animate={inView ? "visible" : "hidden"}
           ref={ref}
         >
-          {" "}
           <motion.li
             className="border border-addBlack p-10 rounded-lg bg-gray-900 shadow-2xl mb-10"
             initial="hidden"
