@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { FC, useEffect, SyntheticEvent } from "react";
-import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { IModalProps } from "./Modal.types";
 import icon_close from "/public/icons/x.svg";
 import Backdrop from "./BackDrop";
@@ -16,13 +15,13 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
       }
     };
 
-    if (!window?.location?.hash) {
-      disableBodyScroll(document.body);
-    }
+    window.addEventListener("keydown", handleEscClick);
+
+    document.body.style.overflow = "hidden";
 
     return () => {
       window.removeEventListener("keydown", handleEscClick);
-      enableBodyScroll(document.body);
+      document.body.style.overflow = "";
     };
   }, [close]);
 

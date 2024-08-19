@@ -20,7 +20,7 @@ export const teamProjects = [
       "Product presentation",
       "Resolving problem to create CMS from scratch",
     ],
-    technologies: ["Next.js"],
+    technologies: ["Next.js, Full Stack"],
     toDo: "Product card | CMS | Product presentation",
   },
   {
