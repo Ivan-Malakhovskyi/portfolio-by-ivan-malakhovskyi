@@ -20,7 +20,7 @@ const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
       setFilteredProjects(projects);
     } else {
       const filtered = projects.filter((project) =>
-        project?.technologies?.includes(technology)
+        project.technologies?.includes(technology)
       );
 
       setFilteredProjects(filtered);
