@@ -89,6 +89,13 @@ export const softSkills = [
 export const experiences = [
   {
     position: "Frontend developer",
+    company: "Talent Bay",
+    project: "CRM",
+    period: "2024 - Present",
+    employment: "Part-time",
+  },
+  {
+    position: "Frontend developer",
     company: "Team Challenge",
     project: "Online store - marketplace",
     period: "2023 - 2024",

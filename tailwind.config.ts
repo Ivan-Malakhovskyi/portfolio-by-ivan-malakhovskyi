@@ -25,7 +25,7 @@ const config: Config = {
         purpleMain: "#4A0D67",
         purpleAccent: "#6B21A8",
         addPurple: "#8c21f8",
-        mainPurple: "#a958fa",
+        mainPurple: "#2c0076",
         purpleAdd: "#9333EA",
         accentPurple: "#c591fc",
       },
