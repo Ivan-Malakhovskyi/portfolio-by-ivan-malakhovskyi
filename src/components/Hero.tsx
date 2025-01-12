@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { FC } from "react";
 import { motion } from "framer-motion";
-import MaxWidthWrapper from "../global/MaxWidthWrapper";
+import MaxWidthWrapper from "./global/MaxWidthWrapper";
 import Image from "next/image";
 import copy from "/public/images/my_photo_copy_2.jpg";
-import TypeWriterTextAnimation from "../global/TypeWriterTextAnimation";
+import TypeWriterTextAnimation from "./global/TypeWriterTextAnimation";
 import {
   containerVariants,
   itemVariants,
@@ -20,11 +20,10 @@ const Hero: FC = () => {
     <MaxWidthWrapper>
       <section className="py-20">
         <TypeWriterTextAnimation
-          text="Hey there  &#128075;, my name is"
+          text="Hey there &#x1F600;, my name is"
           tag="h2"
           className="text-mainWhite mb-8"
         />
-
         <ul className="md:flex md:gap-6 flex-wrap justify-between">
           <li>
             {" "}

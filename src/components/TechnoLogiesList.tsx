@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { TechnoLogiesListProps } from "../../types";
+import { TechnoLogiesListProps } from "../types";
 
 const TechnoLogiesList: FC<TechnoLogiesListProps> = ({ workedOn }) => {
   return (

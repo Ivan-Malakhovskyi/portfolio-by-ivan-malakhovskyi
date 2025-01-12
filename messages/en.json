@@ -1,0 +1,15 @@
+{
+  "Common": {
+    "language": "en",
+    "label": "Language"
+  },
+  "Header": {
+    "logo": "Ivan Malakhovskyi",
+    "about": "About",
+    "experience": "Work experience",
+    "certificates": "Certificates",
+    "hard_skills": "Hard skills",
+    "soft_skills": "Soft skills",
+    "projects": "Projects"
+  }
+}

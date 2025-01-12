@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import ImageComponent from "../global/ImageComponent";
 import { ProjectsListItemProps } from "@/types";
-import TechnoLogiesList from "../TechnologiesList";
+import TechnoLogiesList from "../TechnoLogiesList";
 import { item, transition } from "@/constants/animations/animationStyles";
 
 const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {

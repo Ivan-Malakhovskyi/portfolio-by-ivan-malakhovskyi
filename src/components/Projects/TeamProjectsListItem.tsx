@@ -8,7 +8,7 @@ import ImageComponent from "../global/ImageComponent";
 import Link from "next/link";
 import RolesList from "../RolesList";
 import { ProjectsListItemProps } from "@/types";
-import TechnoLogiesList from "../TechnologiesList";
+import TechnoLogiesList from "../TechnoLogiesList";
 import { item, transition } from "@/constants/animations/animationStyles";
 
 const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {

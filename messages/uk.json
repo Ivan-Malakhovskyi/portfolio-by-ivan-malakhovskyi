@@ -1,0 +1,15 @@
+{
+  "Common": {
+    "language": "uk",
+    "label": "Мова"
+  },
+  "Header": {
+    "logo": "Іван Малаховський",
+    "about": "Про мене",
+    "experience": "Досвід роботи",
+    "certificates": "Сертифікати",
+    "hard_skills": "Технічні скіли",
+    "soft_skills": "Гнучкі навички",
+    "projects": "Проєкти"
+  }
+}

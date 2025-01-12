@@ -2,8 +2,8 @@
 
 import { FC } from "react";
 import people from "/public/icons/people_alt.svg";
-import ImageComponent from "../global/ImageComponent";
-import MaxWidthWrapper from "../global/MaxWidthWrapper";
+import ImageComponent from "./global/ImageComponent";
+import MaxWidthWrapper from "./global/MaxWidthWrapper";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";

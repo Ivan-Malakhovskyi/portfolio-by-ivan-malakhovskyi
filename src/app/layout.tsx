@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import "normalize.css/normalize.css";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 
 const roboto = Roboto({
   weight: ["400", "500", "700", "900"],
@@ -18,7 +16,7 @@ export const metadata: Metadata = {
   description: "Home page",
 };
 
-export default function RootLayout({
+async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -38,10 +36,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon/favicon.svg" />
       </head>
       <body className={roboto.className} style={{ backgroundColor: "#000" }}>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
 }
+
+export default RootLayout;
