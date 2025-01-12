@@ -9,7 +9,7 @@ const Experience = () => {
     <MaxWidthWrapper>
       <section id="experience" className="pb-14">
         <h2 className=" text-3xl font-semibold  text-center md:text-6xl mb-8">
-          Experience
+          Work Experience
         </h2>
 
         {experiences.map((exp, index) => (

@@ -25,12 +25,12 @@ const Navigation: FC = () => {
 
   return (
     <>
-      <ul className="md:flex md:gap-8 hidden">
-        <NavList />
+      <ul className="md:flex md:gap-8 hidden items-center">
+        <NavList action={handleLinkClick} />
         <LanguageSwitcher />
       </ul>
-      <div className="md:hidden">
-        {" "}
+      <div className="md:hidden flex items-center gap-8">
+        <LanguageSwitcher />
         <button type="button" onClick={handleToggleClick}>
           <Image src={burger} width={32} height={32} alt="burger_icon" />
         </button>
@@ -41,7 +41,7 @@ const Navigation: FC = () => {
         >
           {showModal && (
             <Modal close={handleToggleClick} showModal={showModal}>
-              <ul className="text-center">
+              <ul className="text-center ">
                 <NavList action={handleLinkClick} />
               </ul>
             </Modal>

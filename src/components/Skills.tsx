@@ -25,7 +25,7 @@ const Skills = () => {
           Hard Skills
         </h2>
         <motion.ul
-          className="flex justify-center items-center flex-wrap gap-6 mb-6"
+          className="grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mb-6"
           variants={container}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -34,7 +34,7 @@ const Skills = () => {
           {hardSkills.map(({ name, icon }, index) => (
             <li
               key={index}
-              className="w-full md:w-1/2 lg:w-1/4 xl:w-1/5  bg-mainBlack shadow-md rounded-lg p-6 hover:animate-pulse transition ease-out duration-300 cursor-pointer"
+              className="w-full bg-mainBlack shadow-md rounded-lg p-6 hover:animate-pulse transition ease-out duration-300 cursor-pointer"
             >
               <motion.div
                 className="flex  justify-center items-center flex-col"
@@ -58,7 +58,7 @@ const Skills = () => {
           Soft Skills
         </h2>
         <motion.ul
-          className="flex justify-center items-center flex-wrap gap-6 mb-6"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 mb-6"
           variants={container}
           initial="hidden"
           animate={softInView ? "visible" : "hidden"}
@@ -67,7 +67,7 @@ const Skills = () => {
           {softSkills.map(({ name, icon }, index) => (
             <li
               key={index}
-              className="w-full md:w-1/2 lg:w-1/4 xl:w-1/5  bg-mainBlack shadow-md rounded-lg p-6 hover:animate-pulse transition ease-out duration-300 cursor-pointer"
+              className=" bg-mainBlack shadow-md rounded-lg p-6 hover:animate-pulse transition ease-out duration-300 cursor-pointer"
             >
               <motion.div
                 className="flex  justify-center items-center flex-col"
