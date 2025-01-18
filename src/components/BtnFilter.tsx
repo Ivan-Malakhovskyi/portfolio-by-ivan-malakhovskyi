@@ -4,6 +4,7 @@ import React, { FC, useState } from "react";
 
 import { technologies } from "@/constants/technologies";
 import { Project } from "@/types";
+import { useTranslations } from "next-intl";
 
 interface IBtnFilterProps {
   projects: Project[];
@@ -13,10 +14,12 @@ interface IBtnFilterProps {
 const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
   const [active, setActive] = useState<string | null>(null);
 
+  const t = useTranslations("Projects");
+
   const handleFilter = (technology: string) => {
     setActive(technology);
 
-    if (technology === "All") {
+    if (technology === t("btn_filter")) {
       setFilteredProjects(projects);
     } else {
       const filtered = projects.filter((project) =>
@@ -28,29 +31,28 @@ const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
   };
 
   return (
-    <ul className="flex gap-2 flex-wrap justify-center items-center mb-10">
+    <ul className="grid md:grid-cols-3 lg:grid-cols-5 sm:grid-cols-2 gap-2 grid-cols-1  justify-center items-center mb-10">
       <button
         className={`${
-          active === "All" ? "ring-4 ring-yellow-400" : ""
+          active === t("btn_filter") ? "ring-4 ring-yellow-400" : ""
         } bg-mainBlack text-mainWhite px-4 py-2 border-2 border-solid rounded-full transform transition-transform duration-300 hover:-translate-y-1 active:translate-y-0`}
-        onClick={() => handleFilter("All")}
+        onClick={() => handleFilter(t("btn_filter"))}
       >
-        All
+        {t("btn_filter")}
       </button>
-      {technologies &&
-        technologies.map(({ id, technologyName }) => (
-          <li key={id}>
-            <button
-              onClick={() => handleFilter(technologyName)}
-              type="button"
-              className={`${
-                active === technologyName ? "ring-4 ring-yellow-400" : ""
-              } bg-mainBlack text-mainWhite px-4 py-2 border-2 border-solid rounded-full transform transition-transform duration-300 hover:-translate-y-1 active:translate-y-0`}
-            >
-              {technologyName}
-            </button>
-          </li>
-        ))}
+      {technologies?.map(({ id, technologyName }) => (
+        <li key={id} className="grid ">
+          <button
+            onClick={() => handleFilter(technologyName)}
+            type="button"
+            className={`${
+              active === technologyName ? "ring-4 ring-yellow-400" : ""
+            } bg-mainBlack text-mainWhite px-4 py-2 border-2 border-solid rounded-full transform transition-transform duration-300 hover:-translate-y-1 active:translate-y-0`}
+          >
+            {technologyName}
+          </button>
+        </li>
+      ))}
     </ul>
   );
 };

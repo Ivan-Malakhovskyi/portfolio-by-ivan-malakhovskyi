@@ -4,6 +4,7 @@ import { FC } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { container, item } from "@/constants/animations/animationStyles";
+import { useTranslations } from "next-intl";
 
 interface IJobExperienceProps {
   position: string;
@@ -21,6 +22,8 @@ const JobExperience: FC<IJobExperienceProps> = ({
   employment,
 }) => {
   const { ref, inView } = useInView({ threshold: 0.1 });
+
+  const t = useTranslations("WorkExperience");
 
   return (
     <>
@@ -43,7 +46,7 @@ const JobExperience: FC<IJobExperienceProps> = ({
           </div>
           <div className="text-gray-200">
             <strong>Employment: </strong>
-            {employment}
+            {t("employment")}
           </div>
         </motion.div>
       </motion.div>

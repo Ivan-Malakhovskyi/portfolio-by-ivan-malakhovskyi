@@ -1,6 +1,6 @@
 {
   "Common": {
-    "language": "en",
+    "language": "uk",
     "label": "UA"
   },
   "Header": {
@@ -11,5 +11,43 @@
     "hard_skills": "Hard skills",
     "soft_skills": "Soft skills",
     "projects": "Projects"
+  },
+  "Hero": {
+    "text_add": "Hey there, my name is",
+    "text_main": "Ivan Malakhovskyi Enthusiastic Full Stack Developer from Ukraine, Vinnytsia",
+    "summary": "I am a Full Stack Developer. Recently I am a successfully completed commercial project ",
+    "summary_add": "at company Team Challenge. Now I am ready to new opportunities",
+    "btn_hire": "Hire me",
+    "btn_download": "Download"
+  },
+  "OpenToWork": {
+    "text": "I`m currently looking for Jobs",
+    "role": "Jobs"
+  },
+  "About": {
+    "title": "About me",
+    "summary": "Summary",
+    "text": "With a background in Biology and a drive for tech innovation, my journey led me to frontend development, where I currently enhance online shopping experiences at Team Challenge. I apply my Full Stack Developer skills, including proficiency with React, Next.js, Redux and Vite, to create adaptive and user-centric web solutions.As a Master`s candidate at Donetsk National University, I blend scientific analytical skills with technical prowess, underscoring my commitment to continuous learning. My goal is to contribute meaningfully to a collaborative team environment, leveraging my education and expertise to push boundaries in web development."
+  },
+  "WorkExperience": {
+    "title": "Work Experience",
+    "employment": "Part-time"
+  },
+  "Certificates": {
+    "title": "Certificates"
+  },
+  "Skills": {
+    "title": "Hard skills",
+    "title_2": "Soft Skills"
+  },
+  "Projects": {
+    "title": "featured projects",
+    "title_add": "team projects",
+    "text": "PERSONAL PROJECTS",
+    "btn_filter": "All"
+  },
+  "Footer": {
+    "title": "Social",
+    "author_rules": "All Rights Reserved"
   }
 }

@@ -15,18 +15,18 @@ const Header: FC = () => {
       setPrevScrollPos(currentScrollPos);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 
   return (
     <header
-      className={`bg-mainBlack fixed z-50 w-full top-0 transition-transform duration-300 ${
-        visible ? "transform translate-y-0" : "-translate-y-full"
-      }`}
+      className={`bg-mainBlack sticky z-50 w-full top-0 transition-transform duration-300 
+        ${visible ? "transform translate-y-0" : "-translate-y-full"}
+        `}
     >
       <NavBar />
     </header>

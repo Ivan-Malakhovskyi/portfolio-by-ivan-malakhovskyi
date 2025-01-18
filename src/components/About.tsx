@@ -8,15 +8,17 @@ import MaxWidthWrapper from "./global/MaxWidthWrapper";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { container, item } from "@/constants/animations/animationStyles";
+import { useTranslations } from "next-intl";
 
 const About: FC = () => {
   const { ref, inView } = useInView({ threshold: 0.1 });
+  const t = useTranslations("About");
 
   return (
     <MaxWidthWrapper>
       <section id="about" className="pb-14">
         <h2 className="text-mainWhite text-3xl font-semibold  text-center md:text-6xl mb-8">
-          About me
+          {t("title")}
         </h2>
         <motion.ul
           className="flex justify-center gap-4"
@@ -41,20 +43,11 @@ const About: FC = () => {
                   height={40}
                   alt="people_icon"
                 />
-                <span className="ml-4">Summary</span>
+                <span className="ml-4">{t("summary")}</span>
               </div>
             </h3>
             <p className="text-mainGrey text-base md:text-xl lg:text-2xl">
-              With a background in Biology and a drive for tech innovation, my
-              journey led me to frontend development, where I currently enhance
-              online shopping experiences at Team Challenge. I apply my Full
-              Stack Developer skills, including proficiency with React, Next.js,
-              Redux and Vite, to create adaptive and user-centric web solutions.
-              As a Master`s candidate at Donetsk National University, I blend
-              scientific analytical skills with technical prowess, underscoring
-              my commitment to continuous learning. My goal is to contribute
-              meaningfully to a collaborative team environment, leveraging my
-              education and expertise to push boundaries in web development.
+              {t("text")}
             </p>
           </motion.li>
         </motion.ul>

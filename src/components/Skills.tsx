@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 import ImageComponent from "./global/ImageComponent";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
 
@@ -15,6 +16,8 @@ const Skills = () => {
 
   const { ref: softRef, inView: softInView } = useInView({ threshold: 0.1 });
 
+  const t = useTranslations("Skills");
+
   return (
     <section id="skills" className="py-20 bg-gray-900">
       <MaxWidthWrapper>
@@ -22,7 +25,7 @@ const Skills = () => {
           id="hard_skills"
           className="text-mainWhite text-3xl md:text-6xl font-bold text-center mb-8"
         >
-          Hard Skills
+          {t("title")}
         </h2>
         <motion.ul
           className="grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mb-6"
@@ -55,7 +58,7 @@ const Skills = () => {
           id="soft_skills"
           className="text-mainWhite text-3xl md:text-6xl font-bold text-center my-8"
         >
-          Soft Skills
+          {t("title_2")}
         </h2>
         <motion.ul
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 mb-6"

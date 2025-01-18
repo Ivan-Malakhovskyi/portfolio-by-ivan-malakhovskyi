@@ -17,7 +17,7 @@ export interface Project {
   role: string[] | null;
   technologies: string[] | null;
   workedOn: string[] | null;
-  toDo: string | null;
+  toDo: string[] | null;
 }
 export interface ProjectsListItemProps {
   project: Project;

@@ -1,13 +1,17 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { socialLinks } from "../constants";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
 import Image from "next/image";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 text-gray-400 py-10 animate-gradient-x">
       <MaxWidthWrapper>
-        <h4 className=" text-center mb-6">Social</h4>
+        <h4 className=" text-center mb-6">{t("title")}</h4>
 
         <ul className="flex gap-10 justify-center mb-6">
           {socialLinks.map(({ id, href, icon, alt }) => (
@@ -24,7 +28,11 @@ const Footer = () => {
           ))}
         </ul>
 
-        <p className=" text-center">&#169; All Rights Reserved</p>
+        <p className=" text-center">&#169; {t("author_rules")}</p>
+
+        <div className="flex justify-center mt-10">
+          <LanguageSwitcher />
+        </div>
       </MaxWidthWrapper>
     </footer>
   );

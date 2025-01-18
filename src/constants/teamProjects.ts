@@ -21,7 +21,7 @@ export const teamProjects = [
       "Resolving problem to create CMS from scratch",
     ],
     technologies: ["Full Stack", "Next.js"],
-    toDo: "Product card | CMS | Product presentation",
+    toDo: ["Product card", "CMS", "Product presentation"],
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ export const teamProjects = [
       "validation of fields ✅",
     ],
     technologies: ["Full Stack", "React"],
-    toDo: "Setting modal",
+    toDo: ["Setting modal"],
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ export const teamProjects = [
       "displaying a message to the user if there are no books 📖",
     ],
     technologies: ["HTML/CSS/JS"],
-    toDo: "Shopping List",
+    toDo: ["Shopping List"],
   },
   {
     id: 4,
@@ -72,6 +72,6 @@ export const teamProjects = [
       "collection display",
     ],
     technologies: ["HTML/CSS/JS"],
-    toDo: "Collection watches",
+    toDo: ["Collection watches"],
   },
 ];

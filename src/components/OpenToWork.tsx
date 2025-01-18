@@ -2,8 +2,11 @@
 
 import { FC } from "react";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
+import { useTranslations } from "next-intl";
 
 const OpenToWork: FC = () => {
+  const t = useTranslations("OpenToWork");
+
   return (
     <>
       <div className="overflow-hidden w-full">
@@ -11,7 +14,7 @@ const OpenToWork: FC = () => {
         <div className="animate-marquee gradient-text">
           {" "}
           <h3 className="text-mainGrey text-2xl font-semibold mb-8">
-            I`m currently looking for Jobs.
+            {t("text")}
           </h3>
         </div>
       </div>
@@ -22,7 +25,7 @@ const OpenToWork: FC = () => {
             <li>
               <span className="text-mainWhite font-semibold  text-3xl md:text-6xl">
                 {" "}
-                Jobs: &#123;
+                {t("role")}: &#123;
               </span>
             </li>{" "}
             <li>
