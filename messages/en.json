@@ -38,7 +38,11 @@
   },
   "Skills": {
     "title": "Hard skills",
-    "title_2": "Soft Skills"
+    "title_2": "Soft Skills",
+    "Communicative": "Communicative",
+    "Being proactive": "Being proactive",
+    "Problem solving": "Problem solving",
+    "Responsible": "Responsible"
   },
   "Projects": {
     "title": "featured projects",

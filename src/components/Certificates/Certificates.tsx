@@ -8,7 +8,7 @@ const Certificates: FC = () => {
   return (
     <MaxWidthWrapper>
       <section id="certificates" className="pb-14">
-        <h2 className=" text-3xl font-semibold  text-center md:text-6xl mb-8">
+        <h2 className=" text-3xl text-mainWhite font-semibold  text-center md:text-6xl mb-8">
           {t("title")}
         </h2>
         <CertificatesList />

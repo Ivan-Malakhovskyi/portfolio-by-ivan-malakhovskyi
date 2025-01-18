@@ -49,7 +49,7 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
           <ul className="flex flex-wrap gap-2">
             {toDo?.map((item, idx) => (
               <li key={idx}>
-                <span className="text-xs md:text-xl ml-2 border-2 rounded-full  border-mainGrey px-1 md:px-2 md:py-[2px]">
+                <span className="text-xs md:text-xl ml-2 border-2 rounded-full text-mainWhite border-mainGrey px-1 md:px-2 md:py-[2px]">
                   {item}
                 </span>
               </li>
