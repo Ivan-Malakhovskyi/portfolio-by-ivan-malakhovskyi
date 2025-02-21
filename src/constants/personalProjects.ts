@@ -5,8 +5,26 @@ import contactsApp from "/public/images/main_page_contacts.png";
 import webStudio from "/public/images/lending.png";
 import restaurantTestTask from "/public/images/restaurant_test_task.png";
 import contactsTestTask from "/public/images/contacts-test-task.png";
+import myportfolio from "/public/images/myportfolio.png";
 
 export const personalProjects = [
+  {
+    id: 3,
+    href: "https://portfolio-by-ivan-malakhovskyi.vercel.app/en",
+    title: "My Portfolio",
+    description:
+      "This application i was crated for demonstrate my skills, strong sides and work with different technologies",
+    img: myportfolio,
+    role: null,
+    workedOn: null,
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Google SEO",
+      "Internationalization",
+    ],
+    toDo: null,
+  },
   {
     id: 4,
     href: "https://learn-lingo-pet-project.vercel.app/",

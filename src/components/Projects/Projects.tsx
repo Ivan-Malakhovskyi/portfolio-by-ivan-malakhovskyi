@@ -46,7 +46,7 @@ const Projects: FC = () => {
             component={TeamProjectsListItem}
           />
 
-          <p className="text-mainBlack text-2xl uppercase text-center mt-10 mb-4 ">
+          <p className="text-mainGrey text-2xl capitalize text-center mt-10 mb-6   ">
             {t("text")}
           </p>
 
