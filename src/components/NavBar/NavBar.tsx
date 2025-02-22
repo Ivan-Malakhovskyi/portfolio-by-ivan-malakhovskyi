@@ -87,7 +87,7 @@ const NavBar: FC = () => {
                 type="button"
                 className={`p-2 text-base text-mainBlack  dark:text-mainWhite ${
                   activeTheme === "system"
-                    ? "bg-mainPurple rounded-lg"
+                    ? "bg-mainGrey rounded-lg"
                     : "bg-transparent"
                 }`}
               >
@@ -98,7 +98,7 @@ const NavBar: FC = () => {
               <button type="button" onClick={() => handleThemeChange("light")}>
                 {" "}
                 <SunIcon
-                  className={`transition ease-out duration-300 size-6 ${
+                  className={`transition stroke-mainWhite fill-mainWhite ease-out duration-300 size-6 ${
                     activeTheme === "light"
                       ? "stroke-orange-500 fill-orange-500"
                       : " stroke-mainWhite fill-mainWhite"
