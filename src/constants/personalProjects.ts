@@ -19,6 +19,7 @@ export const personalProjects = [
     workedOn: null,
     technologies: [
       "Next.js",
+      "Tailwind CSS",
       "TypeScript",
       "Google SEO",
       "Internationalization",
