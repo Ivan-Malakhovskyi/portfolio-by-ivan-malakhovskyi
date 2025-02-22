@@ -79,7 +79,7 @@ const Skills = () => {
                 variants={item}
               >
                 {" "}
-                <Icon className="size-16" />
+                <Icon className="size-16 text-mainBlack dark:text-mainWhite" />
                 <h3 className="text-xl text-mainBlack dark:text-mainWhite text-center font-semibold mt-4">
                   {t(name)}
                 </h3>
