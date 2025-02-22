@@ -22,7 +22,7 @@ async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={roboto.className}>
       <head>
         <title>Portfolio by Ivan Malakhovskyi</title>
         <meta
@@ -35,9 +35,7 @@ async function RootLayout({
         />
         <link rel="icon" href="/favicon/favicon.svg" />
       </head>
-      <body className={roboto.className} style={{ backgroundColor: "#000" }}>
-        {children}
-      </body>
+      <body className="bg-white dark:bg-black">{children}</body>
     </html>
   );
 }

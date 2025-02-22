@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "media",
   theme: {
     extend: {
       colors: {
@@ -14,8 +15,11 @@ const config: Config = {
         addBlack: "#060708",
         accentBlack: "#0e0f11",
         mainWhite: "#ffffff",
+        accentGrey: "#434455",
         mainGreen: "#1ed760",
         mainGrey: "#959595",
+        mainBlue: "#4d5ae5",
+        accentBlue: "#404bbf",
         addGreen: "#0e8538",
         accentGreen: "#a7d575",
         neon: "#a7d575",

@@ -20,18 +20,18 @@ const Projects: FC = () => {
   const t = useTranslations("Projects");
 
   return (
-    <div className="bg-gradient-to-b from-black via-gray-400 to-mainBlack">
+    <div className="bg-gradient-to-b dark:from-black dark:via-gray-400 dark:to-mainBlack  from-gray-200 via-gray-300 to-gray-500">
       <MaxWidthWrapper>
         <section id="projects" className="py-40">
           <div>
             {" "}
-            <p className="text-mainGrey text-2xl uppercase text-center mb-4">
+            <p className="text-mainBlack dark:text-mainGrey text-2xl uppercase text-center mb-4">
               Frontend | Backend
             </p>
-            <h2 className="text-mainWhite text-3xl font-semibold text-center md:text-6xl mb-4 capitalize">
+            <h2 className="text-mainBlack dark:text-mainWhite text-3xl font-semibold text-center md:text-6xl mb-4 capitalize">
               {t("title")}
             </h2>
-            <p className="text-mainGrey text-2xl text-center mb-6 capitalize">
+            <p className="text-mainBlack dark:text-mainGrey text-2xl text-center mb-6 capitalize">
               {t("title_add")}
             </p>
           </div>
@@ -41,12 +41,18 @@ const Projects: FC = () => {
             setFilteredProjects={setTeamFilter}
           />
 
-          <ProjectsList
-            projects={teamFilter}
-            component={TeamProjectsListItem}
-          />
+          {teamFilter.length > 0 ? (
+            <ProjectsList
+              projects={teamFilter}
+              component={TeamProjectsListItem}
+            />
+          ) : (
+            <p className="text-center font-medium text-mainBlack dark:text-mainGre">
+              In progress
+            </p>
+          )}
 
-          <p className="text-mainGrey text-2xl capitalize text-center mt-10 mb-6   ">
+          <p className="text-mainBlack dark:text-mainGrey text-2xl capitalize text-center mt-10 mb-6   ">
             {t("text")}
           </p>
 
@@ -55,10 +61,16 @@ const Projects: FC = () => {
             setFilteredProjects={setPersonalFilter}
           />
 
-          <ProjectsList
-            projects={personalFilter}
-            component={PersonalProjectListItem}
-          />
+          {personalFilter.length > 0 ? (
+            <ProjectsList
+              projects={personalFilter}
+              component={PersonalProjectListItem}
+            />
+          ) : (
+            <p className="text-center font-medium text-mainBlack dark:text-mainGrey">
+              In progress
+            </p>
+          )}
         </section>
       </MaxWidthWrapper>
     </div>

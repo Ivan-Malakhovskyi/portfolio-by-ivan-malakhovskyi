@@ -5,7 +5,6 @@ import { FC } from "react";
 import MaxWidthWrapper from "../global/MaxWidthWrapper";
 import Navigation from "./Navigation";
 import { useTranslations } from "next-intl";
-import LanguageSwitcher from "../LanguageSwitcher";
 
 const NavBar: FC = () => {
   const t = useTranslations("Header");
@@ -15,11 +14,11 @@ const NavBar: FC = () => {
       <div className="flex items-center gap-10">
         {" "}
         <span className="">
-          <Link href="/" className="py-6 text-mainWhite ">
+          <Link href="/" className="py-6 dark:text-mainWhite ">
             {t("logo")}
           </Link>
         </span>
-        <nav className="ml-auto text-mainWhite">
+        <nav className="ml-auto dark:text-mainWhite">
           {" "}
           <Navigation />
         </nav>

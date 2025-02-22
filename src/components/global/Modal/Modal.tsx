@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { FC, useEffect, SyntheticEvent } from "react";
 import { IModalProps } from "./Modal.types";
-import icon_close from "/public/icons/x.svg";
 import Backdrop from "./BackDrop";
 import ModalContent from "./ModalContent";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const Modal: FC<IModalProps> = ({ close, children }) => {
   useEffect(() => {
@@ -37,9 +36,13 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
         <button
           type="button"
           onClick={close}
-          className="text-mainWhite absolute top-5 right-5"
+          className="text-gray-600 dark:text-mainWhite absolute top-5 right-5"
         >
-          <Image src={icon_close} width={32} height={32} alt="icon_close" />
+          <XMarkIcon
+            width={40}
+            height={40}
+            className="size-6 text-mainBlack dark:text-white"
+          />
         </button>
         {children}
       </ModalContent>

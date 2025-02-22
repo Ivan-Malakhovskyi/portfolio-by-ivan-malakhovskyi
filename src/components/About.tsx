@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { container, item } from "@/constants/animations/animationStyles";
 import { useTranslations } from "next-intl";
+import { IdentificationIcon } from "@heroicons/react/24/outline";
 
 const About: FC = () => {
   const { ref, inView } = useInView({ threshold: 0.1 });
@@ -17,7 +18,7 @@ const About: FC = () => {
   return (
     <MaxWidthWrapper>
       <section id="about" className="pb-14">
-        <h2 className="text-mainWhite text-3xl font-semibold  text-center md:text-6xl mb-8">
+        <h2 className="text-mainBlack dark:text-mainWhite text-3xl font-semibold  text-center md:text-6xl mb-8">
           {t("title")}
         </h2>
         <motion.ul
@@ -28,25 +29,20 @@ const About: FC = () => {
           ref={ref}
         >
           <motion.li
-            className="border border-addBlack p-10 rounded-lg bg-gray-900 shadow-2xl mb-10"
+            className="dark:border dark:border-addBlack p-10 rounded-lg dark:bg-gray-900 shadow-2xl mb-10"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={item}
           >
             {" "}
-            <h3 className="text-mainWhite font-semibold  text-3xl">
+            <h3 className="text-mainBlack dark:text-mainWhite font-semibold  text-3xl">
               {" "}
               <div className="mb-4 flex">
-                <ImageComponent
-                  src={people}
-                  width={40}
-                  height={40}
-                  alt="people_icon"
-                />
+                <IdentificationIcon className="size-10 text-mainBlack dark:text-mainWhite" />
                 <span className="ml-4">{t("summary")}</span>
               </div>
             </h3>
-            <p className="text-mainGrey text-base md:text-xl lg:text-2xl">
+            <p className="text-accentGrey dark:text-mainGrey   text-base md:text-xl lg:text-2xl">
               {t("text")}
             </p>
           </motion.li>

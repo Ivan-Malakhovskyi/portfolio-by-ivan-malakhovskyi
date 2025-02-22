@@ -23,7 +23,7 @@ const OpenToWork: FC = () => {
           <ul className="flex gap-4 flex-col items-center mb-8">
             {" "}
             <li>
-              <span className="text-mainWhite font-semibold  text-3xl md:text-6xl">
+              <span className="text-mainBlack dark:text-mainWhite font-semibold  text-3xl md:text-6xl">
                 {" "}
                 {t("role")}: &#123;
               </span>
@@ -45,7 +45,7 @@ const OpenToWork: FC = () => {
             </li>
             <li>
               {" "}
-              <span className="text-mainWhite text-3xl md:text-6xl">
+              <span className="text-mainBlack dark:text-mainWhite text-3xl md:text-6xl">
                 &#125;
               </span>
             </li>

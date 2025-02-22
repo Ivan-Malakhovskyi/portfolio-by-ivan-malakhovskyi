@@ -19,11 +19,11 @@ const Skills = () => {
   const t = useTranslations("Skills");
 
   return (
-    <section id="skills" className="py-20 bg-gray-900">
+    <section id="skills" className="py-20 dark:bg-gray-900">
       <MaxWidthWrapper>
         <h2
           id="hard_skills"
-          className="text-mainWhite text-3xl md:text-6xl font-bold text-center mb-8"
+          className="text-mainBlack dark:text-mainWhite text-3xl md:text-6xl font-bold text-center mb-8"
         >
           {t("title")}
         </h2>
@@ -37,7 +37,7 @@ const Skills = () => {
           {hardSkills.map(({ name, icon }, index) => (
             <li
               key={index}
-              className="w-full bg-mainBlack shadow-md rounded-lg p-6 hover:animate-pulse transition ease-out duration-300 cursor-pointer"
+              className="w-full bg-white dark:bg-mainBlack shadow-xl rounded-lg p-6 hover:scale-105 focus:scale-110 transition ease-out duration-300 cursor-pointer"
             >
               <motion.div
                 className="flex  justify-center items-center flex-col"
@@ -47,7 +47,7 @@ const Skills = () => {
               >
                 {" "}
                 <ImageComponent src={icon} alt={name} width={60} height={60} />
-                <h3 className="text-xl text-mainWhite font-semibold mt-4">
+                <h3 className="text-xl text-mainBlack dark:text-mainWhite font-semibold mt-4">
                   {name}
                 </h3>
               </motion.div>
@@ -56,7 +56,7 @@ const Skills = () => {
         </motion.ul>
         <h2
           id="soft_skills"
-          className="text-mainWhite text-3xl md:text-6xl font-bold text-center my-8"
+          className="text:mainBlack dark:text-mainWhite text-3xl md:text-6xl font-bold text-center my-8"
         >
           {t("title_2")}
         </h2>
@@ -67,10 +67,10 @@ const Skills = () => {
           animate={softInView ? "visible" : "hidden"}
           ref={softRef}
         >
-          {softSkills.map(({ name, icon }, index) => (
+          {softSkills.map(({ name, Icon }, index) => (
             <li
               key={index}
-              className=" bg-mainBlack shadow-md rounded-lg p-6 hover:animate-pulse transition ease-out duration-300 cursor-pointer"
+              className="bg-mainWhite dark:bg-mainBlack shadow-xl rounded-lg p-6 hover:scale-105 focus:scale-110 transition ease-out duration-300 cursor-pointer"
             >
               <motion.div
                 className="flex  justify-center items-center flex-col"
@@ -79,8 +79,8 @@ const Skills = () => {
                 variants={item}
               >
                 {" "}
-                <ImageComponent src={icon} alt={name} width={60} height={60} />
-                <h3 className="text-xl text-mainWhite text-center font-semibold mt-4">
+                <Icon className="size-16" />
+                <h3 className="text-xl text-mainBlack dark:text-mainWhite text-center font-semibold mt-4">
                   {t(name)}
                 </h3>
               </motion.div>

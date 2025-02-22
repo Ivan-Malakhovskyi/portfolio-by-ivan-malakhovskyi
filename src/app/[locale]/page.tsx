@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className="bg-mainBlack">
+      <main className="bg-mainWhite dark:bg-mainBlack">
         <Hero />
         <OpenToWork />
         <About />
@@ -22,8 +22,8 @@ const Home = () => {
         <Certificates />
         <Skills />
         <Projects />
-        <BtnToTop />
       </main>
+      <BtnToTop />
       <Footer />
     </>
   );

@@ -4,11 +4,9 @@ import { useRouter } from "next/navigation";
 import { FC, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
-import burger from "/public/icons/menu.svg";
-import Image from "next/image";
 import Modal from "../global/Modal";
 import NavList from "./NavList";
-import LanguageSwitcher from "../LanguageSwitcher";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 
 const Navigation: FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -30,7 +28,7 @@ const Navigation: FC = () => {
       </ul>
       <div className="md:hidden flex items-center gap-8">
         <button type="button" onClick={handleToggleClick}>
-          <Image src={burger} width={32} height={32} alt="burger_icon" />
+          <Bars3Icon className="size-6 text-mainBlack dark:text-white" />
         </button>
         <AnimatePresence
           initial={false}

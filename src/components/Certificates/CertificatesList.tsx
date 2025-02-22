@@ -22,7 +22,7 @@ const CertificatesList = () => {
       {certificatesList.map(({ id, title, organization, href }) => (
         <li key={id}>
           <Link href={href} target="_blank">
-            <div className="bg-white text-gray-900 rounded-lg shadow-md m-2 hover:scale-105 focus:scale-105 ease-out duration-200">
+            <div className="bg-white  text-gray-900  rounded-lg shadow-2xl m-2 hover:scale-105 focus:scale-105 ease-out duration-200">
               <motion.div
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}

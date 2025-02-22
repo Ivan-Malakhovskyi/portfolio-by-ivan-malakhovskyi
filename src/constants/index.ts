@@ -23,10 +23,10 @@ import postman from "/public/icons/postman.svg";
 import figma from "/public/icons/figma.svg";
 import pixso from "/public/icons/pixso.jpg";
 
-import communicative from "/public/icons/users.svg";
-import responsible from "/public/icons/user-tie.svg";
-import beingProactive from "/public/icons/power.svg";
-import problemSolving from "/public/icons/sync_problem.svg";
+import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import { SparklesIcon } from "@heroicons/react/24/outline";
+import { LightBulbIcon } from "@heroicons/react/24/outline";
 
 //! SOCIAL LINKS
 
@@ -80,10 +80,10 @@ export const hardSkills = [
 ];
 
 export const softSkills = [
-  { name: "Communicative", icon: communicative },
-  { name: "Being proactive", icon: beingProactive },
-  { name: "Problem solving", icon: problemSolving },
-  { name: "Responsible", icon: responsible },
+  { name: "Communicative", Icon: SparklesIcon },
+  { name: "Being proactive", Icon: LightBulbIcon },
+  { name: "Problem solving", Icon: ChatBubbleLeftRightIcon },
+  { name: "Responsible", Icon: CheckCircleIcon },
 ];
 
 export const experiences = [

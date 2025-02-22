@@ -29,7 +29,7 @@ const JobExperience: FC<IJobExperienceProps> = ({
     <>
       {" "}
       <motion.div
-        className="even:bg-gradient-to-tr from-indigo-600 via-pink-600 to-purple-600 to-indigo-900 odd:bg-mainPurple shadow-lg rounded-lg p-6 mb-6"
+        className="even:bg-gradient-to-tr from-indigo-600 via-pink-600 to-purple-600 to-indigo-900 odd:bg-gradient-to-br  shadow-lg rounded-lg p-6 mb-6"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={container}
