@@ -10,7 +10,8 @@
     "certificates": "Certificates",
     "hard_skills": "Hard skills",
     "soft_skills": "Soft skills",
-    "projects": "Projects"
+    "projects": "Projects",
+    "os": "OS"
   },
   "Hero": {
     "text_add": "Hey there, my name is",

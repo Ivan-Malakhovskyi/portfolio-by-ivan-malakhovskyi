@@ -5,8 +5,7 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
 import Image from "next/image";
-import copy from "/public/images/my_photo_copy_2.jpg";
-import bg from "/public/images/hero.jpg";
+import copy from "/public/images/my_photo.jpg";
 import TypeWriterTextAnimation from "./global/TypeWriterTextAnimation";
 import {
   containerVariants,

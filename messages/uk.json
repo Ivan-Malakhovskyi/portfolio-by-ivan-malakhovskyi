@@ -10,7 +10,8 @@
     "certificates": "Сертифікати",
     "hard_skills": "Технічні скіли",
     "soft_skills": "Гнучкі скіли",
-    "projects": "Проєкти"
+    "projects": "Проєкти",
+    "os": "ОС"
   },
   "Hero": {
     "text_add": "Вітаю, мене звати",

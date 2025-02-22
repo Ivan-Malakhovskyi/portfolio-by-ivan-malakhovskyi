@@ -39,8 +39,12 @@ const CertificatesList = () => {
               </motion.div>
             </div>
           </Link>
-          <h3 className="text-2xl text-center font-semibold  mb-2">{title}</h3>
-          <p className="text-xl text-center  mb-2">{organization}</p>
+          <h3 className="text-2xl text-mainBlack dark:text-mainWhite text-center font-semibold  mb-2">
+            {title}
+          </h3>
+          <p className="text-xl text-mainBlack dark:text-mainWhite text-center  mb-2">
+            {organization}
+          </p>
         </li>
       ))}
     </motion.ul>
