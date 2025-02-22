@@ -98,10 +98,10 @@ const NavBar: FC = () => {
               <button type="button" onClick={() => handleThemeChange("light")}>
                 {" "}
                 <SunIcon
-                  className={`transition stroke-mainWhite fill-mainWhite ease-out duration-300 size-6 ${
+                  className={`transition text-mainWhite dark:text-mainBlack ease-out duration-300 size-6 ${
                     activeTheme === "light"
                       ? "stroke-orange-500 fill-orange-500"
-                      : " stroke-mainWhite fill-mainWhite"
+                      : "dark:stroke-mainWhite stroke-mainBlack  fill-black dark:fill-mainWhite "
                   }`}
                 />
               </button>
