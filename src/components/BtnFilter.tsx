@@ -35,7 +35,7 @@ const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
       <button
         className={`${
           active === t("btn_filter") ? "ring-4 ring-yellow-400" : ""
-        } dark:bg-mainBlack text-mainBlack dark:text-mainWhite px-4 py-2 border-2 border-mainBlack border-solid rounded-full transform transition-transform duration-300 hover:-translate-y-1 active:translate-y-0`}
+        } dark:bg-mainBlack text-mainBlack dark:text-mainWhite px-4 py-2 border-2 dark:border-mainWhite border-mainBlack border-solid rounded-full transform transition-transform duration-300 hover:-translate-y-1 active:translate-y-0`}
         onClick={() => handleFilter(t("btn_filter"))}
       >
         {t("btn_filter")}
@@ -47,7 +47,7 @@ const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
             type="button"
             className={`${
               active === technologyName ? "ring-4 ring-yellow-400" : ""
-            } dark:bg-mainBlack text-mainBlack dark:text-mainWhite px-4 py-2 border-2 border-solid border-mainBlack rounded-full transform transition-transform duration-300 hover:-translate-y-1 active:translate-y-0`}
+            } dark:bg-mainBlack text-mainBlack dark:text-mainWhite px-4 py-2 border-2 border-solid dark:border-mainWhite border-mainBlack rounded-full transform transition-transform duration-300 hover:-translate-y-1 active:translate-y-0`}
           >
             {technologyName}
           </button>
