@@ -56,7 +56,7 @@ const Skills = () => {
         </motion.ul>
         <h2
           id="soft_skills"
-          className="text:mainBlack dark:text-mainWhite text-3xl md:text-6xl font-bold text-center my-8"
+          className="text-mainBlack dark:text-mainWhite text-3xl md:text-6xl font-bold text-center my-8"
         >
           {t("title_2")}
         </h2>
