@@ -23,15 +23,13 @@ const Header: FC = () => {
   }, [prevScrollPos]);
 
   return (
-    <div>
-      <header
-        className={`backdrop-blur-xl text-mainBlack shadow-md fixed z-50 w-full top-0 transition-transform duration-300 
+    <header
+      className={`backdrop-blur-xl text-mainBlack shadow-md fixed z-50 w-full top-0 transition-transform duration-300 
         ${visible ? "transform translate-y-0" : "-translate-y-full"}
         `}
-      >
-        <NavBar />
-      </header>
-    </div>
+    >
+      <NavBar />
+    </header>
   );
 };
 
