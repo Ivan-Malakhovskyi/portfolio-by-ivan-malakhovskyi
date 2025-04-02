@@ -85,7 +85,7 @@ const NavBar: FC = () => {
               <button
                 onClick={() => handleThemeChange("system")}
                 type="button"
-                className={`p-2 text-base text-mainBlack  dark:text-mainWhite ${
+                className={`p-1 text-base text-mainBlack  dark:text-mainWhite ${
                   activeTheme === "system"
                     ? "bg-mainGrey rounded-lg"
                     : "bg-transparent"
