@@ -52,7 +52,7 @@ const Projects: FC = () => {
             </p>
           )}
 
-          <p className="text-mainBlack dark:text-mainGrey text-2xl capitalize text-center mt-10 mb-6   ">
+          <p className="text-mainBlack text-2xl capitalize text-center mt-10 mb-6   ">
             {t("text")}
           </p>
 

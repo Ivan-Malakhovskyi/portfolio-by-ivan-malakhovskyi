@@ -1,11 +1,11 @@
-import learnLingo from "/public/images/LearnLingoPortfolio.png";
-import carRental from "/public/images/car_rental.png";
-import movieSearch from "/public/images/main_page_movies_app.png";
-import contactsApp from "/public/images/main_page_contacts.png";
-import webStudio from "/public/images/lending.png";
-import restaurantTestTask from "/public/images/restaurant_test_task.png";
-import contactsTestTask from "/public/images/contacts-test-task.png";
-import myportfolio from "/public/images/myportfolio.png";
+import learnLingo from "/public/images/LearnLingoPortfolio.jpg";
+import carRental from "/public/images/car_rental.jpg";
+import movieSearch from "/public/images/main_page_movies_app.jpg";
+import contactsApp from "/public/images/main_page_contacts.jpg";
+import webStudio from "/public/images/lending.jpg";
+import restaurantTestTask from "/public/images/restaurant_test_task.jpg";
+import contactsTestTask from "/public/images/contacts-test-task.jpg";
+import myportfolio from "/public/images/myportfolio.jpg";
 
 export const personalProjects = [
   {

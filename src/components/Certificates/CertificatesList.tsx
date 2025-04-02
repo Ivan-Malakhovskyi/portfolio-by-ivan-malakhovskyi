@@ -3,7 +3,7 @@
 import { certificatesList } from "@/constants";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import certificate from "/public/images/certificate.png";
+import certificate from "/public/images/certificate.jpg";
 import Image from "next/image";
 import { container, item } from "@/constants/animations/animationStyles";
 import { useInView } from "react-intersection-observer";

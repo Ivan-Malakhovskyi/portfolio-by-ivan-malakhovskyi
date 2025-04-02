@@ -73,11 +73,11 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
         {" "}
         <Link href={href} key={id} ref={ref} className="w-full">
           <ImageComponent
-            className="w-full h-auto object-cover max-w-[700px]"
+            className="w-auto h-auto object-cover"
             src={img}
             width={700}
             height={700}
-            alt="learn_lingo"
+            alt={title}
           />
         </Link>
       </motion.div>

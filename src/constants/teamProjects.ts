@@ -1,7 +1,7 @@
-import techStop from "/public/images/techstop_large.png";
-import waterTracker from "/public/images/WaterTracker.png";
-import bookSelf from "/public/images/book_shelf.png";
-import watchSpot from "/public/images/watch_spot.png";
+import techStop from "/public/images/techstop_large.jpg";
+import waterTracker from "/public/images/WaterTracker.jpg";
+import bookSelf from "/public/images/book_shelf.jpg";
+import watchSpot from "/public/images/watch_spot.jpg";
 
 export const teamProjects = [
   {

@@ -89,7 +89,8 @@ const Hero: FC = () => {
                   width={395}
                   height={300}
                   alt="my_photo"
-                  className="rounded-full"
+                  className="rounded-full w-auto h-auto"
+                  priority
                 />
               </motion.div>
             </motion.div>

@@ -95,7 +95,11 @@ const NavBar: FC = () => {
               </button>
             </li>
             <li>
-              <button type="button" onClick={() => handleThemeChange("light")}>
+              <button
+                type="button"
+                onClick={() => handleThemeChange("light")}
+                aria-label="Toggle light theme"
+              >
                 {" "}
                 <SunIcon
                   className={`transition text-mainWhite dark:text-mainBlack ease-out duration-300 size-6 ${
@@ -108,7 +112,11 @@ const NavBar: FC = () => {
             </li>
             <li>
               {" "}
-              <button type="button" onClick={() => handleThemeChange("dark")}>
+              <button
+                type="button"
+                aria-label="Toggle dark theme"
+                onClick={() => handleThemeChange("dark")}
+              >
                 <MoonIcon
                   className={`transition ease-out duration-300 size-6 ${
                     activeTheme === "dark"
