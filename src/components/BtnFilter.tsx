@@ -32,14 +32,17 @@ const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
 
   return (
     <ul className="grid md:grid-cols-3 lg:grid-cols-5 sm:grid-cols-2 gap-2 grid-cols-1  justify-center items-center mb-10">
-      <button
-        className={`${
-          active === t("btn_filter") ? "ring-4 ring-yellow-400" : ""
-        } dark:bg-mainBlack text-mainBlack dark:text-mainWhite px-4 py-2 border-2 border-mainBlack border-solid rounded-full transform transition-transform duration-300 dark:border-mainWhite dark:focus:border-mainBlack focus:border-mainBlack hover:-translate-y-1 active:translate-y-0`}
-        onClick={() => handleFilter(t("btn_filter"))}
-      >
-        {t("btn_filter")}
-      </button>
+      <li className="grid">
+        {" "}
+        <button
+          className={`${
+            active === t("btn_filter") ? "ring-4 ring-yellow-400" : ""
+          } dark:bg-mainBlack text-mainBlack dark:text-mainWhite px-4 py-2 border-2 border-mainBlack border-solid rounded-full transform transition-transform duration-300 dark:border-mainWhite dark:focus:border-mainBlack focus:border-mainBlack hover:-translate-y-1 active:translate-y-0`}
+          onClick={() => handleFilter(t("btn_filter"))}
+        >
+          {t("btn_filter")}
+        </button>
+      </li>
       {technologies?.map(({ id, technologyName }) => (
         <li key={id} className="grid ">
           <button
