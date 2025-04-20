@@ -9,6 +9,8 @@ This is my personal portfolio website created using Next.js and Tailwind CSS. He
 - **Certificates and awards**: Information about received certificates and awards.
 - **Social**: Links to contact me via email or social media.
 - **404 Page**: A stylized 404 error page with an option to return to the main page.
+- **Multilingual support**: Available English, Ukrainian languages
+- **Theme switcher**: Switch dark or light theme with taking into account system settings
 - ##### `Google Search Console`: The Web App is available when performing a keyword search
 
 ## Technologies used
@@ -17,6 +19,8 @@ This is my personal portfolio website created using Next.js and Tailwind CSS. He
 - **TypeScript** : For static typing
 - **Tailwind CSS**: Utilitarian CSS framework for fast development of modern interfaces.
 - **Vercel**: Platform for deploying Next.js applications.
+- **i18n**: Multilingual support (Ukrainian, English)
+- **Framer Motion**: Animations and effects
 
 ## Installation and launch
 
@@ -59,3 +63,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ├── tailwind.config.js
 ├── package.json
 └── README.md s
+
+---
+
+## 🌐 Language switching
+
+The site supports multiple languages. To change the language, use the switch in the header. Implemented via JSON dictionaries with `useTranslation`.
+
+---
+
+## 📬 Contact
+
+- **Email:** ivan.malakhovskyi.dev@gmail.com
+- **LinkedIn:** [Ivan Malakhovskyi](https://www.linkedin.com/in/ivan-malakhovskyi/)
+- **GitHub:** [Ivan-Malakhovskyi](https://github.com/Ivan-Malakhovskyi)
+
+---
