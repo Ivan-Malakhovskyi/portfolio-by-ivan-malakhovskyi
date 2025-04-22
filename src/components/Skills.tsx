@@ -19,7 +19,10 @@ const Skills = () => {
   const t = useTranslations("Skills");
 
   return (
-    <section id="skills" className="py-20 dark:bg-gray-900">
+    <section
+      id="skills"
+      className="py-20 dark:bg-gray-900 dark:shadow-custom dark:backdrop-blur-sm"
+    >
       <MaxWidthWrapper>
         <h2
           id="hard_skills"

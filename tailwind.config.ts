@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: "selector",
   theme: {
     extend: {
+      boxShadow: {
+        custom: " 0 0 10px #9333EA",
+      },
       colors: {
         mainBlack: "#000000",
         accentWhite: "#f1e7ff",
