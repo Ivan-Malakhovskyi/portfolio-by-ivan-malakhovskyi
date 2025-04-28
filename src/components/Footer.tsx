@@ -8,10 +8,8 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const Footer = () => {
   const t = useTranslations("Footer");
 
-  //className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 text-gray-400 py-10 animate-gradient-x"
-
   return (
-    <footer className="dark:bg-[url(../../public/images/bg-2.webp)] bg-black bg-no-repeat bg-center bg-cover py-20 md:py-[112px] xl:py-[188px]">
+    <footer className="bg-black bg-no-repeat bg-center bg-cover py-20 md:py-[112px] xl:py-[188px]">
       <MaxWidthWrapper>
         <h4 className=" text-center mb-6">{t("title")}</h4>
         <ul className="flex gap-10 justify-center mb-6 flex-wrap">
