@@ -21,6 +21,8 @@ import git from "/public/icons/git.svg";
 import vite from "/public/icons/vitejs.svg";
 import postman from "/public/icons/postman.svg";
 import figma from "/public/icons/figma.svg";
+import mail from "/public/icons/mail.svg";
+import telegram from "/public/icons/telegram.svg";
 import pixso from "/public/icons/pixso.jpg";
 
 import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
@@ -54,6 +56,18 @@ export const socialLinks = [
     href: "https://www.facebook.com/",
     icon: facebook,
     alt: "facebook_icon",
+  },
+  {
+    id: 5,
+    href: "ivanmalahovskij121@gmail.com",
+    icon: mail,
+    alt: "mail_icon",
+  },
+  {
+    id: 6,
+    href: "https://t.me/ivan_malakhovskyi",
+    icon: telegram,
+    alt: "telegram_icon",
   },
 ];
 

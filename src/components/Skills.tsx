@@ -40,7 +40,7 @@ const Skills = () => {
           {hardSkills.map(({ name, icon }, index) => (
             <li
               key={index}
-              className="w-full bg-white dark:bg-mainBlack shadow-xl rounded-lg p-6 hover:scale-105 focus:scale-110 transition ease-out duration-300 cursor-pointer"
+              className="w-full bg-white dark:bg-mainBlack shadow-xl rounded-lg p-6 hover:scale-105 focus:scale-110 transition ease-out duration-300 "
             >
               <motion.div
                 className="flex  justify-center items-center flex-col"
@@ -73,7 +73,7 @@ const Skills = () => {
           {softSkills.map(({ name, Icon }, index) => (
             <li
               key={index}
-              className="bg-mainWhite dark:bg-mainBlack shadow-xl rounded-lg p-6 hover:scale-105 focus:scale-110 transition ease-out duration-300 cursor-pointer"
+              className="bg-mainWhite dark:bg-mainBlack shadow-xl rounded-lg p-6 hover:scale-105 focus:scale-110 transition ease-out duration-300"
             >
               <motion.div
                 className="flex  justify-center items-center flex-col"
