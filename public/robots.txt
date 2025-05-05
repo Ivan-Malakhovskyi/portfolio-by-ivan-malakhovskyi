@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://portfolio-by-ivan-malakhovskyi.vercel.app/
+Host: https://portfolio-by-ivan-malakhovskyi.vercel.app/en
 
 # Sitemaps
-Sitemap: https://portfolio-by-ivan-malakhovskyi.vercel.app/sitemap.xml
+Sitemap: https://portfolio-by-ivan-malakhovskyi.vercel.app/en/sitemap.xml

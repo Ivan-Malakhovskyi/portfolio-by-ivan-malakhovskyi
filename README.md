@@ -77,5 +77,3 @@ The site supports multiple languages. To change the language, use the switch in 
 - **Email:** ivan.malakhovskyi.dev@gmail.com
 - **LinkedIn:** [Ivan Malakhovskyi](https://www.linkedin.com/in/ivan-malakhovskyi/)
 - **GitHub:** [Ivan-Malakhovskyi](https://github.com/Ivan-Malakhovskyi)
-
----
