@@ -6,6 +6,7 @@ import { createNavigation } from "next-intl/navigation";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Cookies from "js-cookie";
 
 const LanguageSwitcher = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,8 +25,8 @@ const LanguageSwitcher = () => {
   };
 
   const handleClickLanguage = (newLang: string) => {
+    Cookies.set("NEXT_LOCALE", newLang);
     setLanguage(newLang);
-
     const newPathname = `${newLang}${currentPath.replace(/^\/(en|uk)/, "")}`;
     router.push(newPathname);
   };

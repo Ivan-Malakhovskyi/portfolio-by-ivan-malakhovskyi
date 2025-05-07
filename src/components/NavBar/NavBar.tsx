@@ -13,6 +13,7 @@ const NavBar: FC = () => {
 
   useEffect(() => {
     const currentTheme = localStorage.getItem("theme");
+
     if (currentTheme === "system" || !currentTheme) {
       applySystemTheme();
       setActiveTheme("system");

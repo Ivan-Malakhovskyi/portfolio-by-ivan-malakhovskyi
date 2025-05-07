@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import "normalize.css/normalize.css";
-import Head from "next/head";
 
 const roboto = Roboto({
   weight: ["400", "500", "700", "900"],
@@ -24,7 +23,7 @@ async function RootLayout({
 }>) {
   return (
     <html lang="en" className={roboto.className}>
-      <Head>
+      <head>
         <title>Portfolio by Ivan Malakhovskyi</title>
         <meta
           name="description"
@@ -40,7 +39,7 @@ async function RootLayout({
         />
         <meta name="theme-color" content="hsl(24.3, 97.4%, 54.3%)" />
         <link rel="icon" href="/favicon/favicon.svg" />
-      </Head>
+      </head>
       <body className="bg-white dark:bg-black">{children}</body>
     </html>
   );
