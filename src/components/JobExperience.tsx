@@ -1,9 +1,9 @@
 "use client";
 
 import { FC } from "react";
-import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { container, item } from "@/constants/animations/animationStyles";
+import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
 
 interface IJobExperienceProps {

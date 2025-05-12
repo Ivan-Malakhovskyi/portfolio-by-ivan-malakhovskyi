@@ -22,7 +22,7 @@ export const containerVariants = {
 export const itemVariants = {
   hidden: {
     opacity: 0,
-    y: 15,
+    y: 20,
   },
   visible: {
     opacity: 1,
@@ -34,4 +34,4 @@ export const itemVariants = {
   },
 };
 
-export const transition = { duration: 1 };
+export const transition = { duration: 0.6, ease: "easeOut" };

@@ -1,24 +1,16 @@
 "use client";
 
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 import ImageComponent from "../global/ImageComponent";
 import Link from "next/link";
 import RolesList from "../RolesList";
 import { ProjectsListItemProps } from "@/types";
 import TechnoLogiesList from "../TechnoLogiesList";
-import { item, transition } from "@/constants/animations/animationStyles";
 
 const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
   const { id, title, toDo, description, img, role, workedOn, href } = project;
-
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
-
-  useEffect(() => {}, [inView]);
 
   if (!role) {
     return undefined;
@@ -28,15 +20,8 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
     <div
       key={id}
       className="grid grid-cols-1 md:grid-cols-2 items-center max-w-[1712px] gap-6 dark:bg-gray-900  bg-mainWhite shadow-xl rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300"
-      ref={ref}
     >
-      <motion.div
-        className="mb-4 "
-        variants={item}
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        transition={transition}
-      >
+      <motion.div className="mb-4 ">
         {" "}
         <h3 className="text-lg font-medium text-mainBlack dark:text-mainWhite mb-2 ">
           {title}
@@ -65,13 +50,18 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
       </motion.div>
 
       <motion.div
-        variants={item}
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        transition={transition}
+      // variants={item}
+      // initial="hidden"
+      // animate={inView ? "visible" : "hidden"}
+      // transition={transition}
       >
         {" "}
-        <Link href={href} key={id} ref={ref} className="w-full">
+        <Link
+          href={href}
+          key={id}
+          // ref={ref}
+          className="w-full"
+        >
           <ImageComponent
             className="w-auto h-auto object-cover"
             src={img}

@@ -3,14 +3,14 @@
 import { certificatesList } from "@/constants";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import certificate from "/public/images/certificate.jpg";
-import Image from "next/image";
-import { container, item } from "@/constants/animations/animationStyles";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
+
+import certificate from "/public/images/certificate.jpg";
+import { container, item } from "@/constants/animations/animationStyles";
 
 const CertificatesList = () => {
   const { ref, inView } = useInView({ threshold: 0.1 });
-
   return (
     <motion.ul
       className="flex items-center flex-col space-x-4"

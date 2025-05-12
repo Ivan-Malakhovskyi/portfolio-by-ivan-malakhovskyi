@@ -2,6 +2,8 @@
 
 import { FC, useState } from "react";
 import { useTranslations } from "next-intl";
+import { AnimatePresence } from "framer-motion";
+
 import MaxWidthWrapper from "../global/MaxWidthWrapper";
 import ProjectsList from "../global/ProjectsList";
 import { personalProjects } from "@/constants/personalProjects";
@@ -42,10 +44,12 @@ const Projects: FC = () => {
           />
 
           {teamFilter.length > 0 ? (
-            <ProjectsList
-              projects={teamFilter}
-              component={TeamProjectsListItem}
-            />
+            <AnimatePresence mode="wait">
+              <ProjectsList
+                projects={teamFilter}
+                component={TeamProjectsListItem}
+              />
+            </AnimatePresence>
           ) : (
             <p className="text-center font-medium text-mainBlack dark:text-mainGre">
               In progress
@@ -62,10 +66,12 @@ const Projects: FC = () => {
           />
 
           {personalFilter.length > 0 ? (
-            <ProjectsList
-              projects={personalFilter}
-              component={PersonalProjectListItem}
-            />
+            <AnimatePresence mode="wait">
+              <ProjectsList
+                projects={personalFilter}
+                component={PersonalProjectListItem}
+              />
+            </AnimatePresence>
           ) : (
             <p className="text-center font-medium text-mainBlack dark:text-mainGrey">
               In progress

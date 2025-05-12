@@ -6,15 +6,14 @@ import ImageComponent from "./global/ImageComponent";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
 
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { container, item } from "@/constants/animations/animationStyles";
 import { useTranslations } from "next-intl";
 import { IdentificationIcon } from "@heroicons/react/24/outline";
+import { useInView } from "react-intersection-observer";
 
 const About: FC = () => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
   const t = useTranslations("About");
-
+  const { ref, inView } = useInView({ threshold: 0.1 });
   return (
     <MaxWidthWrapper>
       <section id="about" className="pb-14">
