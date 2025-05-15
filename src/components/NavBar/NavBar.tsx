@@ -1,78 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
-import Navigation from "./Navigation";
+import { FC } from "react";
 import { useTranslations } from "next-intl";
 import { SunIcon } from "@heroicons/react/24/outline";
 import { MoonIcon } from "@heroicons/react/24/outline";
 
+import Navigation from "./Navigation";
+import { useTheme } from "@/hooks/useTheme";
+
 const NavBar: FC = () => {
-  const [activeTheme, setActiveTheme] = useState<string>("system");
   const t = useTranslations("Header");
-
-  useEffect(() => {
-    const currentTheme = localStorage.getItem("theme");
-
-    if (currentTheme === "system" || !currentTheme) {
-      applySystemTheme();
-      setActiveTheme("system");
-    } else {
-      applyTheme(currentTheme);
-      setActiveTheme(currentTheme);
-    }
-
-    const mediaQuery = window.matchMedia("(prefers-color-schema:dark)");
-
-    const handleSystemThemeChange = () => {
-      if (!currentTheme || currentTheme !== "system") {
-        applySystemTheme();
-      }
-    };
-
-    mediaQuery.addEventListener("change", handleSystemThemeChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleSystemThemeChange);
-    };
-  }, []);
-
-  const applyTheme = (theme: string) => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else if (theme === "light") {
-      document.documentElement.classList.remove("dark");
-    }
-  };
-
-  const handleThemeChange = (newTheme: string) => {
-    setActiveTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-
-    if (newTheme === "system") {
-      applySystemTheme();
-    } else {
-      applyTheme(newTheme);
-    }
-  };
-
-  const applySystemTheme = () => {
-    const systemPrefersDarkTheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-
-    if (systemPrefersDarkTheme) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  };
+  const { activeTheme, handleThemeChange } = useTheme();
 
   return (
     <div className="flex items-center gap-10 px-4">
       {" "}
-      <span className="">
-        <Link href="/" className="py-6 dark:text-mainWhite ">
+      <span>
+        <Link href={"/"} className="py-6 dark:text-mainWhite">
           {t("logo")}
         </Link>
       </span>

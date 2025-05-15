@@ -2,21 +2,22 @@
 
 import { FC } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+
+import { ProjectsListItemProps } from "@/types";
 
 import ImageComponent from "../global/ImageComponent";
-import { ProjectsListItemProps } from "@/types";
 import TechnoLogiesList from "../TechnoLogiesList";
+import LinkIcons from "./LinkIcons";
 
 const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
-  const { id, img, title, description, technologies, href } = project;
+  const { id, img, title, description, technologies, href, git } = project;
 
   return (
     <div
       key={id}
-      className="grid grid-cols-1 items-center md:grid-cols-2 gap-6 max-w-[1712px] bg-mainWhite dark:bg-gray-900 shadow-xl rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300"
+      className="relative group grid grid-cols-1 items-center md:grid-cols-2 gap-6 max-w-[1712px] bg-mainWhite dark:bg-gray-900 shadow-xl rounded-lg p-8 w-full "
     >
-      <motion.div className="w-full mb-4">
+      <motion.div className="w-full mb-4 ">
         {" "}
         <h3 className="text-lg font-medium text-mainBlack dark:text-mainWhite mb-2 ">
           {title}
@@ -32,16 +33,16 @@ const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
 
       <motion.div>
         {" "}
-        <Link href={href} className="w-full">
-          <ImageComponent
-            className="w-full h-auto object-cover"
-            src={img}
-            width={700}
-            height={700}
-            alt={title}
-          />
-        </Link>
+        <ImageComponent
+          className="w-full h-auto object-cover"
+          src={img}
+          width={700}
+          height={700}
+          alt={title}
+        />
       </motion.div>
+
+      <LinkIcons href={href} codeLink={git} />
     </div>
   );
 };

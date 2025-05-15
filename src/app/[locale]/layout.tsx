@@ -1,7 +1,5 @@
-import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
 import React from "react";
 import { cookies } from "next/headers";
 
@@ -21,6 +19,9 @@ const LocaleLayout: React.FC<ILocaleLayoutProps> = async ({ children }) => {
 
   return (
     <html lang={lang}>
+      <head>
+        <meta name="color-scheme" content="dark light" />
+      </head>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
