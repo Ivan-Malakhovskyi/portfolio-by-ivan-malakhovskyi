@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+
 import { socialLinks } from "../constants";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
-import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Footer = () => {
