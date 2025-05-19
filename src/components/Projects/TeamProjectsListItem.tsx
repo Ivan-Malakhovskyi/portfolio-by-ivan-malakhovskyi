@@ -1,25 +1,24 @@
 "use client";
 
+import Link from "next/link";
 import React, { FC } from "react";
 import { motion } from "framer-motion";
 
-import ImageComponent from "../global/ImageComponent";
-import Link from "next/link";
-import RolesList from "../RolesList";
 import { ProjectsListItemProps } from "@/types";
+
+import ImageComponent from "../global/ImageComponent";
+import RolesList from "../RolesList";
 import TechnoLogiesList from "../TechnoLogiesList";
+import LinkIcons from "./LinkIcons";
 
 const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
-  const { id, title, toDo, description, img, role, workedOn, href } = project;
-
-  if (!role) {
-    return undefined;
-  }
+  const { id, title, toDo, description, img, role, workedOn, href, git } =
+    project;
 
   return (
     <div
       key={id}
-      className="grid grid-cols-1 md:grid-cols-2 items-center max-w-[1712px] gap-6 dark:bg-gray-900  bg-mainWhite shadow-xl rounded-lg p-8 w-full hover:scale-95 transition ease-out duration-300"
+      className="relative group grid grid-cols-1 md:grid-cols-2 items-center max-w-[1712px] gap-6 dark:bg-gray-900  bg-mainWhite shadow-xl rounded-lg p-8 w-full hover:bg-gray-300  focus:bg-zinc-300 hover:dark:bg-gray-500 focus:dark:bg-gray-500 transition ease-out duration-300"
     >
       <motion.div className="mb-4 ">
         {" "}
@@ -28,7 +27,7 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
         </h3>
         <p className="text-accentGrey dark:text-mainGrey mb-2">{description}</p>
         <p className="text-mainBlack dark:text-mainWhite mb-2">
-          Role: <RolesList role={role} />
+          Role: <RolesList role={role!} />
         </p>
         <div className="flex items-start">
           {" "}
@@ -49,19 +48,9 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
         </div>
       </motion.div>
 
-      <motion.div
-      // variants={item}
-      // initial="hidden"
-      // animate={inView ? "visible" : "hidden"}
-      // transition={transition}
-      >
+      <motion.div>
         {" "}
-        <Link
-          href={href}
-          key={id}
-          // ref={ref}
-          className="w-full"
-        >
+        <Link href={href} key={id} className="w-full">
           <ImageComponent
             className="w-auto h-auto object-cover"
             src={img}
@@ -71,6 +60,8 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
           />
         </Link>
       </motion.div>
+
+      <LinkIcons href={href} codeLink={git} />
     </div>
   );
 };

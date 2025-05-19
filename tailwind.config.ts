@@ -6,7 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "selector",
+  darkMode: "class",
   theme: {
     extend: {
       boxShadow: {
@@ -18,9 +18,10 @@ const config: Config = {
         addBlack: "#060708",
         accentBlack: "#0e0f11",
         mainWhite: "#ffffff",
-        accentGrey: "#434455",
         mainGreen: "#1ed760",
         mainGrey: "#959595",
+        accentGrey: "#434455",
+        addGray: "rgba(0, 0, 0, 0.1)",
         mainBlue: "#4d5ae5",
         accentBlue: "#404bbf",
         addGreen: "#0e8538",

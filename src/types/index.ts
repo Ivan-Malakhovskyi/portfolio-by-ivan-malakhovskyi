@@ -12,6 +12,7 @@ export interface Project {
   id: number;
   href: string;
   title: string;
+  git: string;
   description: string;
   img: StaticImageData;
   role: string[] | null;
