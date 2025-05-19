@@ -5,7 +5,7 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
 import Image from "next/image";
-import copy from "/public/images/my_photo.webp";
+import copy from "/public/images/my_photo_1.jpg";
 import TypeWriterTextAnimation from "./global/TypeWriterTextAnimation";
 import {
   containerVariants,
@@ -77,7 +77,7 @@ const Hero: FC = () => {
             <li className="grid md:justify-end">
               {" "}
               <motion.div
-                className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] hidden md:block "
+                className="w-[250px] h-[250px] rounded-[50%] lg:w-[400px] lg:h-[400px] hidden md:block "
                 variants={containerVariants}
                 animate="visible"
                 initial="hidden"
@@ -86,10 +86,10 @@ const Hero: FC = () => {
                   {" "}
                   <Image
                     src={copy}
-                    width={395}
+                    width={300}
                     height={300}
                     alt="my_photo"
-                    className="rounded-full w-auto h-auto"
+                    className="rounded-[100%] overflow-hidden w-full h-full"
                     priority
                   />
                 </motion.div>
