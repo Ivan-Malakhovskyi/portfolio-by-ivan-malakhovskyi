@@ -1,5 +1,5 @@
-import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 type theme = "system" | "light" | "dark";
 

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 
-const config = {
+module.exports = {
   siteUrl: "https://portfolio-by-ivan-malakhovskyi.vercel.app/en",
   generateRobotsTxt: true,
   sitemapSize: 7000,
@@ -10,5 +10,3 @@ const config = {
     policies: [{ userAgent: "*", allow: "/" }],
   },
 };
-
-export default config;

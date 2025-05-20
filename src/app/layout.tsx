@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import "normalize.css/normalize.css";
-import Cookies from "js-cookie";
 import { cookies } from "next/headers";
 
 const roboto = Roboto({
@@ -26,7 +25,6 @@ async function RootLayout({
   const currTheme = cookies().get("theme")?.value;
 
   const isDark = currTheme === "dark";
-  const isLight = currTheme === "light";
 
   return (
     <html
