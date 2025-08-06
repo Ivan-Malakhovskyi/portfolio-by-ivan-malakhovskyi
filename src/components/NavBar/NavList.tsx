@@ -15,9 +15,9 @@ const NavList: React.FC<INavListProps> = ({ action }) => {
     { id: 1, title: t("about"), path: "#about" },
     { id: 2, title: t("experience"), path: "#experience" },
     { id: 3, title: t("certificates"), path: "#certificates" },
-    { id: 4, title: t("hard_skills"), path: "#hard_skills" },
-    { id: 5, title: t("soft_skills"), path: "#soft_skills" },
-    { id: 6, title: t("projects"), path: "#projects" },
+    { id: 4, title: t("skills"), path: "#skills" },
+    { id: 5, title: t("projects"), path: "#projects" },
+    { id: 6, title: t("get_in_touch"), path: "#get_in_touch" },
   ];
 
   const handleClick = (e: SyntheticEvent, path: string) => {

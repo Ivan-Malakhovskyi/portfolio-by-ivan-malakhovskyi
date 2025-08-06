@@ -30,6 +30,9 @@ const Skills = () => {
         >
           {t("title")}
         </h2>
+        <p className="text-mainBlack dark:text-mainGrey text-2xl text-center mb-6 capitalize">
+          {t("hard")}
+        </p>
         <motion.ul
           className="grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mb-6"
           variants={container}
@@ -57,12 +60,10 @@ const Skills = () => {
             </li>
           ))}
         </motion.ul>
-        <h2
-          id="soft_skills"
-          className="text-mainBlack dark:text-mainWhite text-3xl md:text-6xl font-bold text-center my-8"
-        >
-          {t("title_2")}
-        </h2>
+
+        <p className="text-mainBlack dark:text-mainGrey text-2xl text-center mb-6 capitalize">
+          {t("soft")}
+        </p>
         <motion.ul
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 mb-6"
           variants={container}

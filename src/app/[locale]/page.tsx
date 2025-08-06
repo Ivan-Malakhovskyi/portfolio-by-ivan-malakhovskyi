@@ -9,6 +9,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GetInTouch from "@/components/GetInTouch";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <Certificates />
         <Skills />
         <Projects />
+        <GetInTouch />
       </main>
       <BtnToTop />
       <Footer />

@@ -6,6 +6,7 @@ import webStudio from "/public/images/lending.jpg";
 import restaurantTestTask from "/public/images/restaurant_test_task.jpg";
 import contactsTestTask from "/public/images/contacts-test-task.jpg";
 import myportfolio from "/public/images/myportfolio.jpg";
+import frontendTestTask from "/public/images/test_task.webp";
 
 export const personalProjects = [
   {
@@ -113,7 +114,7 @@ export const personalProjects = [
     img: webStudio,
     role: null,
     workedOn: null,
-    technologies: ["HTML/CSS/JS", "SaSS", "Responsive design"],
+    technologies: ["HTML/CSS/JS", "Sass", "Responsive design"],
     toDo: null,
   },
   {
@@ -151,6 +152,19 @@ export const personalProjects = [
       "react-router",
       "Responsive design",
     ],
+    toDo: null,
+  },
+
+  {
+    id: 11,
+    href: "https://ivan-malakhovskyi.github.io/frontend-test-task/",
+    git: "https://github.com/Ivan-Malakhovskyi/frontend-test-task",
+    img: frontendTestTask,
+    title: "Sales Fortuna",
+    description: "Сustomer reviews page with reviews slider",
+    role: null,
+    workedOn: null,
+    technologies: ["JS", "Sass", "Swiper.js", "Responsive design", "Vite"],
     toDo: null,
   },
 ];

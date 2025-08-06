@@ -38,8 +38,9 @@
     "title": "Certificates"
   },
   "Skills": {
-    "title": "Hard skills",
-    "title_2": "Soft Skills",
+    "title": "Skills",
+    "hard": "Hard",
+    "soft": "Soft",
     "Communicative": "Communicative",
     "Being proactive": "Being proactive",
     "Problem solving": "Problem solving",
