@@ -8,9 +8,9 @@
     "about": "About",
     "experience": "Work experience",
     "certificates": "Certificates",
-    "hard_skills": "Hard skills",
-    "soft_skills": "Soft skills",
+    "skills": "Skills",
     "projects": "Projects",
+    "get_in_touch": "Get in touch",
     "os": "OS"
   },
   "Hero": {
@@ -51,6 +51,9 @@
     "title_add": "team projects",
     "text": "personal projects",
     "btn_filter": "All"
+  },
+  "GetInTouch": {
+    "title": "Get in touch"
   },
   "Footer": {
     "title": "Social",

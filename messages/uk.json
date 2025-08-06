@@ -8,9 +8,9 @@
     "about": "Про мене",
     "experience": "Досвід роботи",
     "certificates": "Сертифікати",
-    "hard_skills": "Технічні скіли",
-    "soft_skills": "Гнучкі скіли",
+    "skills": "Cкіли",
     "projects": "Проєкти",
+    "get_in_touch": "Зв'язатися",
     "os": "ОС"
   },
   "Hero": {
@@ -51,6 +51,9 @@
     "title_add": "командні проєкти",
     "text": "Особисті проєкти",
     "btn_filter": "Всі"
+  },
+  "GetInTouch": {
+    "title": "Зв'язатися"
   },
   "Footer": {
     "title": "Медіа",
