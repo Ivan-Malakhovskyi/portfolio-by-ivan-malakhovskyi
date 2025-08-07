@@ -1,44 +1,17 @@
-"use client";
-
 import React, { useRef, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { motion } from "framer-motion";
+import toast, { Toaster } from "react-hot-toast";
 import emailjs from "@emailjs/browser";
-
-const {
-  NEXT_PUBLIC_API_EMAILJS_PUBLIC_KEY,
-  NEXT_PUBLIC_API_EMAILJS_SERVICE_ID,
-  NEXT_PUBLIC_API_EMAILJS_TEMPLATE_ID,
-} = process.env;
-
-type IFormInput = {
-  name: string;
-  email: string;
-  message: string;
-};
+import { validationSchema } from "./validationSchema";
 
 const initialValues = {
   name: "",
   email: "",
   message: "",
 };
-
-const validationSchema = yup.object({
-  name: yup.string().required("Name is required"),
-  email: yup
-    .string()
-    .email()
-    .required("Email is required")
-    .matches(
-      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-      "Invalid email"
-    ),
-  message: yup
-    .string()
-    .required("Message is required")
-    .max(100, "Message must be less then 100 characters"),
-});
 
 type FormData = yup.InferType<typeof validationSchema>;
 
@@ -48,7 +21,7 @@ const Form = () => {
     register,
     reset,
     handleSubmit,
-  } = useForm<IFormInput>({
+  } = useForm<FormData>({
     defaultValues: initialValues,
     resolver: yupResolver(validationSchema),
   });
@@ -56,35 +29,48 @@ const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const form = useRef(null);
+  console.log(form.current);
 
-  const onSubmit: SubmitHandler<IFormInput> = async (data: FormData) => {
+  const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
+    const botField = new FormData(form.current!).get("Bot");
+    if (botField) {
+      return;
+    }
+
     try {
       console.log(data);
 
       setIsLoading(true);
-
       const resp = await emailjs.sendForm(
-        NEXT_PUBLIC_API_EMAILJS_SERVICE_ID!,
-        NEXT_PUBLIC_API_EMAILJS_TEMPLATE_ID!,
+        process.env.NEXT_PUBLIC_API_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_API_EMAILJS_TEMPLATE_ID!,
         form.current!,
         {
-          publicKey: NEXT_PUBLIC_API_EMAILJS_PUBLIC_KEY!,
+          publicKey: process.env.NEXT_PUBLIC_API_EMAILJS_PUBLIC_KEY!,
         }
       );
 
+      toast.success("Your message was successfully sent.");
+      reset();
       return resp;
     } catch (error) {
       console.log(error);
+      toast.error("Something went wrong");
     } finally {
       setIsLoading(false);
     }
   };
 
   return (
-    <form
+    <motion.form
       ref={form}
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full bg-mainWhite dark:bg-transparent dark:bg-linear-to-b dark:from-accentBgGrey dark:to-mainBlack rounded-xl max-w-[500px] mx-auto "
+      className="w-full  rounded-xl max-w-[500px] mx-auto "
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      viewport={{ amount: 0.4 }}
+      exit={{ opacity: 0, transition: { duration: 0.3, ease: "easeOut" } }}
     >
       <h2 className="text-center text-2xl font-bold mb-6 text-gray-800 dark:text-white">
         Get in Touch
@@ -144,6 +130,11 @@ const Form = () => {
         )}
       </div>
 
+      <div className="hidden">
+        <label htmlFor="Bot">Bot</label>
+        <input type="text" id="Bot" name="Bot" autoComplete="off" />
+      </div>
+
       <button
         type="submit"
         className="w-full bg-accentBlack dark:bg-mainBlue text-mainWhite font-semibold p-4 rounded-full dark:hover:bg-accentBlue hover:bg-slate-700 focus:bg-slate-700 transition ease-out focus:outline-none focus:ring-2 dark:focus:ring-accentBlue disabled:bg-gray-400 disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-70"
@@ -151,7 +142,9 @@ const Form = () => {
       >
         {isLoading ? "Loading" : "Submit"}
       </button>
-    </form>
+
+      <Toaster />
+    </motion.form>
   );
 };
 

@@ -1,10 +1,10 @@
 "use client";
 
 import { FC, useEffect, SyntheticEvent } from "react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import { IModalProps } from "./Modal.types";
 import Backdrop from "./BackDrop";
 import ModalContent from "./ModalContent";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const Modal: FC<IModalProps> = ({ close, children }) => {
   useEffect(() => {
@@ -36,7 +36,7 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
         <button
           type="button"
           onClick={close}
-          className="text-gray-600 dark:text-mainWhite absolute top-5 right-5"
+          className={`top-5 right-5 text-gray-600 dark:text-mainWhite absolute `}
         >
           <XMarkIcon
             width={40}

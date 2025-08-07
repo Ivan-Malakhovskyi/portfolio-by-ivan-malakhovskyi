@@ -2,6 +2,7 @@
 
 import React, { FC, useEffect, useState } from "react";
 import NavBar from "./NavBar";
+import MaxWidthWrapper from "./global/MaxWidthWrapper";
 
 const Header: FC = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -28,7 +29,9 @@ const Header: FC = () => {
         ${visible ? "transform translate-y-0" : "-translate-y-full"}
         `}
     >
-      <NavBar />
+      <MaxWidthWrapper>
+        <NavBar />
+      </MaxWidthWrapper>
     </header>
   );
 };

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import CertificatesList from "./CertificatesList";
-import MaxWidthWrapper from "../global/MaxWidthWrapper";
 import { useTranslations } from "next-intl";
+import MaxWidthWrapper from "../global/MaxWidthWrapper";
 
 const Certificates: FC = () => {
   const t = useTranslations("Certificates");

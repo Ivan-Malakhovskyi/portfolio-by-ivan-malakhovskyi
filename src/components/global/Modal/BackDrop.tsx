@@ -25,12 +25,14 @@ interface BackdropProps {
   onClick: (e: SyntheticEvent) => void;
   children: ReactNode;
   maxheight?: string;
+  className?: string;
 }
 
 const Backdrop: React.FC<BackdropProps> = ({
   onClick,
   children,
   maxheight,
+  className,
 }) => {
   return (
     <motion.div
@@ -38,7 +40,7 @@ const Backdrop: React.FC<BackdropProps> = ({
       initial="hidden"
       animate="visible"
       exit="exit"
-      className=" backdrop-blur-lg fixed top-0 left-0 overflow-y-auto bg-white dark:bg-mainBlack w-screen h-screen flex justify-center items-center  backdrop-filter  backdrop-grayscale backdrop-contrast-200 "
+      className="backdrop-blur-lg dark:bg-transparent dark:bg-gradient-to-b dark:from-gray-900  dark:to-mainBlack  bg-white  fixed top-0 left-0 overflow-y-auto   w-screen h-screen flex justify-center items-center  backdrop-filter  backdrop-grayscale backdrop-contrast-200"
       onClick={onClick}
       style={{ maxHeight: maxheight, zIndex: "10000" }}
     >

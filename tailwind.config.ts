@@ -21,6 +21,7 @@ const config: Config = {
         mainGreen: "#1ed760",
         mainGrey: "#959595",
         accentGrey: "#434455",
+        secondaryGrey: "rgba(46,47,66,.8)",
         addGray: "rgba(0, 0, 0, 0.1)",
         accentBgGrey: "#ffffff1a",
         mainBlue: "#4d5ae5",

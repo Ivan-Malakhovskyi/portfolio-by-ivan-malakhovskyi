@@ -14,7 +14,7 @@ const NavBar: FC = () => {
   const { activeTheme, handleThemeChange } = useTheme();
 
   return (
-    <div className="flex items-center gap-10 px-4">
+    <div className="flex items-center gap-10">
       {" "}
       <span>
         <Link href={"/"} className="py-6 dark:text-mainWhite">
