@@ -18,13 +18,16 @@ const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
 
   const handleFilter = (technology: string) => {
     setActive(technology);
-
     if (technology === t("btn_filter")) {
       setFilteredProjects(projects);
     } else {
-      const filtered = projects.filter((project) =>
-        project.technologies?.includes(technology)
-      );
+      const filtered = projects.filter((project) => {
+        if (technology === "Backend") {
+          return project.technologies?.includes("Node.js");
+        }
+
+        return project.technologies?.includes(technology);
+      });
 
       setFilteredProjects(filtered);
     }

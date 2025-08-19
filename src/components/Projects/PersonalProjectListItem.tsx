@@ -11,7 +11,6 @@ import LinkIcons from "./LinkIcons";
 
 const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
   const { id, img, title, description, technologies, href, git } = project;
-
   return (
     <div
       key={id}

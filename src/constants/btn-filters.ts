@@ -8,4 +8,9 @@ export const filterTechnologies = [
     name: "TechStop",
     technologies: ["Next.js", "TypeScript", "Zustand"],
   },
+  {
+    id: 6,
+    name: "Contacts service",
+    technologies: ["TypeScript", "Node.js", "MongoDB", "Docker"],
+  },
 ];

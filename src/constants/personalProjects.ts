@@ -7,6 +7,7 @@ import restaurantTestTask from "/public/images/restaurant_test_task.jpg";
 import contactsTestTask from "/public/images/contacts-test-task.jpg";
 import myportfolio from "/public/images/myportfolio.jpg";
 import frontendTestTask from "/public/images/test_task.webp";
+import restAPI from "/public/images/rest_api.webp";
 
 export const personalProjects = [
   {
@@ -154,7 +155,6 @@ export const personalProjects = [
     ],
     toDo: null,
   },
-
   {
     id: 11,
     href: "https://ivan-malakhovskyi.github.io/frontend-test-task/",
@@ -165,6 +165,26 @@ export const personalProjects = [
     role: null,
     workedOn: null,
     technologies: ["JS", "Sass", "Swiper.js", "Responsive design", "Vite"],
+    toDo: null,
+  },
+  {
+    id: 12,
+    href: "https://contacts-service-v-2.onrender.com/api-docs/",
+    git: "https://github.com/Ivan-Malakhovskyi/contacts_rest_api",
+    img: restAPI,
+    title: "Contacts service",
+    description:
+      "A RESTful API for managing contacts with user authentication, email verification, and profile management features. Built with Node.js, Express, and MongoDB.",
+    role: null,
+    workedOn: null,
+    technologies: [
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Docker",
+      "JWT",
+    ],
     toDo: null,
   },
 ];
