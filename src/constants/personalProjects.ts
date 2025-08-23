@@ -183,7 +183,7 @@ export const personalProjects = [
       "Express.js",
       "MongoDB",
       "Docker",
-      "JWT",
+      "Swagger",
     ],
     toDo: null,
   },
