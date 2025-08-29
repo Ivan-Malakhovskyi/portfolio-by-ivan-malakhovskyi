@@ -25,7 +25,7 @@ const Header: FC = () => {
 
   return (
     <header
-      className={`backdrop-blur-xl text-mainBlack shadow-md fixed z-50 w-full top-0 transition-transform duration-300 
+      className={`backdrop-blur-xl bg-mainWhite dark:bg-mainBlack text-mainBlack shadow-md fixed z-50 w-full top-0 transition-transform duration-300 
         ${visible ? "transform translate-y-0" : "-translate-y-full"}
         `}
     >

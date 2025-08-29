@@ -51,12 +51,12 @@ const Projects: FC = () => {
               />
             </AnimatePresence>
           ) : (
-            <p className="text-center font-medium text-mainBlack dark:text-mainGre">
+            <p className="text-center font-medium text-mainBlack dark:text-mainWhite">
               In progress
             </p>
           )}
 
-          <p className="text-mainBlack text-2xl capitalize text-center mt-10 mb-6   ">
+          <p className="dark:text-mainGrey text-mainBlack text-2xl capitalize text-center mt-10 mb-6   ">
             {t("text")}
           </p>
 
