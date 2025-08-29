@@ -45,7 +45,7 @@ async function RootLayout({
           name="keywords"
           content="Frontend developer, Full Stack, MERN, HTML5, CSS3, Sass, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Redux, Zustand, Firebase, Node.js, Express.js, MongoDB, Postman, Figma, Pixso, Vinnytsia, Ivan Malakhovskyi"
         />
-        <meta name="theme-color" content="hsl(24.3, 97.4%, 54.3%)" />
+        <meta name="theme-color" className="bg-mainWhite dark:bg-mainBlack" />
         <meta name="color-scheme" content="dark light" />
         <link rel="icon" href="/favicon/favicon.svg" />
       </head>
