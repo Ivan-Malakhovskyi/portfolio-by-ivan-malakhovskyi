@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 import NavList from "./NavList";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 
-const Modal = dynamic(() => import("../global/Modal"));
+const Modal = dynamic(() => import("../global/Modal"), { ssr: false });
 
 const Navigation: FC = () => {
   const [showModal, setShowModal] = useState(false);
