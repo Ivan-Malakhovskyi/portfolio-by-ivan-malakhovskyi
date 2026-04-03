@@ -1,10 +1,10 @@
 "use client";
 
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
+import { useTranslations } from "next-intl";
 
 import { technologies } from "@/constants/technologies";
 import { Project } from "@/types";
-import { useTranslations } from "next-intl";
 
 interface IBtnFilterProps {
   projects: Project[];
@@ -12,12 +12,9 @@ interface IBtnFilterProps {
 }
 
 const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
-  const [active, setActive] = useState<string | null>(null);
-
   const t = useTranslations("Projects");
 
   const handleFilter = (technology: string) => {
-    setActive(technology);
     if (technology === t("btn_filter")) {
       setFilteredProjects(projects);
     } else {
@@ -34,13 +31,10 @@ const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
   };
 
   return (
-    <ul className="grid md:grid-cols-3 lg:grid-cols-5 sm:grid-cols-2 gap-2 grid-cols-1  justify-center items-center mb-10">
+    <ul className="grid md:grid-cols-4 lg:grid-cols-5 sm:grid-cols-3 gap-2 grid-cols-2  justify-center items-center mb-10">
       <li className="grid">
-        {" "}
         <button
-          className={`${
-            active === t("btn_filter") ? "ring-4 ring-yellow-400" : ""
-          } dark:bg-mainBlack text-mainBlack dark:text-mainWhite px-4 py-2 border-2 border-mainBlack border-solid rounded-full transform transition-transform duration-300 dark:border-mainWhite dark:focus:border-mainBlack focus:border-mainBlack hover:-translate-y-1 active:translate-y-0`}
+          className="dark:bg-mainBlack text-mainBlack dark:text-mainWhite md:px-4 md:py-2 sm:text-base text-xs px-1 py-1 border-2 dark:focus:border-mainWhite focus:border-4 focus:border-mainWhite border-mainBlack border-solid rounded-full transform transition-transform duration-300 dark:border-mainWhite  hover:-translate-y-1 active:translate-y-0"
           onClick={() => handleFilter(t("btn_filter"))}
         >
           {t("btn_filter")}
@@ -51,9 +45,7 @@ const BtnFilter: FC<IBtnFilterProps> = ({ projects, setFilteredProjects }) => {
           <button
             onClick={() => handleFilter(technologyName)}
             type="button"
-            className={`${
-              active === technologyName ? "ring-4 ring-yellow-400" : ""
-            } dark:bg-mainBlack text-mainBlack dark:text-mainWhite px-4 py-2 border-2 border-solid dark:border-mainWhite border-mainBlack rounded-full transform transition-transform duration-300 dark:focus:border-mainWhite focus:border-mainBlack hover:-translate-y-1 active:translate-y-0`}
+            className="dark:bg-mainBlack text-mainBlack dark:text-mainWhite md:px-4 md:py-2 sm:text-base text-xs px-1 py-1 border-2 border-solid dark:border-mainWhite border-mainBlack rounded-full transform transition-transform duration-300 dark:focus:border-mainWhite focus:border-4 focus:border-mainWhite hover:-translate-y-1 active:translate-y-0"
           >
             {technologyName}
           </button>

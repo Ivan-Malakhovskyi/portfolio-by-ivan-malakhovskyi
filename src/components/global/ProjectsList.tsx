@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import { IProjectsListProps } from "@/types";
 import { motion } from "framer-motion";
+import { IProjectsListProps } from "@/types";
 
 const ProjectsList: FC<IProjectsListProps> = ({
   projects,

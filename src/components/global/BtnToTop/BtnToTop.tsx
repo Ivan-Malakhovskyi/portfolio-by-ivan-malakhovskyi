@@ -38,13 +38,3 @@ const BtnToTop: FC = () => {
 };
 
 export default BtnToTop;
-
-// export interface TopLevel {
-//   navigation: Navigation[];
-// }
-
-// export interface Navigation {
-//   id: number;
-//   title: string;
-//   path: string;
-// }

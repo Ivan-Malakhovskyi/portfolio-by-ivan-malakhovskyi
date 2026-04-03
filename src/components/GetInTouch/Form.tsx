@@ -29,7 +29,6 @@ const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const form = useRef(null);
-  console.log(form.current);
 
   const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
     const botField = new FormData(form.current!).get("Bot");
@@ -38,8 +37,6 @@ const Form = () => {
     }
 
     try {
-      console.log(data);
-
       setIsLoading(true);
       const resp = await emailjs.sendForm(
         process.env.NEXT_PUBLIC_API_EMAILJS_SERVICE_ID!,
@@ -47,7 +44,7 @@ const Form = () => {
         form.current!,
         {
           publicKey: process.env.NEXT_PUBLIC_API_EMAILJS_PUBLIC_KEY!,
-        }
+        },
       );
 
       toast.success("Your message was successfully sent.");
