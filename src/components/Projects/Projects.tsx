@@ -15,7 +15,7 @@ import { Project } from "@/types";
 
 const Projects: FC = () => {
   const [personalFilter, setPersonalFilter] = useState<Project[] | []>(
-    personalProjects
+    personalProjects,
   );
   const [teamFilter, setTeamFilter] = useState<Project[] | []>(teamProjects);
 
@@ -56,7 +56,7 @@ const Projects: FC = () => {
             </p>
           )}
 
-          <p className="dark:text-mainGrey text-mainBlack text-2xl capitalize text-center mt-10 mb-6   ">
+          <p className="text-mainBlack text-2xl capitalize text-center mt-10 mb-6">
             {t("text")}
           </p>
 

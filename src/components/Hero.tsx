@@ -18,7 +18,7 @@ const Hero: FC = () => {
   const text = t("text_main");
 
   return (
-    <div className="dark:bg-[url(../../public/images/bg_hero.webp)] py-8 bg-[url(../../public/images/bg_hero_white.webp)]  bg-cover bg-no-repeat bg-center">
+    <div className="dark:bg-none py-8 bg-[url(../../public/images/bg_hero_white.webp)]  bg-cover bg-no-repeat bg-center">
       <MaxWidthWrapper>
         <section className="py-20 ">
           <TypeWriterTextAnimation
