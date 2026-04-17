@@ -1,8 +1,6 @@
 "use client";
 
 import { FC } from "react";
-import people from "/public/icons/people_alt.svg";
-import ImageComponent from "./global/ImageComponent";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
 
 import { motion } from "framer-motion";
@@ -36,9 +34,11 @@ const About: FC = () => {
             {" "}
             <h3 className="text-mainBlack dark:text-mainWhite font-semibold  text-3xl">
               {" "}
-              <div className="mb-4 flex">
+              <div className="mb-4 flex items-center">
                 <IdentificationIcon className="size-10 text-mainBlack dark:text-mainWhite" />
-                <span className="ml-4">{t("summary")}</span>
+                <span className="ml-4 text-base font-medium md:text-lg lg:text-2xl">
+                  {t("summary")}
+                </span>
               </div>
             </h3>
             <p className="text-accentGrey dark:text-mainGrey   text-base md:text-xl lg:text-2xl">

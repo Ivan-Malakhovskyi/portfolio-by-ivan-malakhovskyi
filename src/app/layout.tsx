@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import "normalize.css/normalize.css";
 import { cookies } from "next/headers";
 
-const roboto = Roboto({
+const roboto = Inter({
   weight: ["400", "500", "700", "900"],
   subsets: ["latin"],
 });

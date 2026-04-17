@@ -4,8 +4,9 @@ export interface TechnoLogiesListProps {
   workedOn: string[] | null;
 }
 
-export interface RolesListProps {
-  role: string[];
+export interface ListBadgesProps {
+  list: string[];
+  title: string;
 }
 
 export interface Project {

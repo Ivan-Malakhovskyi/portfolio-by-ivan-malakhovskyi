@@ -25,7 +25,7 @@ const ImageComponent: FC<IImageComponentProps> = ({
       alt={alt}
       width={width}
       height={height}
-      className={`${className} rounded-md`}
+      className={`${className} `}
     />
   );
 };

@@ -10,14 +10,14 @@
     "certificates": "Сертифікати",
     "skills": "Cкіли",
     "projects": "Проєкти",
-    "get_in_touch": "Зв'язатися",
-    "os": "ОС"
+    "get_in_touch": "Зв'язатися"
   },
   "Hero": {
     "text_add": "Вітаю, мене звати",
     "text_main": "Іван Малаховський, мотивований Full Stack Developer з України, Вінниця",
-    "summary": "Я Full Stack Developer. Нещодавно я успішно завершив комерційний проект ",
-    "summary_add": "компанії Team Challenge. Наразі я працюю на позиції фронтенд розробника в компанії Talent Bay та готовий до нових можливостей.",
+    "summary": "Я Full Stack Developer. Нещодавно я ",
+    "main_title": "успішно завершив комерційний проєкт",
+    "summary_add": "Online-store - marketplace компанії Team Challenge. Наразі я працюю на позиції фронтенд розробника в компанії Talent Bay та готовий до нових можливостей.",
     "btn_hire": "Найняти мене",
     "btn_download": "Завантажити резюме"
   },

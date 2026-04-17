@@ -10,14 +10,14 @@
     "certificates": "Certificates",
     "skills": "Skills",
     "projects": "Projects",
-    "get_in_touch": "Get in touch",
-    "os": "OS"
+    "get_in_touch": "Get in touch"
   },
   "Hero": {
     "text_add": "Hey there, my name is",
     "text_main": "Ivan Malakhovskyi Enthusiastic Full Stack Developer from Ukraine, Vinnytsia",
-    "summary": "I am a Full Stack Developer. Recently I am a successfully completed commercial project ",
-    "summary_add": "at company Team Challenge. I am currently working as a frontend developer at Talent Bay and am ready for new opportunities.",
+    "summary": "I am a Full Stack Developer. Recently I am a ",
+    "main_title": "successfully completed commercial project",
+    "summary_add": " Online store - marketplace at company Team Challenge. I am currently working as a frontend developer at Talent Bay and am ready for new opportunities.",
     "btn_hire": "Hire me",
     "btn_download": "Download CV"
   },

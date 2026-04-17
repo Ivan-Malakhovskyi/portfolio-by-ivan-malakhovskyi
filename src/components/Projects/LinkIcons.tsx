@@ -1,4 +1,4 @@
-import { CodeBracketIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
+import { CommandLineIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -10,11 +10,11 @@ interface ILinkIconsProps {
 const listIcons = [
   {
     id: 1,
-    Component: CodeBracketIcon,
+    Component: CommandLineIcon,
   },
   {
     id: 2,
-    Component: GlobeAltIcon,
+    Component: EyeIcon,
   },
 ];
 
@@ -25,9 +25,10 @@ const LinkIcons: FC<ILinkIconsProps> = ({ href, codeLink }) => (
       <Link
         key={id}
         href={!href.includes("github.com") && id !== 1 ? href : codeLink}
+        target="_blank"
         className="text-black hover:scale-110  transition ease-out duration-300"
       >
-        <Component className=" dark:text-mainWhite" width={40} height={40} />
+        <Component className="dark:text-mainWhite" width={28} height={28} />
       </Link>
     ))}
   </div>

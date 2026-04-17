@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
+import { useTheme } from "next-themes";
 
 type theme = "system" | "light" | "dark";
 
-export const useTheme = () => {
+export const useThemeSwitcher = () => {
+  //! do animate theme change
+  const { theme, setTheme } = useTheme();
+
   const [activeTheme, setActiveTheme] = useState<theme>("system");
 
   useEffect(() => {
@@ -57,7 +61,7 @@ export const useTheme = () => {
 
   const applySystemTheme = () => {
     const systemPrefersDarkTheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
+      "(prefers-color-scheme: dark)",
     ).matches;
 
     if (systemPrefersDarkTheme) {
