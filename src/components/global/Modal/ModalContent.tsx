@@ -7,7 +7,11 @@ interface ModalContentProps {
 
 const ModalContent: React.FC<ModalContentProps> = ({ children, maxwidth }) => {
   return (
-    <div style={{ maxWidth: maxwidth }} onClick={(e) => e.stopPropagation()}>
+    <div
+      className="p-4 ml-auto bg-slate-500 w-[90%]"
+      style={{ maxWidth: maxwidth }}
+      onClick={(e) => e.stopPropagation()}
+    >
       {children}
     </div>
   );

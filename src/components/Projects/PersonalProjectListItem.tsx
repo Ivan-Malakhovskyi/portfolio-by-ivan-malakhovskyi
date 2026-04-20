@@ -8,14 +8,14 @@ import ImageComponent from "../global/ImageComponent";
 import LinkIcons from "./LinkIcons";
 
 const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
-  const { id, img, title, description, technologies, href, git } = project;
+  const { id, img, title, description, href, git } = project;
   return (
     <div
       key={id}
-      className="relative max-w-[1712px] rounded-2xl w-full  overflow-hidden"
+      className="relative max-w-[1712px] w-full overflow-hidden p-4 md:p-5 dark:p-0 rounded-card"
     >
       <ImageComponent
-        className="w-full  mb-1 h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
+        className="w-full mb-1 h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
         src={img}
         width={700}
         height={700}

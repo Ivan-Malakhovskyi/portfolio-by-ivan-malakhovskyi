@@ -1,9 +1,9 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
 import JobExperience from "./JobExperience";
 
 import { experiences } from "@/constants";
-import { useTranslations } from "next-intl";
 
 const Experience = () => {
   const t = useTranslations("WorkExperience");

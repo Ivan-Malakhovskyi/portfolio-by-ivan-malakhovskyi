@@ -15,10 +15,10 @@ const TeamProjectsListItem: FC<ProjectsListItemProps> = ({ project }) => {
   return (
     <div
       key={id}
-      className="relative group max-w-[1712px] rounded-2xl w-full  overflow-hidden"
+      className="relative group max-w-[1712px] w-full overflow-hidden p-4 md:p-5 rounded-card"
     >
       <ImageComponent
-        className="w-full  mb-1 h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
+        className="w-full mb-1 h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
         src={img}
         width={700}
         height={700}

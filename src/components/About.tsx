@@ -26,7 +26,7 @@ const About: FC = () => {
           ref={ref}
         >
           <motion.li
-            className="dark:border dark:border-addBlack p-10 rounded-lg dark:bg-gray-900 shadow-2xl mb-10"
+            className="dark:border dark:border-bgGrey rounded-card p-10 dark:bg-transparent shadow-2xl mb-10"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={item}
@@ -41,7 +41,7 @@ const About: FC = () => {
                 </span>
               </div>
             </h3>
-            <p className="text-accentGrey dark:text-mainGrey   text-base md:text-xl lg:text-2xl">
+            <p className="text-bgGrey font-medium text-base md:text-xl lg:text-2xl">
               {t("text")}
             </p>
           </motion.li>

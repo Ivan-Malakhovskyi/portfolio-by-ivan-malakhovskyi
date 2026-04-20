@@ -1,6 +1,6 @@
-import { CommandLineIcon, EyeIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 import { FC } from "react";
+import Link from "next/link";
+import { CommandLineIcon, EyeIcon } from "@heroicons/react/24/outline";
 
 interface ILinkIconsProps {
   href: string;
@@ -19,7 +19,7 @@ const listIcons = [
 ];
 
 const LinkIcons: FC<ILinkIconsProps> = ({ href, codeLink }) => (
-  <div className="absolute opacity-0 inset-0 flex items-center justify-center gap-4 group-hover:opacity-100 group-focus:opacity-100  transition ease-out duration-300  hover:bg-addGray rounded-md backdrop-blur-sm  focus:bg-addGray hover:dark:bg-addGray focus:dark:bg-addGray ">
+  <div className="absolute opacity-0 inset-0 flex items-center justify-center gap-4 group-hover:opacity-100 group-focus:opacity-100 transition ease-out duration-300 hover:bg-addGray rounded-md backdrop-blur-sm hover:dark:bg-addGray">
     {" "}
     {listIcons.map(({ Component, id }) => (
       <Link
@@ -28,7 +28,7 @@ const LinkIcons: FC<ILinkIconsProps> = ({ href, codeLink }) => (
         target="_blank"
         className="text-black hover:scale-110  transition ease-out duration-300"
       >
-        <Component className="dark:text-mainWhite" width={28} height={28} />
+        <Component className="fill-mainWhite" width={28} height={28} />
       </Link>
     ))}
   </div>

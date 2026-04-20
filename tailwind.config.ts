@@ -1,3 +1,5 @@
+import "tailwindcss";
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -12,6 +14,9 @@ const config: Config = {
       boxShadow: {
         custom: " 0 0 10px #9333EA",
       },
+      borderRadius: {
+        card: "2.5rem",
+      },
       colors: {
         mainBlack: "#000000",
         accentWhite: "#f1e7ff",
@@ -25,6 +30,7 @@ const config: Config = {
         accentGrey: "#434455",
         secondaryGrey: "rgba(46,47,66,.8)",
         addGray: "rgba(0, 0, 0, 0.1)",
+        accentDark: "#00000080",
         accentBgGrey: "#ffffff1a",
         mainBlue: "#4d5ae5",
         accentBlue: "#404bbf",

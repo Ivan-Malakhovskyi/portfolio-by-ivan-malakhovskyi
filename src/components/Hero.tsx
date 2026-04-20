@@ -23,7 +23,7 @@ const Hero: FC = () => {
         <TypeWriterTextAnimation
           text={t("text_add")}
           tag="h2"
-          className="dark:text-mainWhite text-mainBlack mb-8 max-w-none"
+          className="dark:text-mainWhite text-mainBlack mb-8 max-w-none font-medium"
         />
         <ul className="grid md:grid-cols-2 md:gap-6 items-center">
           <li>
@@ -56,7 +56,7 @@ const Hero: FC = () => {
               >
                 <Link
                   href="mailto:ivanmalahovskij121@gmail.com"
-                  className="text-mainWhite dark:text-mainBlack grid items-center text-center bg-slate-900 dark:bg-mainGreen  px-12 py-4  rounded-full hover:bg-slate-700 focus:bg-slate-700 dark:hover:bg-addGreen dark:focus:bg-addGreen transition ease-out duration-300 "
+                  className="text-mainWhite px-12 py-4  dark:text-mainBlack grid items-center text-center text-base font-medium bg-slate-900 dark:bg-mainGreen  rounded-full hover:bg-slate-700 focus:bg-slate-700 dark:hover:bg-addGreen dark:focus:bg-addGreen transition ease-out duration-300 "
                 >
                   {t("btn_hire")}
                 </Link>
@@ -66,7 +66,7 @@ const Hero: FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="/Ivan_Malakhovskyi_Full_Stack_Developer.pdf"
-                  className="text-mainBlack dark:text-mainWhite  grid items-center text-center  px-12 py-4 rounded-full dark:bg-mainBlack border-[2px] border-solid border-mainBlack dark:border-mainWhite hover:shadow-2xl hover:border-transparent  focus:shadow-2xl focus:border-transparent dark:hover:bg-gray-400 dark:focus:bg-gray-400 transition ease-out duration-300 "
+                  className="text-mainBlack dark:text-mainWhite  grid items-center text-center text-base px-12 py-4 font-medium rounded-full dark:bg-mainBlack border-[2px] border-solid border-mainBlack dark:border-mainWhite hover:shadow-2xl hover:border-transparent  focus:shadow-2xl focus:border-transparent dark:hover:bg-gray-400 dark:focus:bg-gray-400 transition ease-out duration-300 "
                 >
                   {t("btn_download")}
                 </Link>

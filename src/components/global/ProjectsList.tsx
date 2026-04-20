@@ -7,11 +7,11 @@ const ProjectsList: FC<IProjectsListProps> = ({
   component: Component,
 }) => {
   return (
-    <ul className="grid  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-center gap-6  ">
+    <ul className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-center gap-6">
       {projects.map((project) => (
         <motion.li
           key={project.id}
-          className="grid grid-cols-1 gap-3 cursor-pointer group"
+          className="grid grid-cols-1 gap-3 cursor-pointer group dark:shadow-none shadow-lg rounded-card"
           initial={{ opacity: 0, height: "auto" }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: "easeOut" }}

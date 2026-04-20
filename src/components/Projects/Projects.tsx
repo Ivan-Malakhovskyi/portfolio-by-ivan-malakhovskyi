@@ -26,7 +26,7 @@ const Projects: FC = () => {
       <section id="projects" className="py-40">
         <div>
           {" "}
-          <p className="text-mainBlack dark:text-mainGrey text-2xl uppercase text-center mb-4">
+          <p className="text-bgGrey font-medium text-2xl uppercase text-center mb-4">
             Frontend | Backend
           </p>
           <h2 className="text-mainBlack dark:text-mainWhite text-3xl font-semibold text-center md:text-6xl mb-4 capitalize">

@@ -30,7 +30,7 @@ const Skills = () => {
         >
           {t("title")}
         </h2>
-        <p className="text-mainBlack dark:text-mainGrey text-2xl text-center mb-6 capitalize">
+        <p className="text-bgGrey font-medium text-2xl text-center mb-6 capitalize">
           {t("hard")}
         </p>
         <motion.ul
@@ -43,7 +43,7 @@ const Skills = () => {
           {hardSkills.map(({ name, icon }, index) => (
             <li
               key={index}
-              className="w-full bg-white dark:bg-mainBlack shadow-xl rounded-lg p-6 hover:scale-105 focus:scale-110 transition ease-out duration-300 "
+              className="w-full rounded-card p-6 hover:scale-105 transition ease-out duration-300 cursor-pointer"
             >
               <motion.div
                 className="flex  justify-center items-center flex-col"
@@ -61,7 +61,7 @@ const Skills = () => {
           ))}
         </motion.ul>
 
-        <p className="text-mainBlack dark:text-mainGrey text-2xl text-center mb-6 capitalize">
+        <p className="text-bgGrey font-medium text-2xl text-center mb-6 capitalize">
           {t("soft")}
         </p>
         <motion.ul
@@ -74,7 +74,7 @@ const Skills = () => {
           {softSkills.map(({ name, Icon }, index) => (
             <li
               key={index}
-              className="bg-mainWhite dark:bg-mainBlack shadow-xl rounded-lg p-6 hover:scale-105 focus:scale-110 transition ease-out duration-300"
+              className="rounded-lg p-6 hover:scale-105 transition ease-out duration-300 cursor-pointer"
             >
               <motion.div
                 className="flex  justify-center items-center flex-col"
@@ -83,7 +83,7 @@ const Skills = () => {
                 variants={item}
               >
                 {" "}
-                <Icon className="size-16 text-mainBlack dark:text-mainWhite" />
+                <Icon className="size-16 text-mainBlack dark:text-mainWhite hover:fill-slate-500" />
                 <h3 className="text-xl text-mainBlack dark:text-mainWhite text-center font-semibold mt-4">
                   {t(name)}
                 </h3>

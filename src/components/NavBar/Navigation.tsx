@@ -7,6 +7,9 @@ import { AnimatePresence } from "framer-motion";
 
 import NavList from "./NavList";
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import Link from "next/link";
+import LanguageSwitcher from "../LanguageSwitcher";
+import Social from "../Social";
 
 const Modal = dynamic(() => import("../global/Modal"), { ssr: false });
 
@@ -28,7 +31,7 @@ const Navigation: FC = () => {
       <ul className="md:flex md:gap-8 hidden items-center">
         <NavList action={handleLinkClick} />
       </ul>
-      <div className="md:hidden flex items-center gap-8">
+      <div className="md:hidden ">
         <button
           type="button"
           onClick={handleToggleClick}
@@ -43,9 +46,15 @@ const Navigation: FC = () => {
         >
           {showModal && (
             <Modal close={handleToggleClick} showModal={showModal}>
-              <div className="relative bg-purpleMain"></div>
-              <ul className="text-center ">
+              <Link href="/">Ivan Malakhovskyi</Link>
+              <LanguageSwitcher />
+              Bottom line
+              <ul className="">
                 <NavList action={handleLinkClick} />
+              </ul>
+              <ul>
+                {" "}
+                <Social />
               </ul>
             </Modal>
           )}

@@ -15,7 +15,7 @@ const NavBar: FC = () => {
       <span>
         <Link
           href={"/"}
-          className="py-4 md:py-6 ext-mainBlack dark:text-mainWhite font-semibold text-xs lg:text-sm"
+          className="py-4 md:py-6 font-semibold text-xs uppercase ext-mainBlack dark:text-mainWhite  "
         >
           {t("logo")}
         </Link>
