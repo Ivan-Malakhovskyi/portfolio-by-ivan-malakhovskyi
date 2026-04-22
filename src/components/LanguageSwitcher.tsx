@@ -30,7 +30,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <ul className="flex gap-4">
+    <ul className="flex align-center gap-4">
       {locales.map(({ id, label, locale }) => {
         const activeLocale = locale === language;
 
