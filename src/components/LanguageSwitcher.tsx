@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { createNavigation } from "next-intl/navigation";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import { useState } from "react";
 import Cookies from "js-cookie";
 
 const locales = [
@@ -30,7 +30,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <ul className="flex align-center gap-4">
+    <ul className="flex items-center gap-4">
       {locales.map(({ id, label, locale }) => {
         const activeLocale = locale === language;
 

@@ -4,10 +4,10 @@ import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 import { FC, useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 import NavList from "./NavList";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import Link from "next/link";
 import LanguageSwitcher from "../LanguageSwitcher";
 import Social from "../Social";
 import ThemeSwitcher from "../ThemeSwitcher";

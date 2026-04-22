@@ -4,6 +4,7 @@ import instagram from "/public/icons/instagram.svg";
 import facebook from "/public/icons/facebook.svg";
 
 import html5 from "/public/icons/html5.svg";
+import { FaNode } from "react-icons/fa";
 import css3 from "/public/icons/css3.svg";
 import sass from "/public/icons/sass.svg";
 import js from "/public/icons/javascript.svg";
@@ -72,7 +73,10 @@ export const socialLinks = [
 ];
 
 export const hardSkills = [
-  { name: "HTML5", icon: html5 },
+  {
+    name: "HTML5",
+    icon: html5,
+  },
   { name: "CSS3", icon: css3 },
   { name: "Sass", icon: sass },
   { name: "JavaScript (ES6+)", icon: js },
