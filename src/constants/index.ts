@@ -4,7 +4,6 @@ import instagram from "/public/icons/instagram.svg";
 import facebook from "/public/icons/facebook.svg";
 
 import html5 from "/public/icons/html5.svg";
-import { FaNode } from "react-icons/fa";
 import css3 from "/public/icons/css3.svg";
 import sass from "/public/icons/sass.svg";
 import js from "/public/icons/javascript.svg";
