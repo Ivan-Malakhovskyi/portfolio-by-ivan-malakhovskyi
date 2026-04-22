@@ -43,7 +43,7 @@ const Skills = () => {
           {hardSkills.map(({ name, icon }, index) => (
             <li
               key={index}
-              className="border bg-mainWhite dark:bg-transparent dark:border-bgGrey rounded-2xl grayscale dark:opacity-60 hover:grayscale-0 hover:opacity-100 transition px-4 py-3 hover:scale-105 ease-out duration-300 cursor-pointer  shadow-lg"
+              className="border bg-mainWhite dark:bg-transparent dark:border-bgGrey rounded-2xl grayscale dark:opacity-60 hover:grayscale-0 dark:hover:opacity-100 transition px-4 py-3 hover:scale-105 ease-out duration-300 cursor-pointer  shadow-lg"
             >
               <motion.div className="text-mainBlack flex justify-between items-center gap-4 transition-transform duration-200 will-change-transform">
                 <ImageComponent src={icon} alt={name} width={30} height={30} />
