@@ -16,10 +16,9 @@ const ThemeSwitcher = () => {
           onClick={() => handleThemeChange("system")}
           type="button"
           aria-label="Appearance: system theme"
-          className={`p-1 text-base `}
         >
           <ComputerDesktopIcon
-            className={`transition  ease-out duration-300 size-6 text-bgGrey ${activeTheme === "system" ? "fill-mainWhite" : "fill-current"}`}
+            className={`transition ease-out duration-300 size-5 text-bgGrey ${activeTheme === "system" ? "fill-mainWhite" : "fill-current"}`}
           />
         </button>
       </li>
@@ -31,10 +30,8 @@ const ThemeSwitcher = () => {
         >
           {" "}
           <SunIcon
-            className={`transition text-bgGrey ease-out duration-300 size-6 ${
-              activeTheme === "light"
-                ? "stroke-orange-500 fill-orange-500"
-                : "fill-  "
+            className={`transition text-bgGrey ease-out duration-300 size-5 ${
+              activeTheme === "light" ? "stroke-orange-500 fill-orange-500" : ""
             }`}
           />
         </button>

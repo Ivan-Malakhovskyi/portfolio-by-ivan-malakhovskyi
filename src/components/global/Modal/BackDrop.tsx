@@ -40,7 +40,7 @@ const Backdrop: React.FC<BackdropProps> = ({
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="backdrop-blur-lg dark:bg-accentDark bg-secondaryGrey fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 overflow-y-auto w-screen h-screen backdrop-filter  backdrop-grayscale backdrop-contrast-200"
+      className="backdrop-blur-lg dark:bg-accentDark bg-secondaryGrey fixed inset-0 h-dvh overflow-hidden w-screen backdrop-filter backdrop-grayscale backdrop-contrast-200"
       onClick={onClick}
       style={{ maxHeight: maxheight, zIndex: "10000" }}
     >

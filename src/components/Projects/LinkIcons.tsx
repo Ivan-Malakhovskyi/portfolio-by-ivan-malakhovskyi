@@ -19,7 +19,7 @@ const listIcons = [
 ];
 
 const LinkIcons: FC<ILinkIconsProps> = ({ href, codeLink }) => (
-  <div className="absolute opacity-0 inset-0 flex items-center justify-center gap-4 group-hover:opacity-100 group-focus:opacity-100 transition ease-out duration-300 hover:bg-addGray rounded-md backdrop-blur-sm hover:dark:bg-addGray">
+  <div className="absolute opacity-0 inset-0 flex items-center justify-center gap-4 group-hover:opacity-100 group-focus:opacity-100 transition ease-out duration-300 backdrop-blur-sm rounded-md ">
     {" "}
     {listIcons.map(({ Component, id }) => (
       <Link

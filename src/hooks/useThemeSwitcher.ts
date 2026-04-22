@@ -22,7 +22,6 @@ export const useThemeSwitcher = () => {
     }
 
     const mediaQuery = window.matchMedia("(prefers-color-scheme:dark)");
-    console.log(mediaQuery.matches);
 
     const handleSystemThemeChange = () => {
       if (currentTheme === "system" || !currentTheme) {

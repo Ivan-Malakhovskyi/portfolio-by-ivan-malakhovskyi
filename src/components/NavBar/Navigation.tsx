@@ -47,7 +47,7 @@ const Navigation: FC = () => {
         >
           {showModal && (
             <Modal close={handleToggleClick} showModal={showModal}>
-              <div className="flex flex-col gap-2 justify-between h-full overflow-scroll">
+              <div className="flex-1 flex flex-col gap-2 justify-between h-full overflow-scroll">
                 <div className="flex flex-col gap-4 border-b border-addBgGrey dark:border-bgGrey pb-8">
                   <Link href="/" className="text-lg font-semibold">
                     Ivan Malakhovskyi
@@ -57,10 +57,11 @@ const Navigation: FC = () => {
                 <ul className="flex flex-col gap-2">
                   <NavList action={handleLinkClick} />
                 </ul>
+
+                <ThemeSwitcher />
                 <ul className="flex justify-between">
                   <Social />
                 </ul>
-                <ThemeSwitcher />
               </div>
             </Modal>
           )}

@@ -13,7 +13,6 @@ const locales = [
 
 const LanguageSwitcher = () => {
   const [language, setLanguage] = useState(Cookies.get("NEXT_LOCALE") || "en");
-  console.log("🚀 ~ LanguageSwitcher ~ language:", language);
 
   const { useRouter } = createNavigation();
 
