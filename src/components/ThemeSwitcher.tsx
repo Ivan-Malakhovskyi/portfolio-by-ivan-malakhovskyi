@@ -9,7 +9,7 @@ import { ComputerDesktopIcon } from "@heroicons/react/24/solid";
 const ThemeSwitcher = () => {
   const { activeTheme, handleThemeChange } = useThemeSwitcher();
   return (
-    <ul className="flex items-center gap-2 mr-4">
+    <ul className="flex items-center gap-2">
       {" "}
       <li>
         <button

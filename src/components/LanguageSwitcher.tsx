@@ -1,16 +1,19 @@
 "use client";
 
-import { AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { createNavigation } from "next-intl/navigation";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import Cookies from "js-cookie";
 
+const locales = [
+  { id: 1, label: "EN", locale: "en" },
+  { id: 2, label: "UA", locale: "uk" },
+];
+
 const LanguageSwitcher = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(Cookies.get("NEXT_LOCALE") || "en");
+  console.log("🚀 ~ LanguageSwitcher ~ language:", language);
 
   const { useRouter } = createNavigation();
 
@@ -20,10 +23,6 @@ const LanguageSwitcher = () => {
 
   const t = useTranslations("Common");
 
-  const toggleSelect = () => {
-    setIsOpen(!isOpen);
-  };
-
   const handleClickLanguage = (newLang: string) => {
     Cookies.set("NEXT_LOCALE", newLang);
     setLanguage(newLang);
@@ -32,51 +31,23 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="relative inline-block text-left ">
-      <button
-        type="button"
-        onClick={toggleSelect}
-        className="inline-flex w-full justify-between items-center px-2 py-1 sm:px-4 sm:py-2 bg-gray-800 border border-gray-700 rounded-md shadow-sm text-gray-200 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
-        {t("label")}
-        <svg
-          className={`ml-2 h-5 w-5 transition-transform ${
-            isOpen ? "rotate-180" : "rotate-0"
-          }`}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            fillRule="evenodd"
-            d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 01.02-1.06z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
+    <ul className="flex gap-4">
+      {locales.map(({ id, label, locale }) => {
+        const activeLocale = locale === language;
 
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.ul
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0 }}
-            className="absolute z-10 w-full bg-gray-800 border border-gray-700 rounded-md shadow-lg focus:outline-none"
-          >
-            <motion.li
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0 }}
+        return (
+          <li key={id}>
+            <button
+              type="button"
               onClick={() => handleClickLanguage(t("language"))}
-              className="cursor-pointer px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white"
+              className={`${activeLocale ? "border-2 border-mainGrey text-mainBlack dark:border-accentWhite  dark:text-mainWhite" : "dark:text-addGray"} text-xs font-semibold rounded-xl bg-secondaryWhite px-4 py-2 active:dark:text-mainWhite active:border active:dark:border-none active:border-mainGrey`}
             >
-              {t("label")}
-            </motion.li>
-          </motion.ul>
-        )}
-      </AnimatePresence>
-    </div>
+              {label}
+            </button>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 

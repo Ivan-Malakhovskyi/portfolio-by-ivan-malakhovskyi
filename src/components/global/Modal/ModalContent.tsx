@@ -8,7 +8,7 @@ interface ModalContentProps {
 const ModalContent: React.FC<ModalContentProps> = ({ children, maxwidth }) => {
   return (
     <div
-      className="p-4 ml-auto bg-slate-500 w-[90%]"
+      className="p-5 ml-auto w-[90%] rounded-l-3xl h-full overflow-hidden bg-mainWhite dark:bg-mainDark"
       style={{ maxWidth: maxwidth }}
       onClick={(e) => e.stopPropagation()}
     >
