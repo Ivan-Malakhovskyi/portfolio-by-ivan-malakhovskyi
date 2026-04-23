@@ -12,13 +12,14 @@ const locales = [
 ];
 
 const LanguageSwitcher = () => {
-  const [language, setLanguage] = useState(Cookies.get("NEXT_LOCALE") || "en");
+  const [language, setLanguage] = useState(Cookies.get("NEXT_LOCALE"));
 
   const { useRouter } = createNavigation();
 
   const router = useRouter();
 
   const currentPath = usePathname();
+  const localeFromURL = currentPath.split("/")[1];
 
   const t = useTranslations("Common");
 
@@ -32,14 +33,14 @@ const LanguageSwitcher = () => {
   return (
     <ul className="flex items-center gap-4">
       {locales.map(({ id, label, locale }) => {
-        const activeLocale = locale === language;
+        const activeLocale = locale === (localeFromURL || language);
 
         return (
           <li key={id}>
             <button
               type="button"
               onClick={() => handleClickLanguage(t("language"))}
-              className={`${activeLocale ? "border-2 border-mainGrey text-mainBlack dark:border-accentWhite  dark:text-mainWhite" : "dark:text-addGray"} text-xs font-semibold rounded-xl bg-secondaryWhite px-4 py-2 active:dark:text-mainWhite active:border active:dark:border-none active:border-mainGrey`}
+              className={`text-mainBlack ${activeLocale ? "border-2 border-mainGrey  dark:border-accentWhite  dark:text-mainWhite" : "dark:text-addGray text-current"} text-xs font-semibold rounded-xl bg-secondaryWhite px-4 py-2 active:dark:text-mainWhite active:border-2 active:dark:border-none active:border-mainGrey`}
             >
               {label}
             </button>

@@ -9,7 +9,7 @@ const GetInTouch = () => {
     <AnimatePresence mode="wait">
       <section
         id="get_in_touch"
-        className="py-6 px-4 dark:bg-transparent dark:bg-gradient-to-b dark:from-accentBgGrey dark:via-gray-900 dark:to-mainBlack  bg-white"
+        className="bg-linear-section-gradient py-6 px-4 dark:bg-transparent dark:bg-gradient-to-b dark:from-accentBgGrey dark:via-gray-900 dark:to-mainBlack"
       >
         <Form />
       </section>

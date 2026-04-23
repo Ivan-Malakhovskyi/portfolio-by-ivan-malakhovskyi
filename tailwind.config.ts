@@ -55,6 +55,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-text": "linear-gradient(to right, #ff7e5f, #feb47b)",
+        "linear-section-gradient":
+          "linear-gradient(180deg, var(--section-start) 20%, var(--section-end) 50%, var(--section-end) 100%)",
+        "radial-section-gradient-light":
+          "radial-gradient(50% 50% at 50% 50%, var(--section-start) 0%, var(--section-end) 100%)",
+        "radial-section-gradient-dark":
+          "radial-gradient(1200px circle at 50% 0%, var(--accentGrey), transparent 70%), var(--mainBlack) 0%, linear-gradient(to bottom, var(--gradient-start), var(--addGray))",
       },
       backgroundClip: {
         text: "text",

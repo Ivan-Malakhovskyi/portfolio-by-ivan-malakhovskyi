@@ -37,10 +37,10 @@ const NavList: React.FC<INavListProps> = ({ action }) => {
           <li key={id}>
             <Link
               href={path}
-              className={`md:py-6 text-lg font-semibold md:text-sm md:uppercase hover:text-blue-500 focus:text-blue-500 dark:hover:text-mainGreen dark:focus:text-mainGreen transition ease-out duration-300 ${
+              className={`md:py-6 text-lg font-semibold md:text-sm hover:text-mainBlack focus:text-mainBlack dark:hover:text-mainGreen dark:focus:text-mainGreen transition ease-out duration-300 ${
                 isActive
                   ? "dark:text-mainGreen text-blue-500"
-                  : "text-mainBlack dark:text-mainWhite font-semibold"
+                  : "text-[var(--mainSlate)] dark:text-mainWhite font-semibold"
               }`}
               onClick={(e) => handleClick(e, path)}
             >

@@ -7,6 +7,7 @@ import { MoonIcon } from "@heroicons/react/24/outline";
 import { ComputerDesktopIcon } from "@heroicons/react/24/solid";
 
 const ThemeSwitcher = () => {
+  // console.log(window.matchMedia("(prefers-color-scheme:dark)").matches);
   const { activeTheme, handleThemeChange } = useThemeSwitcher();
   return (
     <ul className="flex items-center gap-2">
@@ -18,7 +19,7 @@ const ThemeSwitcher = () => {
           aria-label="Appearance: system theme"
         >
           <ComputerDesktopIcon
-            className={`transition ease-out duration-300 size-5 text-bgGrey ${activeTheme === "system" ? "fill-mainWhite" : "fill-current"}`}
+            className={`transition ease-out duration-300 size-5 text-bgGrey ${activeTheme === "system" ? "fill-mainBlack dark:fill-mainWhite" : "fill-current"}`}
           />
         </button>
       </li>

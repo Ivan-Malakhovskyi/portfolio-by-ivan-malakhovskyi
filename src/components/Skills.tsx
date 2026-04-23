@@ -21,7 +21,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 dark:bg-mainBlack dark:shadow-custom dark:backdrop-blur-sm"
+      className="py-20 bg-radial-section-gradient-light dark:bg-radial-section-gradient-dark dark:bg-mainBlack  dark:shadow-custom dark:backdrop-blur-sm"
     >
       <MaxWidthWrapper>
         <h2

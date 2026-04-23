@@ -6,6 +6,43 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --gradient-start: #ff7e5f;
+  --gradient-end: #feb47b;
+  --section-start: #ffffff;
+  --section-end: #fafafa;
+  --mainBlack: "#000000";
+  --addBlack: "#060708";
+  --accentBlack: "#0e0f11";
+  --secondaryBlack: "#2d2f32";
+  --mainDark: "#181819";
+  --accentDark: "#00000080";
+  --mainWhite: "#ffffff";
+  --accentWhite: "#f1e7ff";
+  --secondaryWhite: "#ffffff33";
+  --mainGreen: "#1ed760";
+  --mainGrey: "#959595";
+  --accentGrey: "#434455";
+  --secondaryGrey: "rgba(46,47,66,.8)";
+  --addGray: "#80848D";
+  --accentBgGrey: "#ffffff1a";
+  --addBgGrey: "#0c01011a";
+  --mainSlate: #666666;
+  --mainBlue: "#4d5ae5";
+  --accentBlue: "#404bbf";
+  --addGreen: "#0e8538";
+  --accentGreen: "#a7d575";
+  --neon: "#a7d575";
+  --skyBlue: "#52abc4";
+  --aqua: "#37eaf7";
+  --purple: "#c624ee";
+  --purpleMain: "#4A0D67";
+  --purpleAccent: "#6B21A8";
+  --addPurple: "#8c21f8";
+  --mainPurple: "#2c0076";
+  --purpleAdd: "#9333EA";
+  --accentPurple: "#c591fc";
+
+
   color-scheme: light dark;
 }
 
