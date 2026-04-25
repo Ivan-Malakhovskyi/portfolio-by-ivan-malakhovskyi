@@ -26,9 +26,9 @@ const LinkIcons: FC<ILinkIconsProps> = ({ href, codeLink }) => (
         key={id}
         href={!href.includes("github.com") && id !== 1 ? href : codeLink}
         target="_blank"
-        className="text-black hover:scale-110  transition ease-out duration-300"
+        className="text-text-primary hover:scale-110  transition ease-out duration-300"
       >
-        <Component className="fill-mainWhite" width={28} height={28} />
+        <Component className="fill-text-inverse" width={28} height={28} />
       </Link>
     ))}
   </div>

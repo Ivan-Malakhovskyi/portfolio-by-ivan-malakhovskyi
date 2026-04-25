@@ -21,16 +21,16 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 bg-radial-section-gradient-light dark:bg-radial-section-gradient-dark dark:bg-mainBlack  dark:shadow-custom dark:backdrop-blur-sm"
+      className="py-20 bg-radial-section-gradient-light dark:bg-radial-section-gradient-dark dark:bg-text-primary  dark:shadow-custom dark:backdrop-blur-sm"
     >
       <MaxWidthWrapper>
         <h2
           id="hard_skills"
-          className="text-mainBlack dark:text-mainWhite text-3xl md:text-6xl font-bold text-center mb-8"
+          className="text-text-primary dark:text-text-inverse text-3xl md:text-6xl font-bold text-center mb-8"
         >
           {t("title")}
         </h2>
-        <p className="text-bgGrey font-medium text-2xl text-center mb-6 capitalize">
+        <p className="text-text-muted font-medium text-2xl text-center mb-6 capitalize">
           {t("hard")}
         </p>
         <motion.ul
@@ -43,11 +43,11 @@ const Skills = () => {
           {hardSkills.map(({ name, icon }, index) => (
             <li
               key={index}
-              className="border bg-mainWhite dark:bg-transparent dark:border-bgGrey rounded-2xl grayscale dark:opacity-60 hover:grayscale-0 dark:hover:opacity-100 transition px-4 py-3 hover:scale-105 ease-out duration-300 cursor-pointer  shadow-lg"
+              className="border bg-text-inverse dark:bg-transparent dark:border-border-muted rounded-2xl grayscale dark:opacity-60 hover:grayscale-0 dark:hover:opacity-100 transition px-4 py-3 hover:scale-105 ease-out duration-300 cursor-pointer  shadow-lg"
             >
-              <motion.div className="text-mainBlack flex justify-between items-center gap-4 transition-transform duration-200 will-change-transform">
+              <motion.div className="text-text-primary flex justify-between items-center gap-4 transition-transform duration-200 will-change-transform">
                 <ImageComponent src={icon} alt={name} width={30} height={30} />
-                <h3 className="text-sm text-mainBlack dark:text-mainWhite font-semibold">
+                <h3 className="text-sm text-text-primary dark:text-text-inverse font-semibold">
                   {name}
                 </h3>
               </motion.div>
@@ -55,7 +55,7 @@ const Skills = () => {
           ))}
         </motion.ul>
 
-        <p className="text-bgGrey font-medium text-2xl text-center mb-6 capitalize">
+        <p className="text-text-muted font-medium text-2xl text-center mb-6 capitalize">
           {t("soft")}
         </p>
         <motion.ul
@@ -77,8 +77,8 @@ const Skills = () => {
                 variants={item}
               >
                 {" "}
-                <Icon className="size-16 text-mainBlack dark:text-mainWhite hover:fill-slate-500" />
-                <h3 className="text-xl text-mainBlack dark:text-mainWhite text-center font-semibold mt-4">
+                <Icon className="size-16 text-text-primary dark:text-text-inverse hover:fill-text-muted" />
+                <h3 className="text-xl text-text-primary dark:text-text-inverse text-center font-semibold mt-4">
                   {t(name)}
                 </h3>
               </motion.div>

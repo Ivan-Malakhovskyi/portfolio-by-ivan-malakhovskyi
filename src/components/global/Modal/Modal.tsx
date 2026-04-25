@@ -36,12 +36,12 @@ const Modal: FC<IModalProps> = ({ close, children }) => {
         <button
           type="button"
           onClick={close}
-          className={`top-5 right-5 text-gray-600 dark:text-mainWhite absolute `}
+          className={`top-5 right-5 text-text-muted dark:text-inverse absolute `}
         >
           <XMarkIcon
             width={40}
             height={40}
-            className="size-6 text-mainBlack dark:text-white"
+            className="size-6 text-text-primary dark:text-text-inverse"
           />
         </button>
         {children}

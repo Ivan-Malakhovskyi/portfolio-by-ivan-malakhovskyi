@@ -22,7 +22,7 @@ const CertificatesList = () => {
       {certificatesList.map(({ id, title, organization, href }) => (
         <li key={id}>
           <Link href={href} target="_blank">
-            <div className="bg-white text-gray-900  rounded-card shadow-2xl m-2 hover:scale-105 focus:scale-105 ease-out duration-200">
+            <div className="bg-bg-primary text-text-primary rounded-card shadow-2xl m-2 hover:scale-105 focus:scale-105 ease-out duration-200">
               <motion.div
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
@@ -39,10 +39,10 @@ const CertificatesList = () => {
               </motion.div>
             </div>
           </Link>
-          <h3 className="text-2xl text-mainBlack dark:text-mainWhite text-center font-bold mb-2">
+          <h3 className="text-2xl text-text-primary dark:text-text-inverse text-center font-bold mb-2">
             {title}
           </h3>
-          <p className="text-xl font-medium text-bgGrey dark:text-mainWhite text-center mb-2">
+          <p className="text-xl font-medium text-text-muted dark:text-text-inverse text-center mb-2">
             {organization}
           </p>
         </li>

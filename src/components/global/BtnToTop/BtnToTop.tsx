@@ -28,11 +28,11 @@ const BtnToTop: FC = () => {
       type="button"
       onClick={handleClick}
       aria-label="To top"
-      className={`z-1000 fixed right-4 p-2 bottom-4 lg:right-12 lg:bottom-8 bg-mainBlue dark:bg-mainWhite rounded-full w-12 h-12 flex justify-center items-center ${
+      className={`z-1000 fixed right-4 p-2 bottom-4 lg:right-12 lg:bottom-8 bg-primary dark:bg-bg-primary rounded-full w-12 h-12 flex justify-center items-center ${
         showBtn ? "block opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      } transition ease-out duration-300 hover:bg-accentBlue dark:hover:bg-accentGrey`}
+      } transition ease-out duration-300 hover:bg-primary-hover dark:hover:bg-bg-light-muted`}
     >
-      <ArrowUpIcon className="size-4 text-mainWhite dark:text-mainGrey " />
+      <ArrowUpIcon className="size-4 text-text-inverse dark:text-text-muted " />
     </button>
   );
 };

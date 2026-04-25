@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className="bg-mainWhite dark:bg-mainBlack">
+      <main className="bg-bg-primary dark:bg-bg-dark">
         <Hero />
         <OpenToWork />
         <About />

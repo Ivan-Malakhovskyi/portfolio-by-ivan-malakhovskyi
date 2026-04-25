@@ -24,10 +24,10 @@ const PersonalProjectListItem: FC<ProjectsListItemProps> = ({ project }) => {
       <LinkIcons href={href} codeLink={git} />
       <div className="py-4">
         {" "}
-        <h3 className="text-xl lg:text-2xl font-bold text-mainBlack dark:text-mainWhite">
+        <h3 className="text-xl lg:text-2xl font-bold text-text-primary dark:text-text-inverse">
           {title}
         </h3>
-        <p className="text-accentGrey dar:text-bgGrey font-bold text-sm xl:text-base">
+        <p className="text-text-muted font-bold text-sm xl:text-base">
           {description}
         </p>
       </div>

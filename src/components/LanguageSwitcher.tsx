@@ -40,7 +40,7 @@ const LanguageSwitcher = () => {
             <button
               type="button"
               onClick={() => handleClickLanguage(t("language"))}
-              className={`text-mainBlack ${activeLocale ? "border-2 border-mainGrey  dark:border-accentWhite  dark:text-mainWhite" : "dark:text-addGray text-current"} text-xs font-semibold rounded-xl bg-secondaryWhite px-4 py-2 active:dark:text-mainWhite active:border-2 active:dark:border-none active:border-mainGrey`}
+              className={`text-text-primary hover:bg-bg-light-muted focus:bg-bg-light-muted  ${activeLocale ? "border-2 border-border-secondary  dark:border-border-secondary dark:text-text-inverse" : "dark:text-text-muted text-current dark:hover:text-text-primary dark:focus:text-text-primary dark:hover:bg-bg-secondary-muted focus:hover:bg-bg-secondary-muted"}  text-xs font-semibold rounded-xl bg-bg-secondary px-4 py-2 active:dark:text-text-inverse active:border-2 active:dark:border-none active:border-border-secondary dark:hover:bg-bg-secondary-muted dark:hover:text-text-primary dark:focus:text-text-primary focus:hover:bg-border-muted`}
             >
               {label}
             </button>

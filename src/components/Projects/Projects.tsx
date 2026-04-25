@@ -26,13 +26,13 @@ const Projects: FC = () => {
       <section id="projects" className="py-40">
         <div>
           {" "}
-          <p className="text-bgGrey font-medium text-2xl uppercase text-center mb-4">
+          <p className="text-text-muted font-medium text-2xl uppercase text-center mb-4">
             Frontend | Backend
           </p>
-          <h2 className="text-mainBlack dark:text-mainWhite text-3xl font-semibold text-center md:text-6xl mb-4 capitalize">
+          <h2 className="text-text-primary dark:text-text-inverse text-3xl font-semibold text-center md:text-6xl mb-4 capitalize">
             {t("title")}
           </h2>
-          <p className="text-mainBlack dark:text-mainWhite text-2xl text-center mb-6 font-medium capitalize">
+          <p className="text-text-primary dark:text-text-inverse text-2xl text-center mb-6 font-medium capitalize">
             {t("title_add")}
           </p>
         </div>
@@ -50,12 +50,12 @@ const Projects: FC = () => {
             />
           </AnimatePresence>
         ) : (
-          <p className="text-center font-medium text-mainBlack dark:text-mainWhite">
+          <p className="text-center font-medium text-text-primary dark:text-text-inverse">
             In progress
           </p>
         )}
 
-        <p className="text-mainBlack dark:text-mainWhite text-2xl capitalize font-medium text-center mt-10 mb-6">
+        <p className="text-text-primary dark:text-text-inverse text-2xl capitalize font-medium text-center mt-10 mb-6">
           {t("text")}
         </p>
 
@@ -72,7 +72,7 @@ const Projects: FC = () => {
             />
           </AnimatePresence>
         ) : (
-          <p className="text-center font-medium text-mainBlack dark:text-mainGrey">
+          <p className="text-center font-medium text-text-primary dark:text-text-muted">
             In progress
           </p>
         )}

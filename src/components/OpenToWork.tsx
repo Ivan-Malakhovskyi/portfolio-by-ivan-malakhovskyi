@@ -13,7 +13,7 @@ const OpenToWork: FC = () => {
         {" "}
         <div className="animate-marquee gradient-text">
           {" "}
-          <h3 className="text-mainGrey text-2xl font-semibold mb-8">
+          <h3 className="text-text-muted text-2xl font-semibold mb-8">
             {t("text")}
           </h3>
         </div>
@@ -23,7 +23,7 @@ const OpenToWork: FC = () => {
           <ul className="flex gap-4 flex-col items-center mb-8">
             {" "}
             <li>
-              <span className="text-mainBlack dark:text-mainWhite font-semibold  text-3xl md:text-6xl">
+              <span className="text-text-primary dark:text-text-inverse font-semibold  text-3xl md:text-6xl">
                 {" "}
                 {t("role")}: &#123;
               </span>
@@ -39,13 +39,13 @@ const OpenToWork: FC = () => {
               </h2>
             </li>
             <li>
-              <h2 className="text-3xl text-center md:text-6xl font-bold bg-gradient-to-r from-mainWhite to-gray-600 text-transparent bg-clip-text break-word">
+              <h2 className="text-3xl text-center md:text-6xl font-bold bg-gradient-to-r from-text-inverse to-gray-600 text-transparent bg-clip-text break-word">
                 Backend Developer
               </h2>
             </li>
             <li>
               {" "}
-              <span className="text-mainBlack dark:text-mainWhite text-3xl md:text-6xl">
+              <span className="text-text-primary dark:text-text-inverse text-3xl font-semibold md:text-6xl">
                 &#125;
               </span>
             </li>

@@ -37,14 +37,16 @@ const JobExperience: FC<IJobExperienceProps> = ({
       >
         <motion.div animate={inView ? "visible" : "hidden"} variants={item}>
           {" "}
-          <h2 className="text-2xl font-semibold text-white mb-2">{position}</h2>
-          <h3 className="text-xl text-gray-300 mb-2">{company}</h3>
+          <h2 className="text-2xl font-semibold text-text-inverse mb-2">
+            {position}
+          </h2>
+          <h3 className="text-xl text-text-inverse mb-2">{company}</h3>
           <p className="text-gray-400 mb-2">{period}</p>
-          <div className="text-gray-200">
+          <div className="text-text-muted">
             <strong>Project: </strong>
             {project}
           </div>
-          <div className="text-gray-200">
+          <div className="text-text-inverse">
             <strong>Employment: </strong>
             {t("employment")}
           </div>

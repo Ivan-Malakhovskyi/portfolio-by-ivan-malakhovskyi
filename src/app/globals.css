@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -41,6 +42,53 @@
   --mainPurple: "#2c0076";
   --purpleAdd: "#9333EA";
   --accentPurple: "#c591fc";
+
+  /* 🎨 TEXT */
+  --text-primary: #000000;
+  --text-secondary: #434455;
+  --text-muted: #959595;
+  --text-light-muted: #e6e6e6;
+  --text-inverse: #ffffff;
+  --text-primary-hover: #333333;
+  --text-inverse-hover: #e6e6e6;
+
+  /* 🧱 BACKGROUND */
+  --bg-primary: #ffffff;
+  --bg-secondary: #ffffff33;
+  --bg-secondary-muted: var(--border-light);
+  --bg-muted: var(--text-muted);
+  --bg-light-mode: var(--text-primary);
+  --bg-tertiary: #f1e7ff;
+  --bg-dark-mode: var(--text-primary);
+  /* 🧊 SURFACE (cards, blocks) */
+  --surface-primary: #ffffff;
+  --surface-secondary: rgba(255, 255, 255, 0.2);
+  --surface-muted: rgba(255, 255, 255, 0.1);
+
+  /* 🔲 BORDER */
+  --border-primary: rgba(46, 47, 66, 0.8);
+  --border-muted: #80848D;
+  --border-secondary: #e0e0e0;
+  --border-light: #d1d5db,
+    --border-inverse: #ffffff;
+  --border-dark: #000000;
+  /* 🚀 PRIMARY (твій main blue / green) */
+  --color-primary: #4d5ae5;
+  --color-primary-hover: #404bbf;
+
+  /* 🌿 SUCCESS / GREEN */
+  --color-success: #1ed760;
+  --color-success-dark: #0e8538;
+  --color-active: var(--color-success);
+  /* ⚡ ACCENTS (декор, glow) */
+  --main-purple: #2c0076;
+  --accent-purple: #9333ea;
+  --accent-pink: #c624ee;
+
+
+  /* 🌫 OVERLAYS */
+  --overlay-dark: #00000080;
+  --overlay-light: rgba(46, 47, 66, .8);
 
 
   color-scheme: light dark;

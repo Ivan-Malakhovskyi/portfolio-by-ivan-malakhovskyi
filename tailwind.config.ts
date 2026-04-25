@@ -4,7 +4,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{jsp,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -49,6 +49,49 @@ const config: Config = {
         mainPurple: "#2c0076",
         purpleAdd: "#9333EA",
         accentPurple: "#c591fc",
+
+        primary: "var(--color-primary)",
+        "primary-hover": "var(--color-primary-hover)",
+
+        "main-purple": "var(--main-purple)",
+        "accent-purple": "var(--accent-purple)",
+        text: {
+          primary: "var(--text-primary)",
+          secondary: "var(--text-secondary)",
+          muted: "var(--text-muted)",
+          "light-muted": "var(--text-light-muted)",
+          inverse: "var(--text-inverse)",
+          active: "var(--color-active)",
+          "active-inverse": "",
+        },
+
+        bg: {
+          primary: "var(--bg-primary)",
+          secondary: "var(--bg-secondary)",
+          tertiary: "var(--bg-tertiary)",
+          dark: "var(--bg-dark-mode)",
+          light: "var(--bg-light-mode)",
+          "secondary-muted": "var(--bg-secondary-muted)",
+          "light-muted": "var(--text-light-muted)",
+          "primary-hover": "var(--text-primary-hover)",
+          "inverse-hover": "var(--text-inverse-hover)",
+          "overlay-dark": "var(--overlay-dark)",
+          "overlay-light": "var(--overlay-light)",
+        },
+
+        surface: {
+          primary: "var(--surface-primary)",
+          secondary: "var(--surface-secondary)",
+        },
+
+        border: {
+          primary: "var(--border-primary)",
+          secondary: "var(--border-secondary)",
+          inverse: "var(--border-inverse)",
+          dark: "var(--border-dark)",
+          muted: "var(--border-muted)",
+          light: "var(--border-light)",
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

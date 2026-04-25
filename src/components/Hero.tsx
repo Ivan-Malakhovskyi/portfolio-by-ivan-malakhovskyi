@@ -23,7 +23,7 @@ const Hero: FC = () => {
         <TypeWriterTextAnimation
           text={t("text_add")}
           tag="h2"
-          className="dark:text-mainWhite text-mainBlack mb-8 max-w-none font-medium"
+          className="dark:text-text-inverse text-text-primary mb-8 max-w-none font-medium"
         />
         <ul className="grid md:grid-cols-2 md:gap-6 items-center">
           <li>
@@ -37,15 +37,15 @@ const Hero: FC = () => {
               <TypeWriterTextAnimation
                 text={text}
                 tag="h1"
-                className=" text-4xl font-bold bg-gradient-to-r from-mainPurple to-addPurple bg-clip-text text-transparent break-words animate-text-gradient md:text-5xl lg:text-7xl  mb-8"
+                className="text-4xl font-bold bg-gradient-to-r from-main-purple to-accent-purple bg-clip-text text-transparent break-words animate-text-gradient md:text-5xl lg:text-7xl  mb-8"
               />
 
               <motion.p
-                className="text-bgGrey  font-medium text-xl md:text-2xl xl:text-[28px] mb-8"
+                className="text-text-muted font-medium text-xl md:text-2xl xl:text-[28px] mb-8"
                 variants={itemVariants}
               >
                 {t("summary")}
-                <span className="font-bold text text-mainBlack dark:text-mainWhite">
+                <span className="font-bold text text-text-primary dark:text-text-inverse">
                   {t("main_title")}
                 </span>{" "}
                 {t("summary_add")}
@@ -56,7 +56,7 @@ const Hero: FC = () => {
               >
                 <Link
                   href="mailto:ivanmalahovskij121@gmail.com"
-                  className="text-mainWhite px-12 py-4  dark:text-mainBlack grid items-center text-center text-base font-medium bg-slate-900 dark:bg-mainGreen  rounded-full hover:bg-slate-700 focus:bg-slate-700 dark:hover:bg-addGreen dark:focus:bg-addGreen transition ease-out duration-300 "
+                  className="text-text-inverse px-12 py-4 dark:text-text-primary dark:bg-bg-primary bg-bg-light grid items-center text-center text-base font-medium rounded-full hover:bg-bg-primary-hover focus:bg-bg-primary-hover dark:hover:bg-bg-inverse-hover dark:focus:bg-bg-inverse-hover transition ease-out duration-300 "
                 >
                   {t("btn_hire")}
                 </Link>
@@ -66,7 +66,7 @@ const Hero: FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="/Ivan_Malakhovskyi_Full_Stack_Developer.pdf"
-                  className="text-mainBlack dark:text-mainWhite  grid items-center text-center text-base px-12 py-4 font-medium rounded-full dark:bg-mainBlack border-[2px] border-solid border-mainBlack dark:border-mainWhite hover:shadow-2xl hover:border-transparent  focus:shadow-2xl focus:border-transparent dark:hover:bg-gray-400 dark:focus:bg-gray-400 transition ease-out duration-300 "
+                  className="text-text-primary dark:text-text-inverse  grid items-center text-center text-base px-12 py-4 font-medium rounded-full dark:bg-bg-dark border-[2px] border-solid border-border-primary dark:border-inverse hover:bg-bg-inverse-hover focus:bg-bg-inverse-hover  dark:hover:bg-bg-primary-hover dark:focus:bg-bg-primary-hover transition ease-out duration-300 "
                 >
                   {t("btn_download")}
                 </Link>

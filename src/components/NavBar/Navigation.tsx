@@ -1,18 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import dynamic from "next/dynamic";
 import { FC, useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Link from "next/link";
 
 import NavList from "./NavList";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import LanguageSwitcher from "../LanguageSwitcher";
-import Social from "../Social";
-import ThemeSwitcher from "../ThemeSwitcher";
-
-const Modal = dynamic(() => import("../global/Modal"), { ssr: false });
+import MobileMenu from "../Projects/MobileMenu";
 
 const Navigation: FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -38,7 +32,7 @@ const Navigation: FC = () => {
           onClick={handleToggleClick}
           aria-label="Toggle menu"
         >
-          <Bars3Icon className="size-6 text-mainBlack dark:text-white" />
+          <Bars3Icon className="size-6 text-text-primary dark:text-text-inverse" />
         </button>
         <AnimatePresence
           initial={false}
@@ -46,24 +40,11 @@ const Navigation: FC = () => {
           onExitComplete={() => null}
         >
           {showModal && (
-            <Modal close={handleToggleClick} showModal={showModal}>
-              <div className="flex-1 flex flex-col gap-2 justify-between h-full overflow-scroll">
-                <div className="flex flex-col gap-4 border-b border-addBgGrey dark:border-bgGrey pb-8">
-                  <Link href="/" className="text-lg font-semibold">
-                    Ivan Malakhovskyi
-                  </Link>
-                  <LanguageSwitcher />
-                </div>
-                <ul className="flex flex-col gap-2">
-                  <NavList action={handleLinkClick} />
-                </ul>
-
-                <ThemeSwitcher />
-                <ul className="flex justify-between">
-                  <Social />
-                </ul>
-              </div>
-            </Modal>
+            <MobileMenu
+              show={showModal}
+              handleToggle={handleToggleClick}
+              handleLinkClick={handleLinkClick}
+            />
           )}
         </AnimatePresence>
       </div>

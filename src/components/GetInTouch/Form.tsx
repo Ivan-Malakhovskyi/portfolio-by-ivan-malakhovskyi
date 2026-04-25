@@ -69,13 +69,13 @@ const Form = () => {
       viewport={{ amount: 0.4 }}
       exit={{ opacity: 0, transition: { duration: 0.3, ease: "easeOut" } }}
     >
-      <h2 className="text-center text-2xl font-bold mb-6 text-gray-800 dark:text-white">
+      <h2 className="text-center text-2xl font-bold mb-6 text-text-primary dark:text-text-inverse">
         Get in Touch
       </h2>
 
       <div className="mb-4">
         <label
-          className="block text-gray-700 dark:text-gray-300 mb-2"
+          className="block text-text-muted dark:text-text-inverse mb-2"
           htmlFor="name"
         >
           Your Name
@@ -83,7 +83,7 @@ const Form = () => {
         <input
           type="text"
           {...register("name")}
-          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-full bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          className="w-full px-4 py-3 border border-border-light dark:border-text-muted rounded-full bg-bg-primary dark:bg-bg-secondary text-text-primary dark:text-text-light-muted placeholder-text-muted dark:placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-primary transition"
           placeholder="John Doe"
         />
 
@@ -94,14 +94,14 @@ const Form = () => {
 
       <div className="mb-4">
         <label
-          className="block text-gray-700 dark:text-gray-300 mb-2"
+          className="block text-text-muted dark:text-text-inverse mb-2"
           htmlFor="email"
         >
           Your Email
         </label>
         <input
           {...register("email")}
-          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-full bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          className="w-full px-4 py-3 border border-border-light dark:border-text-muted rounded-full bg-bg-primary dark:bg-bg-secondary text-text-primary dark:text-text-light-muted placeholder-text-muted dark:placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-primary transition"
           placeholder="you@example.com"
         />
         {errors?.email && (
@@ -111,7 +111,7 @@ const Form = () => {
 
       <div className="mb-6">
         <label
-          className="block text-gray-700 dark:text-gray-300 mb-2"
+          className="block text-text-muted dark:text-text-inverse mb-2"
           htmlFor="message"
         >
           Your Message
@@ -119,7 +119,7 @@ const Form = () => {
         <textarea
           {...register("message")}
           rows={5}
-          className="w-full p-4  border border-gray-300 dark:border-gray-700 rounded-2xl bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"
+          className="w-full p-4  border border-border-light dark:border-text-muted rounded-2xl bg-bg-primary  dark:bg-bg-secondary text-text-primary dark:text-text-light-muted placeholder-text-muted dark:placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-primary transition resize-none"
           placeholder="What would you like to talk about?"
         ></textarea>
         {errors?.message && (
@@ -134,7 +134,7 @@ const Form = () => {
 
       <button
         type="submit"
-        className="w-full bg-accentBlack dark:bg-mainBlue text-mainWhite font-semibold p-4 rounded-full dark:hover:bg-accentBlue hover:bg-slate-700 focus:bg-slate-700 transition ease-out focus:outline-none focus:ring-2 dark:focus:ring-accentBlue disabled:bg-gray-400 disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-70"
+        className="w-full bg-bg-dark dark:bg-primary text-text-inverse font-semibold p-4 rounded-full dark:hover:bg-primary-hover  hover:bg-bg-primary-hover focus:bg-bg-primary-hover transition ease-out focus:outline-none focus:ring-2 dark:focus:ring-primary-hover disabled:bg-gray-400 disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-70"
         disabled={isLoading}
       >
         {isLoading ? "Loading" : "Submit"}
