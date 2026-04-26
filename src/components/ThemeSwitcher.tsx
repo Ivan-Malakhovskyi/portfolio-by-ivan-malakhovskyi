@@ -17,9 +17,10 @@ const ThemeSwitcher = () => {
           onClick={() => handleThemeChange("system")}
           type="button"
           aria-label="Appearance: system theme"
+          className="[&:is(:hover,:focus,:active)>svg]:fill-text-primary dark:[&:is(:hover,:focus,:active)>svg]:fill-text-inverse transition ease-out duration-300"
         >
           <ComputerDesktopIcon
-            className={`transition ease-out duration-300 size-5 text-text-muted fill-current ${activeTheme === "system" ? "fill-text-text-primary dark:fill-text-inverse" : null}`}
+            className={`size-5 text-text-muted fill-current ${activeTheme === "system" ? "fill-text-text-primary dark:fill-text-inverse" : null}`}
           />
         </button>
       </li>
@@ -28,10 +29,11 @@ const ThemeSwitcher = () => {
           type="button"
           onClick={() => handleThemeChange("light")}
           aria-label="Appearance: light theme"
+          className="[&:is(:hover,:focus,:active)>svg]:fill-accent-hover [&:is(:hover,:focus,:active)>svg]:stroke-accent-hover ease-out duration-300"
         >
           {" "}
           <SunIcon
-            className={`transition text-text-muted ease-out duration-300 size-5 fill-none stroke-text-muted ${
+            className={`transition text-text-muted size-5 fill-none ${
               activeTheme === "light"
                 ? "stroke-text-accent fill-text-accent"
                 : null
@@ -45,10 +47,11 @@ const ThemeSwitcher = () => {
           type="button"
           aria-label="Toggle dark theme"
           onClick={() => handleThemeChange("dark")}
+          className="[&:is(:hover,:focus,:active)>svg]:fill-primary-hover [&:is(:hover,:focus,:active)>svg]:stroke-primary-hover transition ease-out duration-300"
         >
           <MoonIcon
-            className={`transition ease-out duration-300 size-5 stroke-text-muted ${
-              activeTheme === "dark" ? "fill-primary" : null
+            className={`size-5 stroke-text-muted  ${
+              activeTheme === "dark" ? "fill-primary border-none" : null
             }`}
           />
         </button>

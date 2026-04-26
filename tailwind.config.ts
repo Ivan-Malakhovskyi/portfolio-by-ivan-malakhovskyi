@@ -25,6 +25,7 @@ const config: Config = {
         "accent-purple": "var(--accent-purple)",
         "main-aqua": "var(--main-aqua)",
         "main-neon": "var(--main-neon)",
+        "accent-hover": "var(--text-accent-hover)",
 
         text: {
           primary: "var(--text-primary)",
