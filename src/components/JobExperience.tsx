@@ -29,7 +29,7 @@ const JobExperience: FC<IJobExperienceProps> = ({
     <>
       {" "}
       <motion.div
-        className="even:bg-gradient-to-tr from-indigo-600 via-pink-600 to-purple-600 to-indigo-900 odd:bg-gradient-to-br shadow-lg rounded-card p-6 mb-6"
+        className="even:bg-gradient-to-tr from-primary via-main-purple to-purple-600 to-accent-purple odd:bg-gradient-to-br shadow-lg rounded-card p-6 mb-6"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={container}
@@ -41,7 +41,7 @@ const JobExperience: FC<IJobExperienceProps> = ({
             {position}
           </h2>
           <h3 className="text-xl text-text-inverse mb-2">{company}</h3>
-          <p className="text-gray-400 mb-2">{period}</p>
+          <p className="text-text-muted mb-2">{period}</p>
           <div className="text-text-muted">
             <strong>Project: </strong>
             {project}

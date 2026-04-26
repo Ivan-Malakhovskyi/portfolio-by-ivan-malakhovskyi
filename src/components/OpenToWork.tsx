@@ -29,17 +29,17 @@ const OpenToWork: FC = () => {
               </span>
             </li>{" "}
             <li>
-              <h2 className="text-3xl text-center md:text-6xl font-bold bg-gradient-to-r from-neon to-skyBlue text-transparent bg-clip-text break-words">
+              <h2 className="text-3xl text-center md:text-6xl font-bold bg-gradient-to-r from-main-purple to-main-aqua text-transparent bg-clip-text break-words">
                 Full Stack Developer
               </h2>
             </li>
             <li>
-              <h2 className="text-3xl text-center md:text-6xl font-bold bg-gradient-to-r from-aqua to-purple text-transparent bg-clip-text break-words">
+              <h2 className="text-3xl text-center md:text-6xl font-bold bg-gradient-to-r from-main-purple to-accent-purple text-transparent bg-clip-text break-words">
                 Frontend Developer
               </h2>
             </li>
             <li>
-              <h2 className="text-3xl text-center md:text-6xl font-bold bg-gradient-to-r from-text-inverse to-gray-600 text-transparent bg-clip-text break-word">
+              <h2 className="text-3xl text-center md:text-6xl font-bold bg-gradient-to-r from-text-inverse to-text-muted text-transparent bg-clip-text break-word">
                 Backend Developer
               </h2>
             </li>

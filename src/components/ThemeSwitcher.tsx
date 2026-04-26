@@ -19,7 +19,7 @@ const ThemeSwitcher = () => {
           aria-label="Appearance: system theme"
         >
           <ComputerDesktopIcon
-            className={`transition ease-out duration-300 size-5 text-bgGrey ${activeTheme === "system" ? "fill-mainBlack dark:fill-mainWhite" : "fill-current"}`}
+            className={`transition ease-out duration-300 size-5 text-text-muted fill-current ${activeTheme === "system" ? "fill-text-text-primary dark:fill-text-inverse" : null}`}
           />
         </button>
       </li>
@@ -31,8 +31,10 @@ const ThemeSwitcher = () => {
         >
           {" "}
           <SunIcon
-            className={`transition text-bgGrey ease-out duration-300 size-5 ${
-              activeTheme === "light" ? "stroke-orange-500 fill-orange-500" : ""
+            className={`transition text-text-muted ease-out duration-300 size-5 fill-none stroke-text-muted ${
+              activeTheme === "light"
+                ? "stroke-text-accent fill-text-accent"
+                : null
             }`}
           />
         </button>
@@ -45,10 +47,8 @@ const ThemeSwitcher = () => {
           onClick={() => handleThemeChange("dark")}
         >
           <MoonIcon
-            className={`transition ease-out duration-300 size-5 ${
-              activeTheme === "dark"
-                ? "fill-accentBlue"
-                : "fill-bgGrey stroke-none"
+            className={`transition ease-out duration-300 size-5 stroke-text-muted ${
+              activeTheme === "dark" ? "fill-primary" : null
             }`}
           />
         </button>
