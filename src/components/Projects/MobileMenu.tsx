@@ -21,7 +21,7 @@ const MobileMenu: FC<IModalMenuProps> = ({
 }) => {
   return (
     <Modal close={handleToggle} showModal={show}>
-      <div className="flex-1 flex flex-col gap-2 justify-between h-full overflow-y-auto">
+      <div className="flex-1 flex flex-col gap-2 justify-between h-full">
         <div className="flex flex-col gap-4 border-b border-border-primary dark:border-border-secondary pb-8 ">
           <Link
             href="/"

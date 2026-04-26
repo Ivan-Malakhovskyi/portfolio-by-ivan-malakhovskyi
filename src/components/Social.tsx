@@ -9,7 +9,7 @@ const Social = () => {
       {socialLinks.map(({ id, href, icon, alt }) => (
         <li
           key={id}
-          className="transform transition duration-300 hover:rotate-12 & hover:scale-110 focus:rotate-12"
+          className="transform transition duration-300 hover:scale-110 focus:scale-110"
         >
           {
             <Link href={id === 5 ? `mailto:${href}` : href} target="_blank">

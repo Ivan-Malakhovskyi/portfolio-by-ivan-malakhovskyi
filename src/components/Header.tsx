@@ -1,27 +1,12 @@
 "use client";
 
-import React, { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import NavBar from "./NavBar";
+import { useScroll } from "@/hooks/useScroll";
 import MaxWidthWrapper from "./global/MaxWidthWrapper";
 
 const Header: FC = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 50);
-      setPrevScrollPos(currentScrollPos);
-    };
-
-    addEventListener("scroll", handleScroll);
-
-    return () => {
-      removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos]);
+  const { visible } = useScroll();
 
   return (
     <header
