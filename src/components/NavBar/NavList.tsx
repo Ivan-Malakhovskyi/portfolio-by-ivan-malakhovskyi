@@ -37,7 +37,7 @@ const NavList: React.FC<INavListProps> = ({ action }) => {
           <li key={id}>
             <Link
               href={path}
-              className={`md:py-6 text-lg font-semibold md:text-sm hover:text-text-primary focus:text-text-primary dark:hover:text-mainGreen dark:focus:text-mainGreen transition ease-out duration-300 ${
+              className={`md:py-6 text-lg font-semibold md:text-sm hover:text-text-primary focus:text-text-primary dark:hover:text-accent-purple dark:focus:text-accent-purple transition ease-out duration-300 ${
                 isActive
                   ? "dark:text-text-active text-color-primary"
                   : "text-text-muted dark:text-text-inverse font-semibold"
