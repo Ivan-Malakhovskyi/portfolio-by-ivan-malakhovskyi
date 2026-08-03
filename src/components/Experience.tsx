@@ -15,8 +15,8 @@ const Experience = () => {
           {t("title")}
         </h2>
 
-        {experiences.map((exp, index) => (
-          <JobExperience key={index} {...exp} />
+        {experiences.map((item) => (
+          <JobExperience key={item.id} {...item} />
         ))}
       </section>
     </MaxWidthWrapper>

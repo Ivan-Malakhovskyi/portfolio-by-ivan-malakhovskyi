@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import NavList from "./NavList";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import MobileMenu from "../Projects/MobileMenu";
+import { Bars2Icon } from "@heroicons/react/24/outline";
 
 const Navigation: FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -32,7 +33,7 @@ const Navigation: FC = () => {
           onClick={handleToggleClick}
           aria-label="Toggle menu"
         >
-          <Bars3Icon className="size-6 text-text-primary dark:text-text-inverse" />
+          <Bars2Icon className="size-6 text-text-primary dark:text-text-inverse" />
         </button>
         <AnimatePresence
           initial={false}

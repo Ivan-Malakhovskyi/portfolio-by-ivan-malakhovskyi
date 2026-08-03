@@ -12,6 +12,7 @@ import MaxWidthWrapper from "./global/MaxWidthWrapper";
 const About: FC = () => {
   const t = useTranslations("About");
   const { ref, inView } = useInView({ threshold: 0.1 });
+
   return (
     <MaxWidthWrapper>
       <section id="about" className="pb-14">
@@ -36,13 +37,18 @@ const About: FC = () => {
               {" "}
               <div className="mb-4 flex items-center">
                 <IdentificationIcon className="size-10 text-text-primary dark:text-text-inverse" />
-                <span className="ml-4 text-base font-medium md:text-lg lg:text-2xl">
+                <span
+                  className={`ml-4 text-base font-medium md:text-lg lg:text-2xl`}
+                >
                   {t("summary")}
                 </span>
               </div>
             </h3>
             <p className="text-text-muted font-medium text-base md:text-xl lg:text-2xl">
               {t("text")}
+              <span className="dark:text-text-inverse bg-gradient-to-r from-main-purple to-accent-purple bg-clip-text text-transparent font-bold">
+                {t("marked_text")}
+              </span>
             </p>
           </motion.li>
         </motion.ul>

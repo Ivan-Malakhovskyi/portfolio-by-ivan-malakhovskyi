@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import github from "/public/icons/github.svg";
 import linkedin from "/public/icons/linkedin.svg";
 import instagram from "/public/icons/instagram.svg";
@@ -105,18 +106,28 @@ export const softSkills = [
 
 export const experiences = [
   {
-    position: "Frontend developer",
-    company: "Talent Bay",
-    project: "CRM",
-    period: "2024 - Present",
+    id: 1,
+    position: "Frontend mentor",
+    company: "GoIteens school",
+    project: "",
     employment: "Part-time",
+    duration: "June 2026 - Present",
   },
   {
+    id: 2,
+    position: "Frontend developer",
+    company: "Talent Bay",
+    project: "CRM for business",
+    employment: "Part-time",
+    duration: "Aug 2024 - Present",
+  },
+  {
+    id: 3,
     position: "Frontend developer",
     company: "Team Challenge",
-    project: "Online store - marketplace",
-    period: "2023 - 2024",
+    project: "MarketPlace",
     employment: "Part-time",
+    duration: "Dec 2023 - July 2024",
   },
 ];
 

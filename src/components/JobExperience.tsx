@@ -6,20 +6,24 @@ import { container, item } from "@/constants/animations/animationStyles";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
 
-interface IJobExperienceProps {
-  position: string;
-  company: string;
-  period: string;
-  project: string;
-  employment: string;
+type InfoFields =
+  | "position"
+  | "project"
+  | "employment"
+  | "company"
+  | "duration";
+
+interface IJobExperienceProps extends Record<InfoFields, string> {
+  id: number;
 }
 
 const JobExperience: FC<IJobExperienceProps> = ({
+  id,
   position,
   company,
-  period,
-  project,
+  duration,
   employment,
+  project,
 }) => {
   const { ref, inView } = useInView({ threshold: 0.1 });
 
@@ -40,15 +44,21 @@ const JobExperience: FC<IJobExperienceProps> = ({
           <h2 className="text-2xl font-semibold text-text-inverse mb-2">
             {position}
           </h2>
-          <h3 className="text-xl text-text-inverse mb-2">{company}</h3>
-          <p className="text-text-muted mb-2">{period}</p>
-          <div className="text-text-muted">
-            <strong>Project: </strong>
-            {project}
-          </div>
+          <h3 className="text-xl text-text-inverse mb-2">
+            {t("company")} &#x2D; {company}
+          </h3>
+          <p className="text-text-inverse mb-2">
+            {t("duration")} &#x2D; {duration}
+          </p>
+          {project && (
+            <div className="text-text-inverse mb-2">
+              <strong>{t("project")} &#x2D; </strong>
+              {project}
+            </div>
+          )}
           <div className="text-text-inverse">
-            <strong>Employment: </strong>
-            {t("employment")}
+            <strong>{t("employment")} &#x2D; </strong>
+            {employment}
           </div>
         </motion.div>
       </motion.div>

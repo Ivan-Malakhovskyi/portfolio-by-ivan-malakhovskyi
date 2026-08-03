@@ -15,9 +15,9 @@
   "Hero": {
     "text_add": "Hey there, my name is",
     "text_main": "Ivan Malakhovskyi Enthusiastic Full Stack Developer from Ukraine, Vinnytsia",
-    "summary": "I am a Full Stack Developer. Recently I am a ",
-    "main_title": "successfully completed commercial project",
-    "summary_add": " Online store - marketplace at company Team Challenge. I am currently working as a frontend developer at Talent Bay and am ready for new opportunities.",
+    "summary": "Full Stack Developer with over 2.5 years of commercial frontend development experience and a background in Biology. ",
+    "main_title": "Currently building a user-centric startup product at Talent Bay",
+    "summary_add": " Alongside development, I teach and mentor aspiring frontend developers — reviewing and refactoring code, sharing real production cases, and providing hands-on practice grounded in real-world experience",
     "btn_hire": "Hire me",
     "btn_download": "Download CV"
   },
@@ -28,11 +28,15 @@
   "About": {
     "title": "About me",
     "summary": "Summary",
-    "text": "Full Stack Developer with a background in Biology and strong analytical skills. Currently building user-centric startup project at Talent Bay using Next.js, TS, Zustand, Antd. Previously developed a custom CMS from scratch and key product card features in a commercial marketplace project. Passionate about clean code, performance, and continuous learning."
+    "marked_text": "Also teach and mentor aspiring frontend developers — reviewing and refactoring code, sharing real production cases, and providing hands-on practice grounded in real-world experience.",
+    "text": "Full Stack Developer with over 2,5 years of commercial frontend development experience and a background in Biology. Currently building a startup product at Talent Bay using Nextjs, TypeScript, Zustand, and Ant Design. Previously designed and built a custom CMS from scratch. It`s important to me care about clean code, performance, and continuous growth — for myself and for everyone I work with."
   },
   "WorkExperience": {
+    "company": "Company",
     "title": "Work Experience",
-    "employment": "Part-time"
+    "employment": "Employment",
+    "project": "Project",
+    "duration": "Duration"
   },
   "Certificates": {
     "title": "Certificates"
